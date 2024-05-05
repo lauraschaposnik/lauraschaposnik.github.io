@@ -7,7 +7,7 @@ subtitle:  <b>Professor</b> of <a href="https://mscs.uic.edu">Mathematics, Stati
 profile:
   align: right
   image: prof_pic.jpg
-  address:  
+  address:  >
 
 news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
