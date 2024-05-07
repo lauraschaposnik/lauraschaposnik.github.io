@@ -2,7 +2,7 @@
 layout: page
 title: More
 nav: true
-order: 6
+nav_order: 6
 dropdown: true
 children: 
     - title: Family

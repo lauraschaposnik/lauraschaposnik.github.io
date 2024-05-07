@@ -2,7 +2,7 @@
 layout: page
 title: Mathematics
 nav: true
-order: 2
+nav_order: 2
 dropdown: true
 children: 
     - title: Publications

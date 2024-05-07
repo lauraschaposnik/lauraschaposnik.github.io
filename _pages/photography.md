@@ -2,7 +2,7 @@
 layout: page
 title: Photography
 nav: true
-order: 5
+nav_order: 5
 dropdown: true
 children: 
     - title: Project 365
