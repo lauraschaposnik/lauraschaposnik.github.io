@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2022-01-01 07:59:00-0400
 inline: true
-related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+During Fall 2022  I will be co-organizing the semester long program <a href="https://www.msri.org/programs/340">Analytic and Geometric Aspects of Gauge Theory
+</a> at MSRI.
