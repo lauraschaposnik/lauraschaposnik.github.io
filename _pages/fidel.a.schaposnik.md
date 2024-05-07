@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /fidel.a.schaposnik/
-title: Fidel A. 
+title: Fidel A. Schaposnik (1947 - 2023)
 nav: false
 heading: Fidel A. Schaposnik (1947 - 2023)
 ---
