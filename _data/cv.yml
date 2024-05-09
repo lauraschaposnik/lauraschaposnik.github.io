@@ -2,11 +2,11 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Laura Schaposnik
     - name: Date of Birth
-      value: 14th March 1879
+      value: 20th July 1985
     - name: Languages
-      value: English, German
+      value: English, Spanish, French
 
 - title: Education
   type: time_table
