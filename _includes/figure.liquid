@@ -70,11 +70,6 @@
       {% endif %}
       onerror="this.onerror=null; $('.responsive-img-srcset').remove();"
     >
-    
-       <!-- Fallback to the original file -->
-    <img {% if include.img_class %}class="{{ include.img_class }}"{% endif %} src="{{ include.path | relative_url }}" {% if include.alt %}alt="{{ include.alt }}"{% endif %} {% if include.title %}title="{{ include.title }}"{% endif %} {% if include.zoomable %}data-zoomable{% endif %} style="max-width:100%;max-height:100%"/>
-
-
   </picture>
 
   {% if include.caption %}
