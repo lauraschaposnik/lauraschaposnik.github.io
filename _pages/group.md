@@ -34,7 +34,6 @@ In the last decade I have mentored several students at different levels, and mor
 <div class="publications">
 
 {%- for y in page.years %}
-  <h2 class="year">{{y}}</h2>
   {% bibliography -f past -q @*[year={{y}}]* %}
 {% endfor %}
 

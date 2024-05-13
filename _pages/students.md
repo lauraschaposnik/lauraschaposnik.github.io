@@ -17,9 +17,10 @@ In the last decade I have mentored several students at different levels. Below i
 <span style="font-size:15px">
 
 <h2>Current</h2>
- 
+
+   <br>
+   
  {%- for y in page.years %}
-  <h2 class="year">{{y}}</h2>
   {% bibliography -f current -q @*[year={{y}}]* %}
 {% endfor %}
 
@@ -28,6 +29,8 @@ In the last decade I have mentored several students at different levels. Below i
  <hr>
 <span style="font-size:15px">
 
+  <br>
+  
 <h2>Former</h2>
 
 In reverse chronological order
@@ -35,7 +38,6 @@ In reverse chronological order
 <div class="publications">
 
 {%- for y in page.years %}
-  <h2 class="year">{{y}}</h2>
   {% bibliography -f past -q @*[year={{y}}]* %}
 {% endfor %}
 
