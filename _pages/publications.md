@@ -51,9 +51,10 @@ My research program is dedicated to the study of the geometry and topology of th
 
 <center>
 <p>
-<abbr class="{{site.data.badge_colors['darkgrey']}}" onclick="filterSubject('')" style="cursor: pointer;">all</abbr>&ensp;
-<abbr class="{{site.data.badge_colors['cyan']}}" onclick="filterSubject('geometry')" style="cursor: pointer;">geometry</abbr>&ensp;
-<abbr class="{{site.data.badge_colors['green']}}" onclick="filterSubject('applied')" style="cursor: pointer;">interdisciplinary</abbr>
+<abbr class="{{site.data.badge_colors['darkgrey']}}" onclick="filterSubject('')" style="cursor: pointer;">All</abbr>&ensp;
+<abbr class="{{site.data.badge_colors['cyan']}}" onclick="filterSubject('geometry')" style="cursor: pointer;">Geometry</abbr>&ensp;
+<abbr class="{{site.data.badge_colors['blue']}}" onclick="filterSubject('applied')" style="cursor: pointer;">Interdisciplinary</abbr>&ensp;
+<abbr class="{{site.data.badge_colors['green']}}" onclick="filterSubject('books')" style="cursor: pointer;">Children Books</abbr>&ensp;
 </p>
 </center>
 
