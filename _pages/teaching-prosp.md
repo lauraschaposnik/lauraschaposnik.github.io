@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /teaching-prosp/
-title: 'teaching: prospective students'
+title: 'Prospective students'
 description:  
 nav: false
 heading: Information for prospective students and post-docs
