@@ -18,14 +18,11 @@ function filterSubject(filter) {
   
   // Loop through all rows, hide those which don't match the selected filter
   for (i = 0; i < rows.length; i++) {
-    var category = rows[i].getElementsByClassName("category")[0]; // Change "abbr" to "category"
-    if (category) {
-      var txtValue = category.textContent || category.innerText;
-      if (txtValue.indexOf(filter) > -1) {
+    var primaryClass = rows[i].getElementsByClassName("category-tag")[0];
+	if (primaryClass.textContent.indexOf(filter) > -1) {
         rows[i].style.display = "";
-      } else {
+    } else {
         rows[i].style.display = "none";
-      }
     }
   }
   
