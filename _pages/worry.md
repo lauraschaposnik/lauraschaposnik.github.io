@@ -12,30 +12,25 @@ This situation sheds light on broader issues. It's not only about who’s missin
 
 
 
-<br>
-
+ <blockquote> 
 Could more senior speakers, when invited to speak, bring along their younger students? 
+</blockquote>
 
-<br>
-
+ <blockquote> 
 Could they suggest their female collaborators to give seminars?
+</blockquote>
 
-<br>
-
-
+ <blockquote> 
 Could we ask participants for suggestions of names of people who might be interested in the topics of choice? 
+</blockquote>
 
-<br>
-
-
+ <blockquote> 
 Could we, as a community, keep track of our community and how it evolves and grows? For instance, keeping an eye on lists like this one of [women geometers](https://shorturl.at/mzX34)?
+</blockquote>
 
-<br>
-
+ <blockquote> 
 Much like Sir Michael Atiyah reached out to Ed Witten, fostering interactions between fields,  will not only push our research forward but will likely  also open up new pathways of thinking and problem-solving. Could we further our efforts towards equity, for instance, bringing along young minds in different areas together.
-
-
-<br>
+</blockquote>
 
 
 
