@@ -18,7 +18,6 @@ In the last decade I have mentored several students at different levels. Below i
 
 <h2>Current</h2>
 
-   <br>
    
  {%- for y in page.years %}
   {% bibliography -f current -q @*[year={{y}}]* %}
