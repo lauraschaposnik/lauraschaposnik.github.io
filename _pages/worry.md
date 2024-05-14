@@ -25,8 +25,10 @@ Could we ask participants for suggestions of names of people who might be intere
 </blockquote>
 
  <blockquote> 
-Could we, as a community, keep track of our community and how it evolves and grows? For instance, keeping an eye on lists like this one of [women geometers](https://shorturl.at/mzX34)?
+Could we, as a community, keep track of our community and how it evolves and grows? 
 </blockquote>
+
+For instance, keeping an eye on lists like this one of [women geometers](https://shorturl.at/mzX34)?
 
  <blockquote> 
 Much like Sir Michael Atiyah reached out to Ed Witten, fostering interactions between fields,  will not only push our research forward but will likely  also open up new pathways of thinking and problem-solving. Could we further our efforts towards equity, for instance, bringing along young minds in different areas together.
