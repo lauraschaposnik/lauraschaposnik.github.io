@@ -7,58 +7,13 @@ years: [2024, 2023, 2022, 2021, 2020]
 heading: Children books
 ---
 
-
-<!-- _pages/books.md -->
-
-<script>
-function filterSubject(filter) {
-  var list = document.getElementById("booksList");
-  var rows = list.getElementsByClassName("row");
-  
-  // Loop through all rows, hide those which don't match the selected filter
-  for (i = 0; i < rows.length; i++) {
-    var primaryClass = rows[i].getElementsByClassName("category-tag")[0];
-	if (primaryClass.textContent.indexOf(filter) > -1) {
-        rows[i].style.display = "";
-    } else {
-        rows[i].style.display = "none";
-    }
-  }
-  
-  // Loop through all sections, hide those which are empty
-  var years = list.getElementsByClassName("year");
-  for (i = 0; i < years.length; i++) {
-    var count = 0;
-    for (j = 0; j < rows.length; j++) {
-	  var section_tag = rows[j].getElementsByClassName("section-tag")[0];
-	  if (section_tag.textContent == years[i].textContent && rows[j].style.display == "") { count++; }
-	}
-	if (count != 0) {
-	  years[i].style.display = "";
-	} else {
-	  years[i].style.display = "none";
-	}
-  }
-}
-</script>
-
+ 
+<div class="publications">
 
 
 After reading hundreds of children books with my sons, I decided to start writing and illustrating my own children books, in an attempt to combine this with my research and the educator inside me. You can see my work   related to creating readers' books, to the   <a href="#ene">Ene's book series</a>, <a href="#raccoon">Raccoon's book series</a> and <a href="#azul">translation work</a> below. The latest book, out in January 2023, is a book for young readers on [Sonia Kovalevsky's life](https://www.amazon.com/Potential-Inspire-Kovalevskys-Mathematical-Journey/dp/B0BRJZ182H?ref_=ast_sto_dp). Here is a list of my children books, and longer descriptions are given below. 
 
 <br>
-
-<center>
-<p>
-<abbr class="{{site.data.badge_colors['darkgrey']}}" onclick="filterSubject('')" style="cursor: pointer;">All</abbr>&ensp;
-<abbr class="{{site.data.badge_colors['cyan']}}" onclick="filterSubject('reader')" style="cursor: pointer;">Reader books</abbr>&ensp;
-<abbr class="{{site.data.badge_colors['blue']}}" onclick="filterSubject('ene')" style="cursor: pointer;">Ene's magic world series</abbr>&ensp;
-<abbr class="{{site.data.badge_colors['green']}}" onclick="filterSubject('math')" style="cursor: pointer;">Math books</abbr>&ensp;
-</p>
-</center>
-
-
-<div id="booksList" class="books">
  
 {%- for y in page.years %}
   {% bibliography -f books -q @*[year={{y}}]* %}
