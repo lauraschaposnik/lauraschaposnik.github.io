@@ -11,7 +11,7 @@ heading: Children books
 <div class="publications">
 
 
-After reading hundreds of children books with my sons, I decided to start writing and illustrating my own children books, in an attempt to combine this with my research and the educator inside me. You can see my work   related to creating readers' books, to the   <a href="#ene">Ene's book series</a>, <a href="#raccoon">Raccoon's book series</a> and <a href="#azul">translation work</a> below. The latest book, out in January 2023, is a book for young readers on [Sonia Kovalevsky's life](https://www.amazon.com/Potential-Inspire-Kovalevskys-Mathematical-Journey/dp/B0BRJZ182H?ref_=ast_sto_dp). Here is a list of my children books, and longer descriptions are given below. 
+After reading hundreds of children books with my sons, I decided to start writing and illustrating my own children books, in an attempt to combine this with my research and the educator inside me. You can see my work   related to creating readers' books, to the   <a href="#ene">Ene's book series</a>, <a href="#raccoon">Raccoon's book series</a> and <a href="#azul">translation work</a> below. The latest book, out in January 2023, is a book for young readers on  <a href="https://www.amazon.com/Potential-Inspire-Kovalevskys-Mathematical-Journey/dp/B0BRJZ182H?ref_=ast_sto_dp">Sonia Kovalevsky's life </a>. Here is a list of my children books, and longer descriptions are given below. 
 
 <br>
  
