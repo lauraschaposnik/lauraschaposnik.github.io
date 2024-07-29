@@ -36,7 +36,10 @@
   </div> <!-- Close col-sm-auto or col-sm-2 abbr -->
 
   <!-- Main Content Column -->
+  {%- if entry.type != "thesis" -%} <!-- Open col-sm-8 only if not a thesis -->
   <div id="{{ entry.key }}" class="col-sm-8">
+  {%- endif -%}
+
     {%- if entry.type == "thesis" -%}
       {{ reference }}
     {%- else -%}
@@ -203,5 +206,9 @@
     {%- endif -%}
 
     {%- endif -%} <!-- End of entry.type conditional -->
+
+  {%- if entry.type != "thesis" -%} <!-- Close col-sm-8 only if not a thesis -->
   </div> <!-- Close col-sm-8 -->
+  {%- endif -%}
+
 </div> <!-- Close row -->
