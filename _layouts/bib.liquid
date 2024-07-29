@@ -1,8 +1,6 @@
 <!-- _layouts/bib.html -->
 <div class="row">
-  <!-- Category Tag -->
   <div class="category-tag" style="display: none;">{{ entry.category }}</div>
-  <!-- Section Tag -->
   <div class="section-tag" style="display: none;">{{ entry.year }}</div>
 
   <!-- Image or Abbr Column -->
@@ -42,7 +40,7 @@
     {%- if entry.type == "thesis" -%}
       {{ reference }}
     {%- else -%}
-
+    
     <!-- Title -->
     <div class="title">
       {%- if entry.title_url -%}
