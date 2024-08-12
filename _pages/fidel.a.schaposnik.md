@@ -107,13 +107,11 @@ As time passes, his friends, colleagues and family will be finding different way
 <ul>
   <li>Together with Paula Bergero, we will be editing the lecture notes set <b> <a href="https://drive.google.com/file/d/12x3c2ijrgWEtS9-1CEpIH16kfKPJcQAX/view"> Introducción a los Métodos
 del Conocimiento Científico </a></b> to be published as a book soon with an Argentinian publisher. </li>
-  
-  <li>There will be a workshop in his memory to take place in La Plata in December 2024. Reach out if you'd like to be added to an email list to get updates. </li>
-  
-  <li>The stories that my father told my children always kept them so entertained. Since I recorded most of them, together with my illustrator  <a href="https://www.instagram.com/cecilialarosa.ilus/?hl=en"> Cecilia La Rosa </a>we will be working on a children's book <i>"Historias del abuelo"</i> to be finished in 2024.  </li>
+    
+  <li>The stories that my father told my children always kept them so entertained. Since I recorded most of them, together with my illustrator  <a href="https://www.instagram.com/cecilialarosa.ilus/?hl=en"> Cecilia La Rosa </a>we will be working on a children's book <i>"Historias del abuelo"</i> to be finished in the next years.  </li>
 
 
-  <li>My father's library likely had over 100.000 books, and so we made a beautiful stamp to mark each of them, and now have donated most of his physics and mathematics books to Universidad Nacional de La Plata: a new portion of the library of the Physics Department will now be named after him and showcase his books. We found good homes for many other books, and many others are staying within family members, to endure the love for reading among our future generations </li>
+  <li>My father's library likely had over 100.000 books, and so we made a beautiful stamp to mark each of them, and now have donated most of his physics and mathematics books to Universidad Nacional de La Plata: a new portion of the library of the Physics Department will  be named after him and showcase his books. We found good homes for many other books, and many others are staying within family members, to endure the love for reading among our future generations </li>
 
 <br>
 
