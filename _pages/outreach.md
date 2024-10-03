@@ -118,6 +118,23 @@ These days are part of series of the <a href="https://sites.google.com/site/awmm
 
 <tr>
 <td width="20%">
+<img src="/assets/img/sonia-2024.PNG" height="200px" width="150px">
+</td>
+
+<td width="60%">
+<h5><a href="https://sites.google.com/view/soniamathday2024/home"><b>Sonia Kovalevsky day VIII
+</b></a></h5>
+Games on Surfaces<br>
+</td>
+
+<td width="10%"> 2024
+</td>
+</tr>
+
+
+
+<tr>
+<td width="20%">
 <img src="/assets/img/2023_Sonia.png" height="200px" width="150px">
 </td>
 
