@@ -164,7 +164,7 @@ You can find below the links to each year's Project Website, as well as a 3 minu
 <br>
 
 <h1 id="2014"> </h1>
-### Project 365 2014:   [Photos here.](https://faculty.math.illinois.edu/%7Eschapos/Project_365_2014.html)  
+### Project 365 2014:   [Photos here.](https://faculty.math.illinois.edu/~schapos/Project_365_2014.html)  
 
 The beautiful music is by my friend [Rebecca Rego](http://regorego.com).
 
@@ -182,7 +182,7 @@ The beautiful music is by my friend [Rebecca Rego](http://regorego.com).
 <br>
 
 <h1 id="2013"> </h1>
-### Project 365 2013:   [Photos here.](https://faculty.math.illinois.edu/%7Eschapos/Project_365_2013.html)     
+### Project 365 2013:   [Photos here.](https://faculty.math.illinois.edu/~schapos/Project_365_2013.html)     
 <br>
 
 <div id="video-container" style="float: none; clear: both; width: 100%; position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0;">
