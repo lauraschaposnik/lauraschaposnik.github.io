@@ -209,4 +209,7 @@ In late October 2024 we made our first asado - we all loved both the food, and t
         {% include figure.html path="assets/img/brick/2024grill9.jpeg" title="Finished!" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
+
+
+
  

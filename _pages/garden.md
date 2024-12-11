@@ -71,23 +71,53 @@ The garden itself felt like a magical garden, both for us grown ups as well as f
  
 <h1 id="base"> Our sunroom and the spicy pepper plants  </h1>
  
-We started to grow 10 different pepper plant varieties in the spring 2023, using ultraviolet lights and careful set up - it didn't take long for us to get an overwhealming amount of plants!    
+We started to grow 10 different pepper plant varieties in the spring 2023, using ultraviolet lights and careful set up - it didn't take long for us to get an overwhelming amount of plants!    
 
-  <div class="row">
+<div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/pep2.jpeg" title="Our indoor plants" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="assets/img/brick/gar2.jpg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/gar3.jpg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+        <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/gar4.jpg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
-Soon after we chose those we wanted to keep, we offered a bunch to our friends and neighbours, and proceeded to take even more care of those we'd have for a long time. 
+
+
+Soon after we chose those we wanted to keep, we offered a bunch to our friends and neighbours, and proceeded to take even more care of those we'd have for a long time. It wasn't long until it all started to flower and produce amazing peppers!
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/garden12.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/pep1.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+        <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/pep2.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
 
 
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/pep1.jpeg" title="Our indoor plants" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="assets/img/brick/garden2.jpeg" title="Our indoor plants" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
  
+ <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/garden14.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/garden16.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+        <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/gar1.jpg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
 Now it's our first full   winter in the house (2024-2025) we are keeping our plants thriving indoors!
 
  
@@ -104,7 +134,11 @@ Now it's our first full   winter in the house (2024-2025) we are keeping our pla
 
  
 Our front yard was a bit dull when we bought the house, so we have created our own version of a Japanese zen garden, with a touch of happy childhood... we have a river of rocks, a wooden bridge, an enchanted tree house and a little free library.   
-
+  <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/garden1.jpeg" title="Our indoor plants" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
  
 
 <br>
@@ -115,9 +149,40 @@ Our front yard was a bit dull when we bought the house, so we have created our o
  
  
  
-<h1 id="grill"> Our fruit trees    </h1>
+<h1 id="grill"> Our fruit trees  and bushes  </h1>
 
  
 During the summer 2024 we started using Fast Growing Trees and we could't be happier, both with the plants we have received but also with their efficient resolution of any problems we've encountered in the now many many times we bought things from them. We are so happy with our big Lemon Tree, our Chicago hardy Fig Tree, our Blueberry bushes, our Fig leaf palm trees, and so many more. The smaller plants have been thriving so much that we've been able to create many others through little cuttings. And the best part of all - being able to eat our own grown fruit!
 
- 
+  <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/garden7.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/garden10.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+        <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/gar8.jpg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+
+  <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/garden15.jpeg" title="Our indoor plants" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+  <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/garden4.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/garden9.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+        <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/garden9.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+
