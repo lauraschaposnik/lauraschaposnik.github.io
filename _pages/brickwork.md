@@ -153,7 +153,7 @@ Once the the foundation was dry, we were ready to start making the legs and the 
     </div>
 </div>
 
-After the upper level was done, we waited for a warmish December day to add the fire bricks that should make the grill ready to be used next spring! 
+After the upper level was done, we waited for a warmish December day in late 2023 to add the fire bricks that should make the grill ready to be used next spring! 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/brick/grillnew.png" title="Fire bricks set" class="img-fluid rounded z-depth-1" zoomable=true %}
@@ -163,6 +163,50 @@ After the upper level was done, we waited for a warmish December day to add the 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/brick/grillnew-d.jpg" title="Niko proud of the new grill" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+Now that we've been almost a year in our new home, we have finally (quasi) finished pour Argentinian grill! On a warm halloween week, we built the chimney using a wire structure and cement.  
+   <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/2024grill1.jpeg" title="Building the chimney" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/2024grill2.jpeg" title="Building the chimney" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/2024grill3.jpeg" title="Building the chimney" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/2024grill4.jpeg" title="Finished!" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/2024grill7.jpeg" title="Finished!" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+In late October 2024 we made our first asado - we all loved both the food, and the fire / set up! Come and join us for our weekly asados once the weather allows us in 2025!
+   <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/2024grill5.jpeg" title="It's finished!" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/2024grill8.jpeg" title="It's finished!" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/2024grill10.jpeg" title="It's finished!" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/2024grill9.jpeg" title="Finished!" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
  
