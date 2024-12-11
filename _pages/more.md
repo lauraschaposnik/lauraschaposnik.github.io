@@ -17,6 +17,8 @@ children:
       permalink: /woodwork/
     - title: Brickwork
       permalink: /brickwork/
+    - title: Gardening
+      permalink: /garden/
 ---
 
  

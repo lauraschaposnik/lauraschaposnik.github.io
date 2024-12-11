@@ -1,9 +1,9 @@
 ---
 layout: page
-permalink: /brickwork/
-title: Brickwork
+permalink: /garden/
+title: Gardening
 nav: false
-heading: Brickwork
+heading: Gardening
 ---
 
 I grew up watching my mother, father and my brother gardening, they were all so good at it! our family home felt like a beautiful rainforest, with a mix of dessert and spiced peppers:
@@ -11,13 +11,31 @@ I grew up watching my mother, father and my brother gardening, they were all so 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/work1.jpeg" title="My brother making a Christmas tree" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="assets/img/brick/work1.jpeg" title="My childhood home in La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/work2.jpeg" title="Tools when growing up" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="assets/img/brick/work2.jpeg" title="My childhood home in La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
         <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/work3.jpeg" title="James and my father building a Christmas tree" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="assets/img/brick/work3.jpeg" title="My childhood home in La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+  <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/base2.jpeg" title="My childhood home in La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/work1.jpeg" title="My childhood home in La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/work2.jpeg" title="My childhood home in La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+        <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/work3.jpeg" title="My childhood home in La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -26,6 +44,7 @@ I grew up watching my mother, father and my brother gardening, they were all so 
 
 
 
+
 <br>
 <hr>
 <span style="font-size:15px">
@@ -34,34 +53,44 @@ I grew up watching my mother, father and my brother gardening, they were all so 
  
  
  
-<h1 id="base"> Building a Solid Foundation  </h1>
+<h1 id="base"> Our sunroom and the spicy pepper plants  </h1>
  
-We decided to build a shed in our front yard, and so we needed a solid foundation to put it on.   
+We started to grow 10 different pepper plant varieties in the spring 2023, using ultraviolet lights and careful set up - it didn't take long for us to get an overwhealming amount of plants!    
+
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/base2.jpeg" title="Nikolay helped a lot" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="assets/img/brick/base2.jpeg" title="Our indoor plants" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
-We had to excavate a trench of undisturbed soil for the required bearing, lay the Step 1 and Step 2 foundation bags, then the cement tiles making sure they were horizontal (enough) and then make the shed. 
+Soon after we chose those we wanted to keep, we offered a bunch to our friends and neighbours, and proceeded to take even more care of those we'd have for a long time. 
 
 
- 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/base1.jpeg" title="Set things up for a day of work" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="assets/img/brick/base1.jpeg" title="Our indoor plants" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-            {% include figure.html path="assets/img/brick/base3.jpeg" title="And the base is finished!" class="img-fluid rounded z-depth-1" zoomable=true %}
+            {% include figure.html path="assets/img/brick/base3.jpeg" title="Our indoor plants" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
         <div class="col-sm mt-3 mt-md-0">
-                {% include figure.html path="assets/img/brick/shed.jpeg" title="The shed finished" class="img-fluid rounded z-depth-1" zoomable=true %}
+                {% include figure.html path="assets/img/brick/shed.jpeg" title="Our indoor plants" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
  
-We set up things to make the foundation during one day. A beach tent kept Nikolay entertained with toys, and allowed him to watch ups build things from scratch. He now wants to be an Architect and a builder! (and a scientist and a painter and so much more!). 
-   
+Now it's our first full   winter in the house (2024-2025) we are keeping our plants thriving indoors!
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/base1.jpeg" title="Our indoor plants" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+            {% include figure.html path="assets/img/brick/base3.jpeg" title="Our indoor plants" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+        <div class="col-sm mt-3 mt-md-0">
+                {% include figure.html path="assets/img/brick/shed.jpeg" title="Our indoor plants" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
 
 <br>
 <hr>
@@ -71,98 +100,51 @@ We set up things to make the foundation during one day. A beach tent kept Nikola
  
  
  
-<h1 id="grill"> Parrilla Argentinian    </h1>
+<h1 id="grill"> Our Japanese garden    </h1>
 
  
-We have a beautiful back yard (not so common in Lincoln Park, we're indeed very lucky!
+Our front yard was a bit dull when we bought the house, so we have created our own version of a Japanese zen garden, with a touch of happy childhood... we have a river of rocks, a wooden bridge, an enchanted tree house and a little free library.   
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/set0.jpeg" title="Our front yard" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+  
+  
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/base1.jpeg" title="Our front yard" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+            {% include figure.html path="assets/img/brick/base3.jpeg" title="Our front yard" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+        <div class="col-sm mt-3 mt-md-0">
+                {% include figure.html path="assets/img/brick/shed.jpeg" title="Our front yard" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+<br>
+<hr>
+<span style="font-size:15px">
+<br>
+
  
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/set0.jpeg" title="Our back yard" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
-
-To honor our Argentinian heritage, and to continue my father's tradition of Sunday Asados, we needed to build an Argentinian Parrilla there. 
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/grill.jpeg" title="The plans" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
-
-After making several sketches, we proceeded to make a lego model, of course. 
-
-  <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/grill0.jpeg" title="Our new tools" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/grill1.jpeg" title="Getting things together" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/grill2.jpeg" title="James learning new skills" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
-
-We then emptied the whole space from plants and soil, it was quite some work, and prepared the ground for a 5' foundation base. 
-
-  <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/set3.jpeg" title="The ground is ready" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/set1.jpeg" title="The first rocks are set" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/set2.jpeg" title="Everything ready for the foundation" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
-
-Our fantastic contractor Maurizio (and his team, and his uncle!) have been teaching us so much! 
-
-  <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/brick1.jpeg" title="The foundation bags are ready" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/set4.jpeg" title="The mixer Maurizio lent us" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/set2.jpeg" title="The first step towards the grill done" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
-
-Once the the foundation was dry, we were ready to start making the legs and the counter. 
  
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/brick3.jpeg" title="Half way there" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
-
-  <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/grillnew-c.jpg" title="Building the upper level" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/grillnew-b.jpg" title="Building the upper level" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/grillnew-a.jpg" title="Building the upper level" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
-
-After the upper level was done, we waited for a warmish December day to add the fire bricks that should make the grill ready to be used next spring! 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/grillnew.png" title="Fire bricks set" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/grillnew-d.jpg" title="Niko proud of the new grill" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
  
+<h1 id="grill"> Our Japanese garden    </h1>
+
+ 
+During the summer 2024 we started using Fast Growing Trees and we could't be happier, both with the plants we have received but also with their efficient resolution of any problems we've encountered in the now many many times we bought things from them. We are so happy with our big Lemon Tree, our Chicago hardy Fig Tree, our Blueberry bushes, our Fig leaf palm trees, and so many more. The smaller plants have been thriving so much that we've been able to create many others through little cuttings. And the best part of all - being able to eat our own grown fruit!
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/brick/base1.jpeg" title="Our trees" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+            {% include figure.html path="assets/img/brick/base3.jpeg" title="Our trees" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+        <div class="col-sm mt-3 mt-md-0">
+                {% include figure.html path="assets/img/brick/shed.jpeg" title="Our trees" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
