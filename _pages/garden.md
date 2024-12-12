@@ -136,7 +136,7 @@ Now it's our first full   winter in the house (2024-2025) we are keeping our pla
 Our front yard was a bit dull when we bought the house, so we have created our own version of a Japanese zen garden, with a touch of happy childhood... we have a river of rocks, a wooden bridge, an enchanted tree house and a little free library.   
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/garden1.jpeg" title="Our indoor plants" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="assets/img/brick/japan.PNG" title="Our indoor plants" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
  
@@ -156,7 +156,7 @@ During the summer 2024 we started using Fast Growing Trees and we could't be hap
 
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/garden7.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="assets/img/brick/garden7.PNG" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/brick/garden10.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
@@ -175,13 +175,13 @@ During the summer 2024 we started using Fast Growing Trees and we could't be hap
 
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/garden4.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="assets/img/brick/garden4.PNG" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/brick/garden9.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
         <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/garden9.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="assets/img/brick/2024grill4.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
