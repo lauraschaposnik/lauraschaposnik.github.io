@@ -8,7 +8,6 @@ heading: My family
 
 My husband [James A. Unwin](https://jamesunwin.github.io/) is a physicist - we met in grad school at the University of Oxford back in 2008, and since then we have explored the world and built a beautiful family. 
 
- 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/family.jpeg" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
