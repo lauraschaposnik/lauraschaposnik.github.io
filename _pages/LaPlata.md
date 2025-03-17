@@ -14,7 +14,7 @@ heading: 36 Hours in La Plata
 
 ![]({{site.baseurl}}/assets/img/laplata.png)
 
-Almost two centuries ago, Argentina became independent - after being colonised by the Spaniards, and having been involved in several wars and revolutions. It was not until 1882 that La Plata was planned by Dardo Rocha, and officially founded on 19th of November that year. It has since been known as “Cuidad de las diagonales” (City of diagonals), and you will quickly see how geometrical the place is on getting there. Thanks to its enormous university, and being the capital of the province of Buenos Aires, La Plata has become a very active city, filled with new and trendy eateries, local breweries, a great music scene and beautiful parks.
+Almost two centuries ago, Argentina became independent - after being colonized by the Spaniards, and having been involved in several wars and revolutions. It was not until 1882 that La Plata was planned by Dardo Rocha, and officially founded on 19th of November that year. It has since been known as “Cuidad de las diagonales” (City of diagonals), and you will quickly see how geometrical the place is on getting there. Thanks to its enormous university, and being the capital of the province of Buenos Aires, La Plata has become a very active city, filled with new and trendy eateries, local breweries, a great music scene and beautiful parks.
 
 ## Friday
 
