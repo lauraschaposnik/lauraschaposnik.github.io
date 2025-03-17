@@ -18,7 +18,7 @@ Almost two centuries ago, Argentina became independent - after being colonized b
 
 ## Friday
 
-### People watching| 5 p.m.
+### People watching |  5 p.m.
 
 La Plata is connected by rail to Buenos Aires through the Estación La Plata (Avenida 1 y 44), a beautiful building worth visiting. In the busy hours of Friday afternoon you will see workers commuting to the capital of the country, as well as to suburbs of the city.  After walking in that area, stroll by Diagonal 80 to see how the streets are filled with locals and shops selling all kinds of bargains.  It won’t be long until you are able to recognize how different parts of the city are dedicated to different social strata, and complete integration has not yet been achieved. To get a different feeling of the city, visit also Wilkenny (Calle 11 y 50), where you will find the posh students and workers having a coffee or a beer, at all times of the day. If you then explore Calle 8 between 47 and 51, you will also see how school kids gather on Friday afternoons, waiting to receive party invitations by the corner of 8 and 48.
 
