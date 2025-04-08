@@ -11,4 +11,6 @@ children:
       permalink: /teaching-courses/
     - title: Prospective
       permalink: /teaching-prosp/
+    - title: Graduate Applications
+      permalink: /teaching-guide/
 ---
