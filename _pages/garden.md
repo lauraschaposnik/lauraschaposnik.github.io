@@ -71,7 +71,7 @@ The garden itself felt like a magical garden, both for us grown ups as well as f
  
 <h1 id="base"> Our sunroom and the spicy pepper plants  </h1>
  
-We started to grow 10 different pepper plant varieties in the spring 2023, using ultraviolet lights and careful set up - it didn't take long for us to get an overwhelming amount of plants!    
+We started to grow 10 different pepper plant varieties in the spring 2024, using ultraviolet lights and careful set up - it didn't take long for us to get an overwhelming amount of plants!    
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
