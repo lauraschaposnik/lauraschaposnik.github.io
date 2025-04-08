@@ -3,7 +3,7 @@ layout: page
 permalink: /books/
 title: Children books
 nav: false
-years: [2024, 2023, 2022, 2021, 2020]
+years: [2025, 2024, 2023, 2022, 2021, 2020]
 heading: Children books
 ---
 
