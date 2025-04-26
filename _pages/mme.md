@@ -28,13 +28,13 @@ Which mathematical world maps can we arrive at if we think collectively? As scie
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/start1.png" title="Starting image - what does it make you think about?" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/start1.png" title="Starting image - what does it make you think about?" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/start2.png" title="Starting image - what does it make you think about?" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/start2.png" title="Starting image - what does it make you think about?" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/start3.png" title="Starting image - what does it make you think about?" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/start3.png" title="Starting image - what does it make you think about?" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -47,7 +47,7 @@ Starting images
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/start1.1.1.png" title="The first evolutions" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/start1.1.1.png" title="The first evolutions" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -55,7 +55,7 @@ Starting images
 <br>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/start2.1.png" title="The first evolutions" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/start2.1.png" title="The first evolutions" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 

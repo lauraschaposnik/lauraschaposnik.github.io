@@ -10,7 +10,7 @@ With the deepest sadness, my brother Fidel and I bid farewell to our father, Fid
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/cuatro1989.jpeg" title="Fidel I. Schaposnik Massolo, Patricia Massolo, Laura P. Schaposnik Massolo, & Fidel A. Schaposnik. 1989, La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/cuatro1989.jpeg" title="Fidel I. Schaposnik Massolo, Patricia Massolo, Laura P. Schaposnik Massolo, & Fidel A. Schaposnik. 1989, La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -32,13 +32,13 @@ Thirty years later, he rests in peace next to his beloved Patricia, our mother.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/papa1.jpeg" title="2010 in Paris" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/papa1.jpeg" title="2010 in Paris" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/papa2.jpeg" title="2016 in Paris" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/papa2.jpeg" title="2016 in Paris" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/papa3.jpeg" title="April 2023 in La Plata" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/papa3.jpeg" title="April 2023 in La Plata" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -49,13 +49,13 @@ Photos of our trips with James in 2010 and 2016 to Paris to see my father, and o
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/papa4.jpeg" title="2009 in La Plata" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/papa4.jpeg" title="2009 in La Plata" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/papa5.jpeg" title="2011 in La Plata" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/papa5.jpeg" title="2011 in La Plata" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/papa6.jpeg" title="January 2022 in Chicago" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/papa6.jpeg" title="January 2022 in Chicago" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -68,13 +68,13 @@ Our boys loved spending time with Abu, learning from him and sometimes just admi
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/Fidel2+Lau.jpg" title="December 2018 in La Plata" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/Fidel2+Lau.jpg" title="December 2018 in La Plata" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/nikoabu2.png" title="November 2022 in La Plata" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/nikoabu2.png" title="November 2022 in La Plata" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/nikoabu3.png" title="November 2022 in La Plata" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/nikoabu3.png" title="November 2022 in La Plata" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -83,13 +83,13 @@ Niko and Abu
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/alexabu.jpeg" title="November 2022 in La Plata" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/alexabu.jpeg" title="November 2022 in La Plata" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/alexabu2.png" title="November 2022 in La Plata" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/alexabu2.png" title="November 2022 in La Plata" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/alexabu3.jpeg" title="January 2022 in Chicago" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/alexabu3.jpeg" title="January 2022 in Chicago" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -117,7 +117,7 @@ del Conocimiento Científico </a></b> to be published as a book soon with an Arg
 
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/sello.jpeg" title="Biblioteca Fidel A. Schaposnik" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/sello.jpeg" title="Biblioteca Fidel A. Schaposnik" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 </ul>
@@ -127,7 +127,7 @@ My father's website is still going on at [https://sites.google.com/site/schaposn
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/tres.jpeg" title="I've always loved these garden photos my mother took of us" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/tres.jpeg" title="I've always loved these garden photos my mother took of us" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 

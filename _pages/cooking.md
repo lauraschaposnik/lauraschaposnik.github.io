@@ -11,7 +11,7 @@ We like trying new recipies, coming up with our own ones, and making our friends
  
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/Cooking/pastafrola.jpeg" title="pastafrola" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/Cooking/pastafrola.jpeg" title="pastafrola" class="img-fluid rounded z-depth-1" %}
     </div>
      </div>
 
@@ -24,7 +24,7 @@ We like trying new recipies, coming up with our own ones, and making our friends
  
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/Cooking/coco.jpeg" title="Tarta de Coco" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/Cooking/coco.jpeg" title="Tarta de Coco" class="img-fluid rounded z-depth-1" %}
     </div>
      </div>
 
@@ -33,7 +33,7 @@ We like trying new recipies, coming up with our own ones, and making our friends
  
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/Cooking/chipas.jpeg" title="Chipas" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/Cooking/chipas.jpeg" title="Chipas" class="img-fluid rounded z-depth-1" %}
     </div>
      </div>
 
@@ -42,7 +42,7 @@ We like trying new recipies, coming up with our own ones, and making our friends
  
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/Cooking/spaetzle.jpeg" title="Spaetzle" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/Cooking/spaetzle.jpeg" title="Spaetzle" class="img-fluid rounded z-depth-1" %}
     </div>
      </div>
 
@@ -51,7 +51,7 @@ We like trying new recipies, coming up with our own ones, and making our friends
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/Cooking/oatcakes.jpeg" title="oatcakes" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/Cooking/oatcakes.jpeg" title="oatcakes" class="img-fluid rounded z-depth-1" %}
     </div>
     </div>
 

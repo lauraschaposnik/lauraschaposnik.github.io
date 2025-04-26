@@ -14,7 +14,7 @@ The project started in 2013, and I have now entered the 10th year collecting mom
 
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/map.jpg" title="Krakow" class="img-fluid rounded z-depth-0" %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/map.jpg" title="Krakow" class="img-fluid rounded z-depth-0" %}
     </div>
 </div>
 
@@ -45,7 +45,7 @@ You can find below the links to each year's Project Website, as well as a 3 minu
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/January2022.jpeg" title="Project 365 2022" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/January2022.jpeg" title="Project 365 2022" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
  

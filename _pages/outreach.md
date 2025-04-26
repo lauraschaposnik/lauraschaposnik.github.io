@@ -23,19 +23,19 @@ Information about different career talks I have given these last years can be fo
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/Books/sonia.jpeg" title="The potential to inspire" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/sonia.jpeg" title="The potential to inspire" class="img-fluid rounded z-depth-1" %}
     </div>
  
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/Books/sonia1.jpeg" title="The potential to inspire" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/sonia1.jpeg" title="The potential to inspire" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/Books/sonia2.jpeg" title="The potential to inspire" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/sonia2.jpeg" title="The potential to inspire" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/Books/sonia3.jpeg" title="The potential to inspire" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/sonia3.jpeg" title="The potential to inspire" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <hr>
@@ -118,7 +118,7 @@ These days are part of series of the <a href="https://sites.google.com/site/awmm
 
 <tr>
 <td width="20%">
-<img src="/assets/img/sonia-2024.PNG" height="200px" width="150px">
+<img src="https://lauraschaposnik.com/assets/img/sonia-2024.PNG" height="200px" width="150px">
 </td>
 
 <td width="60%">
@@ -135,7 +135,7 @@ Games on Surfaces<br>
 
 <tr>
 <td width="20%">
-<img src="/assets/img/2023_Sonia.png" height="200px" width="150px">
+<img src="https://lauraschaposnik.com/assets/img/2023_Sonia.png" height="200px" width="150px">
 </td>
 
 <td width="60%">
@@ -151,7 +151,7 @@ Mathematics in Nature<br>
 
 <tr>
 <td width="20%">
-<img src="/assets/img/sonia2020.png" height="200px" width="150px">
+<img src="https://lauraschaposnik.com/assets/img/sonia2020.png" height="200px" width="150px">
 </td>
 
 <td width="60%">
@@ -168,7 +168,7 @@ Mathematics in Nature<br>
 
 <tr>
 <td width="20%">
-<img src="/assets/img/sonia2019.jpg" height="200px" width="150px">
+<img src="https://lauraschaposnik.com/assets/img/sonia2019.jpg" height="200px" width="150px">
 </td>
 <td width="60%">
 <h5><a href="https://schapos.people.uic.edu/Sonia2019.html"><b>Sonia Kovalevsky day V
@@ -185,7 +185,7 @@ Mathematics in the Sea<br>
 
 <tr>
 <td width="20%">
-<img src="/assets/img/sonia-2018.jpg" height="200px" width="150px">
+<img src="https://lauraschaposnik.com/assets/img/sonia-2018.jpg" height="200px" width="150px">
 </td>
 <td width="60%">
 <h5><a href="https://schapos.people.uic.edu/Sonia2018.html"><b>Sonia Kovalevsky day IV
@@ -200,7 +200,7 @@ Geometric Day<br>
 
 <tr>
 <td width="20%">
-<img src="/assets/img/sonia-2017.jpg" height="200px" width="150px">
+<img src="https://lauraschaposnik.com/assets/img/sonia-2017.jpg" height="200px" width="150px">
 </td>
 <td width="60%">
 <h5><a href="https://schapos.people.uic.edu/Sonia2017.html"><b>Sonia Kovalevsky day III
@@ -215,7 +215,7 @@ Games of Chance<br>
 
 <tr>
 <td width="20%">
-<img src="/assets/img/sonia-2016.png" height="200px" width="150px">
+<img src="https://lauraschaposnik.com/assets/img/sonia-2016.png" height="200px" width="150px">
 </td>
 <td width="60%">
 <h5><a href="https://schapos.people.uic.edu/Sonia2019.html"><b>Sonia Kovalevsky day II 
@@ -230,7 +230,7 @@ Knots and Graphs<br>
 
 <tr>
 <td width="20%">
-<img src="/assets/img/sonia-2015.jpg" height="200px" width="150px">
+<img src="https://lauraschaposnik.com/assets/img/sonia-2015.jpg" height="200px" width="150px">
 </td>
 <td width="60%">
 <h5><a href="https://schapos.people.uic.edu/Sonia2015.html"><b>Sonia Kovalevsky day I
