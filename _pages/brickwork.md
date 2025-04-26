@@ -11,13 +11,13 @@ I grew up watching my father and my brother building things, sometimes helping m
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/work1.jpeg" title="My brother making a Christmas tree" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/work1.jpeg" title="My brother making a Christmas tree" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/work2.jpeg" title="Tools when growing up" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/work2.jpeg" title="Tools when growing up" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
         <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/work3.jpeg" title="James and my father building a Christmas tree" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/work3.jpeg" title="James and my father building a Christmas tree" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -39,7 +39,7 @@ I grew up watching my father and my brother building things, sometimes helping m
 We decided to build a shed in our front yard, and so we needed a solid foundation to put it on.   
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/base2.jpeg" title="Nikolay helped a lot" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/base2.jpeg" title="Nikolay helped a lot" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -49,13 +49,13 @@ We had to excavate a trench of undisturbed soil for the required bearing, lay th
  
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/base1.jpeg" title="Set things up for a day of work" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/base1.jpeg" title="Set things up for a day of work" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-            {% include figure.html path="assets/img/brick/base3.jpeg" title="And the base is finished!" class="img-fluid rounded z-depth-1" zoomable=true %}
+            {% include figure.html path="/assets/img/brick/base3.jpeg" title="And the base is finished!" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
         <div class="col-sm mt-3 mt-md-0">
-                {% include figure.html path="assets/img/brick/shed.jpeg" title="The shed finished" class="img-fluid rounded z-depth-1" zoomable=true %}
+                {% include figure.html path="/assets/img/brick/shed.jpeg" title="The shed finished" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
  
@@ -79,7 +79,7 @@ We have a beautiful back yard (not so common in Lincoln Park, we're indeed very 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/set0.jpeg" title="Our back yard" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/set0.jpeg" title="Our back yard" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -87,7 +87,7 @@ To honor our Argentinian heritage, and to continue my father's tradition of Sund
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/grill.jpeg" title="The plans" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/grill.jpeg" title="The plans" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -95,13 +95,13 @@ After making several sketches, we proceeded to make a lego model, of course.
 
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/grill0.jpeg" title="Our new tools" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/grill0.jpeg" title="Our new tools" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/grill1.jpeg" title="Getting things together" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/grill1.jpeg" title="Getting things together" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/grill2.jpeg" title="James learning new skills" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/grill2.jpeg" title="James learning new skills" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -109,13 +109,13 @@ We then emptied the whole space from plants and soil, it was quite some work, an
 
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/set3.jpeg" title="The ground is ready" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/set3.jpeg" title="The ground is ready" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/set1.jpeg" title="The first rocks are set" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/set1.jpeg" title="The first rocks are set" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/set2.jpeg" title="Everything ready for the foundation" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/set2.jpeg" title="Everything ready for the foundation" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -123,13 +123,13 @@ Our fantastic contractor Maurizio (and his team, and his uncle!) have been teach
 
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/brick1.jpeg" title="The foundation bags are ready" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/brick1.jpeg" title="The foundation bags are ready" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/set4.jpeg" title="The mixer Maurizio lent us" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/set4.jpeg" title="The mixer Maurizio lent us" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/set2.jpeg" title="The first step towards the grill done" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/set2.jpeg" title="The first step towards the grill done" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -137,76 +137,76 @@ Once the the foundation was dry, we were ready to start making the legs and the 
  
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/brick3.jpeg" title="Half way there" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/brick3.jpeg" title="Half way there" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/grillnew-c.jpg" title="Building the upper level" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/grillnew-c.jpg" title="Building the upper level" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/grillnew-b.jpg" title="Building the upper level" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/grillnew-b.jpg" title="Building the upper level" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/grillnew-a.jpg" title="Building the upper level" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/grillnew-a.jpg" title="Building the upper level" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
 After the upper level was done, we waited for a warmish December day in late 2023 to add the fire bricks that should make the grill ready to be used next spring! 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/grillnew.png" title="Fire bricks set" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/grillnew.png" title="Fire bricks set" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/grillnew-d.jpg" title="Niko proud of the new grill" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/grillnew-d.jpg" title="Niko proud of the new grill" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
 Now that we've been almost a year in our new home, we have finally (quasi) finished pour Argentinian grill! On a warm halloween week, we built the chimney using a wire structure and cement.  
    <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/2024grill1.jpeg" title="Building the chimney" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/2024grill1.jpeg" title="Building the chimney" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/2024grill2.jpeg" title="Building the chimney" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/2024grill2.jpeg" title="Building the chimney" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/2024grill3.jpeg" title="Building the chimney" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/2024grill4.jpeg" title="Finished!" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/2024grill3.jpeg" title="Building the chimney" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/2024grill7.jpeg" title="Finished!" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/2024grill4.jpeg" title="Finished!" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="/assets/img/brick/2024grill7.jpeg" title="Finished!" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
 In late October 2024 we made our first asado - we all loved both the food, and the fire / set up! Come and join us for our weekly asados once the weather allows us in 2025!
    <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/2024grill5.jpeg" title="It's finished!" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/2024grill5.jpeg" title="It's finished!" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/2024grill8.jpeg" title="It's finished!" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/2024grill8.jpeg" title="It's finished!" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/2024grill10.jpeg" title="It's finished!" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/2024grill10.jpeg" title="It's finished!" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/brick/2024grill9.PNG" title="Finished!" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="/assets/img/brick/2024grill9.PNG" title="Finished!" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 

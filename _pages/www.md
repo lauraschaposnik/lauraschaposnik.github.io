@@ -37,7 +37,7 @@ That said, whilst the peak interest in an <i> online degree </i> was reached in 
  
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/onlinedegree.png" title="Online degree interest" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="/assets/img/onlinedegree.png" title="Online degree interest" class="img-fluid rounded z-depth-1" %}
     </div>
      </div>
 
