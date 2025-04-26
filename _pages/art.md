@@ -25,11 +25,11 @@ I grew up in a house full of art, and was taken to museums whenever we had a cha
  
  <div class="row">
     <div class="col-sm mt-3 mt-md-0">
- {% include figure.html path="/assets/img/patterns/pattern1.png" title="AI vintage patern" class="img-fluid rounded z-depth-1" zoomable=true %}    </div>
+ {% include figure.html path="https://lauraschaposnik.com/assets/img/patterns/pattern1.png" title="AI vintage patern" class="img-fluid rounded z-depth-1" zoomable=true %}    </div>
     <div class="col-sm mt-3 mt-md-0">
- {% include figure.html path="/assets/img/patterns/pattern5.png" title="AI vintage patern" class="img-fluid rounded z-depth-1" zoomable=true %}    </div>
+ {% include figure.html path="https://lauraschaposnik.com/assets/img/patterns/pattern5.png" title="AI vintage patern" class="img-fluid rounded z-depth-1" zoomable=true %}    </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/patterns/pattern9.png" title="AI vintage patern" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/patterns/pattern9.png" title="AI vintage patern" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -39,11 +39,11 @@ Here are some of the things one can make.
   
  <div class="row">
     <div class="col-sm mt-3 mt-md-0">
- {% include figure.html path="/assets/img/patterns/pattern15.png" title="AI vintage patern" class="img-fluid rounded z-depth-1" zoomable=true %}    </div>
+ {% include figure.html path="https://lauraschaposnik.com/assets/img/patterns/pattern15.png" title="AI vintage patern" class="img-fluid rounded z-depth-1" zoomable=true %}    </div>
     <div class="col-sm mt-3 mt-md-0">
- {% include figure.html path="/assets/img/patterns/pattern17.png" title="AI vintage patern" class="img-fluid rounded z-depth-1" zoomable=true %}    </div>
+ {% include figure.html path="https://lauraschaposnik.com/assets/img/patterns/pattern17.png" title="AI vintage patern" class="img-fluid rounded z-depth-1" zoomable=true %}    </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/patterns/pattern18.png" title="AI vintage patern" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/patterns/pattern18.png" title="AI vintage patern" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -60,11 +60,11 @@ Patterns available in <a href="https://www.spoonflower.com/profiles/schapospubli
  
  <div class="row">
     <div class="col-sm mt-3 mt-md-0">
- {% include figure.html path="/assets/img/Birds2022/Bird10.png" title="Berkeley Bird" class="img-fluid rounded z-depth-1" zoomable=true %}    </div>
+ {% include figure.html path="https://lauraschaposnik.com/assets/img/Birds2022/Bird10.png" title="Berkeley Bird" class="img-fluid rounded z-depth-1" zoomable=true %}    </div>
     <div class="col-sm mt-3 mt-md-0">
- {% include figure.html path="/assets/img/Birds2022/Bird14.png" title="Berkeley Bird" class="img-fluid rounded z-depth-1" zoomable=true %}    </div>
+ {% include figure.html path="https://lauraschaposnik.com/assets/img/Birds2022/Bird14.png" title="Berkeley Bird" class="img-fluid rounded z-depth-1" zoomable=true %}    </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/Birds2022/Bird15.png" title="Berkeley Bird" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/Birds2022/Bird15.png" title="Berkeley Bird" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -74,7 +74,7 @@ Patterns available in <a href="https://www.spoonflower.com/profiles/schapospubli
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/Books/bird1.jpeg" title="bird" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/bird1.jpeg" title="bird" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -84,11 +84,11 @@ Patterns available in <a href="https://www.spoonflower.com/profiles/schapospubli
 
  <div class="row">
     <div class="col-sm mt-3 mt-md-0">
- {% include figure.html path="/assets/img/Birds2022/Bird1.png" title="Berkeley Bird" class="img-fluid rounded z-depth-1" zoomable=true %}    </div>
+ {% include figure.html path="https://lauraschaposnik.com/assets/img/Birds2022/Bird1.png" title="Berkeley Bird" class="img-fluid rounded z-depth-1" zoomable=true %}    </div>
     <div class="col-sm mt-3 mt-md-0">
- {% include figure.html path="/assets/img/Birds2022/Bird2.png" title="Berkeley Bird" class="img-fluid rounded z-depth-1" zoomable=true %}    </div>
+ {% include figure.html path="https://lauraschaposnik.com/assets/img/Birds2022/Bird2.png" title="Berkeley Bird" class="img-fluid rounded z-depth-1" zoomable=true %}    </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/Birds2022/Bird3.png" title="Berkeley Bird" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/Birds2022/Bird3.png" title="Berkeley Bird" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -97,7 +97,7 @@ Patterns available in <a href="https://www.spoonflower.com/profiles/schapospubli
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/Books/bird2.jpeg" title="bird" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/bird2.jpeg" title="bird" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -106,11 +106,11 @@ Patterns available in <a href="https://www.spoonflower.com/profiles/schapospubli
 
  <div class="row">
     <div class="col-sm mt-3 mt-md-0">
- {% include figure.html path="/assets/img/Birds2022/Bird4.png" title="Berkeley Bird" class="img-fluid rounded z-depth-1" zoomable=true %}    </div>
+ {% include figure.html path="https://lauraschaposnik.com/assets/img/Birds2022/Bird4.png" title="Berkeley Bird" class="img-fluid rounded z-depth-1" zoomable=true %}    </div>
     <div class="col-sm mt-3 mt-md-0">
- {% include figure.html path="/assets/img/Birds2022/Bird5.png" title="Berkeley Bird with Alex's hand vanishing" class="img-fluid rounded z-depth-1" zoomable=true %}    </div>
+ {% include figure.html path="https://lauraschaposnik.com/assets/img/Birds2022/Bird5.png" title="Berkeley Bird with Alex's hand vanishing" class="img-fluid rounded z-depth-1" zoomable=true %}    </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/Birds2022/Bird9.png" title="Berkeley Bird with Niko's background" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/Birds2022/Bird9.png" title="Berkeley Bird with Niko's background" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -120,7 +120,7 @@ Patterns available in <a href="https://www.spoonflower.com/profiles/schapospubli
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/Birds2022/Bird8.png" title="Kiwi" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/Birds2022/Bird8.png" title="Kiwi" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -141,7 +141,7 @@ Artist trading cards (ATCs) are miniature pieces of art that are traded around t
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/Birds2022/Bird7.png" title="Kiwi" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/Birds2022/Bird7.png" title="Kiwi" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -159,13 +159,13 @@ My first attempt at creating an ATC. </div>
  
  <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/Books/sonia2.png" title="Sonia" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/sonia2.png" title="Sonia" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
  <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/Books/sonia1.png" title="Sonia" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/sonia1.png" title="Sonia" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
