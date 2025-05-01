@@ -109,7 +109,7 @@ Our second son, <b>Alexander Ivan Unwin Schaposnik</b>, was born in 2020.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/Alex2021_2" title="Alex during Christmas week 2021" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/Alex2021_2.png" title="Alex during Christmas week 2021" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/Alex2021.jpg" title="Alex enjoying the Nugget 2021" class="img-fluid rounded z-depth-1" zoomable=true %}
