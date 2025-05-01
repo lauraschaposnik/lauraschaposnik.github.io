@@ -34,19 +34,19 @@ After reading hundreds of children books with my sons, I decided to start writin
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/sonia.jpeg" title="The potential to inspire" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/Books/sonia.jpeg" title="The potential to inspire" class="img-fluid rounded z-depth-1" %}
     </div>
      </div>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/sonia1.jpeg" title="The potential to inspire" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/Books/sonia1.jpeg" title="The potential to inspire" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/sonia2.jpeg" title="The potential to inspire" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/Books/sonia2.jpeg" title="The potential to inspire" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/sonia3.jpeg" title="The potential to inspire" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/Books/sonia3.jpeg" title="The potential to inspire" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -70,13 +70,13 @@ Our first book <b> Ene and the Magic Boxes </b>  is a beautifully illustrated ta
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/box1.jpg" title="Magic Boxes" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/Books/box1.jpg" title="Magic Boxes" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/box2.jpg" title="Magic Boxes" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/Books/box2.jpg" title="Magic Boxes" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/box3.jpg" title="Magic Boxes" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/Books/box3.jpg" title="Magic Boxes" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
  
@@ -84,7 +84,7 @@ Ene and the Magic Boxes teaches vocabulary related to trades (Chefs, Artists, Ca
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/box4.jpg" title="Magic Boxes" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/Books/box4.jpg" title="Magic Boxes" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -99,13 +99,13 @@ Our second book <b> Ene and the Magic Tree </b>  is yet another beautifully illu
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/tree1.png" title="Magic Tree" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/Books/tree1.png" title="Magic Tree" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/tree2.png" title="Magic Tree" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/Books/tree2.png" title="Magic Tree" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/tree3.png" title="Magic Tree" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/Books/tree3.png" title="Magic Tree" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
  
@@ -113,14 +113,14 @@ Ene and the Magic Boxes teaches vocabulary related to mathematics with a three p
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/tree4.png" title="Magic Tree" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/Books/tree4.png" title="Magic Tree" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
  
  <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/tree5.png" title="Magic Tree" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/Books/tree5.png" title="Magic Tree" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -142,13 +142,13 @@ Together with illustrator [Martina Rusznak](https://tinarusznak.com/) we are wor
 Our first book <b> A difficult day</b> is a book about overcoming difficulties that one encounters daily, changing perspective to turn things our way, and building a <i>map to a better day</i> to be used next time a day seems to start in a difficult way. 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/roku1.png" title="A Difficult Day" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/Books/roku1.png" title="A Difficult Day" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/roku5.png" title="A Difficult Day" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/Books/roku5.png" title="A Difficult Day" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/roku6.png" title="A Difficult Day" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/Books/roku6.png" title="A Difficult Day" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
  
@@ -157,12 +157,12 @@ Embark on a whimsical adventure with Roku Raccoon navigating the twists and turn
 
  <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/roku4.png" title="A Difficult Day" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/Books/roku4.png" title="A Difficult Day" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
  <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/roku3.png" title="A Difficult Day" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/Books/roku3.png" title="A Difficult Day" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -181,13 +181,13 @@ My husband [James Unwin](https://unwin.people.uic.edu/James_Unwin.html) wrote hi
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/azul1.png" title="Magic Tree" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/Books/azul1.png" title="Magic Tree" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/azul2.jpg" title="Magic Tree" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/Books/azul2.jpg" title="Magic Tree" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/azul3.jpg" title="Magic Tree" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/Books/azul3.jpg" title="Magic Tree" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -195,7 +195,7 @@ I had the honor of translating the book to Spanish whilst preserving the beautif
 
  <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/Books/azul.jpg" title="stars" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/Books/azul.jpg" title="stars" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
