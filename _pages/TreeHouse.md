@@ -14,13 +14,13 @@ When we moved to Belden in 2024 I made a very little front garden tree house for
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/woodwork/TH1.png" title="Tree House #1" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/2025/TH1.png" title="Tree House #1" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/woodwork/TH2.png" title="Tree House #1" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/2025/TH2.png" title="Tree House #1" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
         <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/woodwork/TH3.png" title="Tree House #1" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/2025/TH3.png" title="Tree House #1" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -41,13 +41,13 @@ Now that we marked the one year anniversary of living in Belden, and we have gag
  
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/woodwork/TH15.png" title="Tree House #2" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/2025/TH15.png" title="Tree House #2" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/woodwork/TH16.png" title="Tree House #2" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/2025/TH16.png" title="Tree House #2" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
         <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/woodwork/TH9.png" title="Tree House #2" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/2025/TH9.png" title="Tree House #2" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -56,13 +56,13 @@ The back wall was made on the ground since it went right by the house edge, but 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/woodwork/TH5.png" title="Tree House #2" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/2025/TH5.png" title="Tree House #2" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/woodwork/TH6.png" title="Tree House #2" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/2025/TH6.png" title="Tree House #2" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
         <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/woodwork/TH7.png" title="Tree House #2" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/2025/TH7.png" title="Tree House #2" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -70,13 +70,13 @@ After a couple of days of work we had a fairly good structure.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/woodwork/TH10.png" title="Tree House #2" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/2025/TH10.png" title="Tree House #2" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/woodwork/TH12.png" title="Tree House #2" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/2025/TH12.png" title="Tree House #2" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
         <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/woodwork/TH14.png" title="Tree House #2" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="https://lauraschaposnik.com/assets/img/2025/TH14.png" title="Tree House #2" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
