@@ -13,14 +13,6 @@ children:
       permalink: /cooking/
     - title: Art
       permalink: /art/
-    - title: Woodwork
-      permalink: /woodwork/
-    - title: Brickwork
-      permalink: /brickwork/
-    - title: Gardening
-      permalink: /garden/
-    - title: Pottery
-      permalink: /pottery/
     - title: Little Free Library
       permalink: /LittleFreeLibrary/
     - title: Tree House

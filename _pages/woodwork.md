@@ -220,6 +220,17 @@ We used a couple of solid pine bridge wall cabinets in the bottom, and calculate
  
 
  
-<h1 id="toys"> Wooden Toys  </h1>
+<h1 id="toys"> Wooden Toys and Tree Houses  </h1>
 
 I have started making wooden toys with some mathematical inspiration (to teach about series, sums, products, squares). I'll be uploading photos of any successful toy  in the future - likely once we are back in Chicago after our year away. 
+
+In 2025 I made a pretty cool <a href="https://lauraschaposnik.com/TreeHouse/"> backyard tree house - you can see more about it here.  </a>
+
+ <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+ {% include figure.liquid path="https://lauraschaposnik.com/assets/img/2025/TH17.png" title="little free library" class="img-fluid rounded z-depth-1" %}
+     </div>
+</div>
+
+
+
