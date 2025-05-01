@@ -10,24 +10,24 @@ I grew up watching my mother, father and my brother gardening, they were all so 
 
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/brick/arg1.jpeg" title="The queen of the night in my childhood home in La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/brick/arg1.jpeg" title="The queen of the night in my childhood home in La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/brick/arg3.jpeg" title="My childhood home in La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/brick/arg3.jpeg" title="My childhood home in La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/brick/arg4.jpeg" title="My childhood home in La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/brick/arg4.jpeg" title="My childhood home in La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
         <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/brick/arg8.jpeg" title="My childhood home in La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/brick/arg8.jpeg" title="My childhood home in La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/brick/arg2.jpeg" title="Plants would be everywhere in childhood home in La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/brick/arg2.jpeg" title="Plants would be everywhere in childhood home in La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -35,13 +35,13 @@ The garden itself felt like a magical garden, both for us grown ups as well as f
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/brick/arg12.jpeg" title="My childhood home in La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/brick/arg12.jpeg" title="My childhood home in La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/brick/arg6.jpeg" title="My childhood home in La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/brick/arg6.jpeg" title="My childhood home in La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
         <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/brick/arg5.jpeg" title="My childhood home in La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/brick/arg5.jpeg" title="My childhood home in La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -50,13 +50,13 @@ The garden itself felt like a magical garden, both for us grown ups as well as f
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/brick/arg13.jpeg" title="My childhood home in La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/brick/arg13.jpeg" title="My childhood home in La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/brick/arg14.jpeg" title="My childhood home in La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/brick/arg14.jpeg" title="My childhood home in La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
         <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/brick/arg10.jpeg" title="My childhood home in La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/brick/arg10.jpeg" title="My childhood home in La Plata, Argentina" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -75,13 +75,13 @@ We started to grow 10 different pepper plant varieties in the spring 2024, using
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/brick/gar2.jpg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/brick/gar2.jpg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/brick/gar3.jpg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/brick/gar3.jpg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
         <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/brick/gar4.jpg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/brick/gar4.jpg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -90,32 +90,32 @@ We started to grow 10 different pepper plant varieties in the spring 2024, using
 Soon after we chose those we wanted to keep, we offered a bunch to our friends and neighbours, and proceeded to take even more care of those we'd have for a long time. It wasn't long until it all started to flower and produce amazing peppers!
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/brick/garden12.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/brick/garden12.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/brick/pep1.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/brick/pep1.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
         <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/brick/pep2.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/brick/pep2.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
 
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/brick/garden2.jpeg" title="Our indoor plants" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/brick/garden2.jpeg" title="Our indoor plants" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
  
  <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/brick/garden14.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/brick/garden14.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/brick/garden16.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/brick/garden16.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
         <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/brick/gar1.jpg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/brick/gar1.jpg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 Now it's our first full   winter in the house (2024-2025) we are keeping our plants thriving indoors!
@@ -136,7 +136,7 @@ Now it's our first full   winter in the house (2024-2025) we are keeping our pla
 Our front yard was a bit dull when we bought the house, so we have created our own version of a Japanese zen garden, with a touch of happy childhood... we have a river of rocks, a wooden bridge, an enchanted tree house and a little free library.   
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/brick/japan.PNG" title="Our indoor plants" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/brick/japan.PNG" title="Our indoor plants" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
  
@@ -156,32 +156,32 @@ During the summer 2024 we started using Fast Growing Trees and we could't be hap
 
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/brick/garden7.PNG" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/brick/garden7.PNG" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/brick/garden10.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/brick/garden10.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
         <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/brick/gar8.jpg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/brick/gar8.jpg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
 
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/brick/garden15.jpeg" title="Our indoor plants" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/brick/garden15.jpeg" title="Our indoor plants" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/brick/garden4.PNG" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/brick/garden4.PNG" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/brick/garden9.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/brick/garden9.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
         <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/brick/2024grill4.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/brick/2024grill4.jpeg" title="How it all started" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 

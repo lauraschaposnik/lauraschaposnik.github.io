@@ -16,7 +16,7 @@ Applying to graduate school in the USA - in any subject - can be overwhelming, a
 
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/2025/table.png" title="Example of table" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/table.png" title="Example of table" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
