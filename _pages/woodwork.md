@@ -22,7 +22,7 @@ We begun the project trying to plan our ideal "Ikea Hack", and soon realized we 
  
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/woodwork/IkeaFinal1.jpg" title="Final built in" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/woodwork/IkeaFinal1.jpg" title="Final built in" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -35,7 +35,7 @@ It all started when we bought our family home in June 2022, and had a large room
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/woodwork/Ikea13.jpg" title="How the room started" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/woodwork/Ikea13.jpg" title="How the room started" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -43,7 +43,7 @@ After some drafting we decided to buy the following Billy bookcases and Kallax c
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/woodwork/comp.jpg" title="Final built in" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/woodwork/comp.jpg" title="Final built in" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -51,13 +51,13 @@ Here is a list of what we bought.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/woodwork/buy2.jpg" title="Things we bought" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/woodwork/buy2.jpg" title="Things we bought" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/woodwork/buy3.jpg" title="Things we bought" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/woodwork/buy3.jpg" title="Things we bought" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
         <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/woodwork/buy1.jpg" title="Things we bought" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/woodwork/buy1.jpg" title="Things we bought" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
  
@@ -66,13 +66,13 @@ Here is a list of what we bought.
   
  <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/woodwork/Ikea3.jpg" title="Our new tools" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/woodwork/Ikea3.jpg" title="Our new tools" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/woodwork/Ikea4.jpg" title="Getting things together" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/woodwork/Ikea4.jpg" title="Getting things together" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/woodwork/Ikea8.jpg" title="James learning new skills" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/woodwork/Ikea8.jpg" title="James learning new skills" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
  
@@ -82,13 +82,13 @@ Here is a list of what we bought.
  
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/woodwork/Ikea5.jpg" title="Our new tools" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/woodwork/Ikea5.jpg" title="Our new tools" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/woodwork/Ikea11.jpg" title="Getting things together" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/woodwork/Ikea11.jpg" title="Getting things together" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/woodwork/Ikea12.jpg" title="James learning new skills" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/woodwork/Ikea12.jpg" title="James learning new skills" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -96,13 +96,13 @@ The final details are what made the builtin look amazing when finished, so we le
 
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/woodwork/Ikea6.jpg" title="Our new tools" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/woodwork/Ikea6.jpg" title="Our new tools" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/woodwork/Ikea7.jpg" title="Getting things together" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/woodwork/Ikea7.jpg" title="Getting things together" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/woodwork/Ikea14.jpg" title="James learning new skills" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/woodwork/Ikea14.jpg" title="James learning new skills" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -118,7 +118,7 @@ The second built-in bookcase we built together with my husband <a href="https://
  
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/piano/Done2.jpeg" title="Final built in" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/piano/Done2.jpeg" title="Final built in" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -130,7 +130,7 @@ We will eventually turn this into a piano room, but for now, it will be our libr
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/piano/Last1.jpeg" title="Our latin-american library" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/piano/Last1.jpeg" title="Our latin-american library" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -139,13 +139,13 @@ We used some pine wall cabinets from Home Depot, some base boards, 2x4's for the
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/piano/Base1.jpeg" title="Making a base" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/piano/Base1.jpeg" title="Making a base" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/piano/Base2.jpeg" title="Making a base" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/piano/Base2.jpeg" title="Making a base" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
         <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/piano/Base3.jpeg" title="Making a base" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/piano/Base3.jpeg" title="Making a base" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
  
@@ -154,13 +154,13 @@ We used some pine wall cabinets from Home Depot, some base boards, 2x4's for the
   
  <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/piano/book1.jpeg" title="Making the bookcases" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/piano/book1.jpeg" title="Making the bookcases" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/piano/book2.jpeg" title="Making the bookcases" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/piano/book2.jpeg" title="Making the bookcases" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/piano/book3.jpeg" title="Making the bookcases" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/piano/book3.jpeg" title="Making the bookcases" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
  
@@ -170,13 +170,13 @@ We used some pine wall cabinets from Home Depot, some base boards, 2x4's for the
  
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/piano/Last3.jpeg" title="Our new tools" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/piano/Last3.jpeg" title="Our new tools" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/piano/Last4.jpeg" title="Getting things together" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/piano/Last4.jpeg" title="Getting things together" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/piano/Done3.jpeg" title="James learning new skills" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/piano/Done3.jpeg" title="James learning new skills" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
  
@@ -191,7 +191,7 @@ The third built-in bookcase/media modular we built together with my husband <a h
  
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/TV/Last1.jpeg" title="Almost there" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/TV/Last1.jpeg" title="Almost there" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -200,13 +200,13 @@ We used a couple of solid pine bridge wall cabinets in the bottom, and calculate
  
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/TV/plan1.jpeg" title="Planning" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/TV/plan1.jpeg" title="Planning" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/TV/plan2.jpeg" title="Pine slabs to make the three bookcases" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/TV/plan2.jpeg" title="Pine slabs to make the three bookcases" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
         <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="https://lauraschaposnik.com/assets/img/TV/Last2.jpeg" title="Making a base" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/TV/Last2.jpeg" title="Making a base" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
