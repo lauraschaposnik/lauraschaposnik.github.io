@@ -21,9 +21,9 @@ children:
       permalink: /garden/
     - title: Pottery
       permalink: /pottery/
-    - title: LittleFreeLibrary
+    - title: Little Free Library
       permalink: /LittleFreeLibrary/
-    - title: TreeHouse
+    - title: Tree House
       permalink: /TreeHouse/
 ---
 
