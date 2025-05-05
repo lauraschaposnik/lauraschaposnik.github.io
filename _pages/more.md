@@ -13,6 +13,8 @@ children:
       permalink: /cooking/
     - title: Art
       permalink: /art/
+    - title: Crochet
+      permalink: /crochet/
     - title: Little Free Library
       permalink: /LittleFreeLibrary/
     - title: Tree House
