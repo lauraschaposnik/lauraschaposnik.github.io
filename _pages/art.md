@@ -29,7 +29,7 @@ I love coming up with new ideas of patterns that could exist, fabrics that could
     <div class="col-sm mt-3 mt-md-0">
  {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/fabric2.png" title="An example of our patterns" class="img-fluid rounded z-depth-1" zoomable=true %}    </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/fabric=3.png" title="An example of our patterns" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/fabric3.png" title="An example of our patterns" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -41,7 +41,7 @@ Patterns available in <a href="https://www.spoonflower.com/profiles/schaposstyle
     <div class="col-sm mt-3 mt-md-0">
  {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/fabric5.png" title="An example of our patterns" class="img-fluid rounded z-depth-1" zoomable=true %}    </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/fabric=6.png" title="An example of our patterns" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/fabric6.png" title="An example of our patterns" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
