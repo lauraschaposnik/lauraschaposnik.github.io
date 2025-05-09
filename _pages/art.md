@@ -17,11 +17,47 @@ I grew up in a house full of art, and was taken to museums whenever we had a cha
 <span style="font-size:15px">
 <br>
 
+
+ <h1 id="patterns"> <a href="https://www.spoonflower.com/profiles/schaposstyle">Patterns</a>  </h1>
+
+I love coming up with new ideas of patterns that could exist, fabrics that could be made, and just art that could be explored - and in particular using <a href="https://www.midjourney.com/">Midjourney</a> and ChatGPT. Sometimes whilst we walk and explore places we dream of things that could be made - and then we ask Midjourney to imagine it... since we also like building things with fabric, I have put many of our patterns in <a href="https://www.spoonflower.com/profiles/schaposstyle">Spoonflower</a> where I (and others) can buy products with those patterns. Here are some examples:
+
  
- <h1 id="AIart"> AI inspired art  </h1>
+ <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+ {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/fabric1.png" title="An example of our patterns" class="img-fluid rounded z-depth-1" zoomable=true %}    </div>
+    <div class="col-sm mt-3 mt-md-0">
+ {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/fabric2.png" title="An example of our patterns" class="img-fluid rounded z-depth-1" zoomable=true %}    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/fabric=3.png" title="An example of our patterns" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<div class="caption">
+Patterns available in <a href="https://www.spoonflower.com/profiles/schaposstyle">Spoonflower</a> </div>
+
+ <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+ {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/fabric4.png" title="An example of our patterns" class="img-fluid rounded z-depth-1" zoomable=true %}    </div>
+    <div class="col-sm mt-3 mt-md-0">
+ {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/fabric5.png" title="An example of our patterns" class="img-fluid rounded z-depth-1" zoomable=true %}    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/fabric=6.png" title="An example of our patterns" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<div class="caption">
+Patterns available in <a href="https://www.spoonflower.com/profiles/schaposstyle">Spoonflower</a> </div>
+
+Have you always wanted a pattern for your walls or your dinning table (or anywhere else!) and you couldn't find it? send me a line and I'll try and help - I like challenges!
+
+ <br>
+<hr>
+<span style="font-size:15px">
+<br>
+ 
+ <h1 id="AIart"> 2023' AI inspired art  </h1>
 
 
-<a href="https://openai.com/dall-e-2/">DALL·E 2</a> <i> is a new AI system that can create realistic images and art from a description in natural language. </i> I have recently started investigating the different results one can gate through varied prompts, and then finishing or editing the illustrations using <a href="https://procreate.art/">Procreate</a>. In particular, I've been interested in creating different types of vintage patterns that can be used for home design. 
+<a href="https://openai.com/dall-e-2/">DALL·E 2</a> <i> was a new AI system in 2023 that could create realistic images and art from a description in natural language. </i> I have recently started investigating the different results one can gate through varied prompts, and then finishing or editing the illustrations using <a href="https://procreate.art/">Procreate</a>. At the time I was   interested in creating different types of vintage patterns that can be used for home design. 
  
  <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -33,7 +69,7 @@ I grew up in a house full of art, and was taken to museums whenever we had a cha
     </div>
 </div>
 <div class="caption">
-Patterns available in <a href="https://www.spoonflower.com/profiles/schapospublishing?sub_action=designs">Spoonflower</a> </div>
+Patterns available in <a href="https://www.spoonflower.com/profiles/schaposstyle">Spoonflower</a> </div>
 
 Here are some of the things one can make. 
   
@@ -47,7 +83,7 @@ Here are some of the things one can make.
     </div>
 </div>
 <div class="caption">
-Patterns available in <a href="https://www.spoonflower.com/profiles/schapospublishing?sub_action=designs">Spoonflower</a> </div>
+Patterns available in <a href="https://www.spoonflower.com/profiles/schaposstyle">Spoonflower</a> </div>
 
 
 
