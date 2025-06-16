@@ -9,12 +9,7 @@ heading: Some thoughts on parenthood
 When we decided to have our first baby back in 2017, there were so many questions we would have loved to have answers to. So many concerns and doubts, and so much written about so many things - from how to maximize likelihood of becoming pregnant (or of actually giving birth) to which month should a child be born to optimize their university chances. In the world of research and human experiments, information can get quite overwhelming! 
 
  In the world of paper-backed baby/child books, we did enjoy reading <i>Cribsheet: A Data-Driven Guide to Better, More Relaxed Parenting, from Birth to Preschool </i> by Prof. Emily Olsen, who also has a useful website <a href="https://parentdata.org/" >ParentData </a> to <i>"Find the data-driven, judgment-free answers you’re looking for on trying to conceive, pregnancy, parenting, and beyond."</i>. 
-
-  <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/crib.PNG" title="Cribsheet" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
+ 
 
 But among what helped us most were a couple of books that reminded us we are not special, we are not unique, and neither are our children. We are part of a humongous world where statistics can be analized. And yes, we might be in one of the tails one way or another - and often want to be in those tails - but yet, we will often fall right in the middle of the bell of that normal distribution. Then, it will be up to us to work towards those tails.  
 
@@ -28,6 +23,9 @@ Marc Weissbluth M.D. from Chicago, recommended to us by old friends Bea and Jeff
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/book2.PNG" title="Book 2" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+        <div class="col-sm mt-3 mt-md-0">
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/crib.PNG" title="Cribsheet" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
