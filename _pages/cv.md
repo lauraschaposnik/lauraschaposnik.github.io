@@ -13,8 +13,4 @@ If the embedded version of my CV does not work, you can download a copy <a href=
 
 <br>
 
-<center>
-<object data="https://drive.google.com/file/d/1IaPp8aOvFE49pAG3rGPYDTVElxu0K1xE/view?usp=sharing" width="100%" height="800px" type="application/pdf">
-    <embed src="https://drive.google.com/file/d/1IaPp8aOvFE49pAG3rGPYDTVElxu0K1xE/view?usp=sharing" width="100%" height="800px" type="application/pdf" />
-</object>
-</center>
+<iframe src="https://drive.google.com/file/d/1IaPp8aOvFE49pAG3rGPYDTVElxu0K1xE/preview" width="640" height="480" allow="autoplay"></iframe>
