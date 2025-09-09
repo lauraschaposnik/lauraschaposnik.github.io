@@ -8,13 +8,13 @@ heading: CV
 
 
 <center>
-If the embedded version of my CV does not work, you can download a copy <a href="https://lauraschaposnik.com/assets/pdf/Schaposnik_CV_2022_July.pdf" target="_blank">here</a>.
+If the embedded version of my CV does not work, you can download a copy <a href="https://drive.google.com/file/d/1IaPp8aOvFE49pAG3rGPYDTVElxu0K1xE/view?usp=sharing" target="_blank">here</a>.
 </center>
 
 <br>
 
 <center>
-<object data="https://lauraschaposnik.com/assets/pdf/Schaposnik_CV_2022.pdf#view=FitH&pagemode=none" width="100%" height="800px" type="application/pdf">
-    <embed src="https://lauraschaposnik.com/assets/pdf/Schaposnik_CV_2022.pdf#view=FitH&pagemode=none" width="100%" height="800px" type="application/pdf" />
+<object data="https://drive.google.com/file/d/1IaPp8aOvFE49pAG3rGPYDTVElxu0K1xE/view?usp=sharing" width="100%" height="800px" type="application/pdf">
+    <embed src="https://drive.google.com/file/d/1IaPp8aOvFE49pAG3rGPYDTVElxu0K1xE/view?usp=sharing" width="100%" height="800px" type="application/pdf" />
 </object>
 </center>
