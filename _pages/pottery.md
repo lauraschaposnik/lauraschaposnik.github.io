@@ -12,48 +12,49 @@ I grew up watching my aunt Viviana, my father's sister, making beautiful art and
 
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/clay1.png" title="2025 pottery" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/clay1.png" title="2025 pottery" class="img-fluid rounded z-depth-1"  %}
     </div>
 </div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/clay2.png" title="2025 pottery" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/clay2.png" title="2025 pottery" class="img-fluid rounded z-depth-1"  %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/clay3.png" title="2025 pottery" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/clay3.png" title="2025 pottery" class="img-fluid rounded z-depth-1"  %}
     </div>
         <div class="col-sm mt-3 mt-md-0">
-        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/clay4.png" title="2025 pottery" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/clay4.png" title="2025 pottery" class="img-fluid rounded z-depth-1"  %}
     </div>
 </div>
 
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/clay5.png" title="2025 pottery" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/clay5.png" title="2025 pottery" class="img-fluid rounded z-depth-1"  %}
     </div>
 </div>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/clay6.png" title="2025 pottery" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/clay6.png" title="2025 pottery" class="img-fluid rounded z-depth-1"  %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/clay7.png" title="2025 pottery" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/clay7.png" title="2025 pottery" class="img-fluid rounded z-depth-1"  %}
     </div>
         <div class="col-sm mt-3 mt-md-0">
-        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/clay8.png" title="2025 pottery" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/clay8.png" title="2025 pottery" class="img-fluid rounded z-depth-1"  %}
     </div>
 </div>
 
 
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/clay9.png" title="2025 pottery" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/clay9.png" title="2025 pottery" class="img-fluid rounded z-depth-1"  %}
     </div>
 </div>
+
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/clay10.png" title="2025 pottery" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/clay10.png" title="2025 pottery" class="img-fluid rounded z-depth-1"  %}
     </div>
 </div>
 
