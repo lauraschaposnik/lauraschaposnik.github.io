@@ -52,11 +52,7 @@ I grew up watching my aunt Viviana, my father's sister, making beautiful art and
     </div>
 </div>
 
-  <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include  figure.liquid path="https://lauraschaposnik.com/assets/img/2025/clay10.png" title="2025 pottery" class="img-fluid rounded z-depth-1"  %}
-    </div>
-</div>
+
 
 And this is how it all started back in March or so...
 
