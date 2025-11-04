@@ -5,6 +5,8 @@ nav: true
 nav_order: 2
 dropdown: true
 children: 
+    - title: Research Overview
+      permalink: /research-overview/
     - title: Publications
       permalink: /publications/
     - title: Talks and Trips
