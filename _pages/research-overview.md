@@ -40,22 +40,17 @@ In practice, I often start from simple, tractable settings and build toward more
 **Geometric questions within different areas of science.** My current projects lie along two intertwined directions—**virus and society**—with the overall aim of building **novel techniques** useful across many domains. Themes include: **geometric insights** (symmetries and patterns), **repurposing stock‑market indicators** for time‑series data in the social and natural sciences, and **graph/network‑theoretic approaches** to contagion and collective behavior.
 
 **Representative papers**
-- **A carbon‑aware ant colony system (CAACS) for sustainable GTSP** — *Scientific Reports* (2025, with M. Lin). Bi‑objective routing balances solution quality and estimated carbon impact, offering a practical sustainability lens on GTSP.  
+- **A carbon‑aware ant colony system (CAACS) for sustainable GTSP** — *Nature Scientific Reports* (2025, with M. Lin). Bi‑objective routing balances solution quality and estimated carbon impact, offering a practical sustainability lens on GTSP.  
 
 - **Modeling social cohesion with coupled oscillators: synchrony & fragmentation** — *Chaos, Solitons & Fractals* (2025, with S. Hsu & R. Dunbar). A semicoupled‑oscillator model explains when activity schedule mismatch fractures groups—and how bonding mitigates it.  
 
-- **Correlations between COVID‑19 and dengue** — *Scientific Reports* (2023, with P. Bergero & G. Wang). Neural‑network models link signals across diseases and climates to improve dengue estimates where data are scarce.  
+- **Correlations between COVID‑19 and dengue** — *Nature Scientific Reports* (2023, with P. Bergero & G. Wang). Neural‑network models link signals across diseases and climates to improve dengue estimates where data are scarce.  
 
-- **A Physarum swarm Steiner‑tree algorithm** — *Scientific Reports* (2022, with S. Hsu & F.I. Schaposnik Massolo). A slime‑mold‑inspired, explore‑and‑fuse strategy that competes with leading solvers and handles obstacles naturally.  
+- **A Physarum swarm Steiner‑tree algorithm** — *Nature Scientific Reports* (2022, with S. Hsu & F.I. Schaposnik Massolo). A slime‑mold‑inspired, explore‑and‑fuse strategy that competes with leading solvers and handles obstacles naturally.  
 
-- **Modified age‑structured SIR model for COVID‑19‑type viruses** — *Scientific Reports* (2021, with V. Ram). Shows how contact patterns and age structure shape outcomes and policy trade‑offs.  
+- **Modified age‑structured SIR model for COVID‑19‑type viruses** — *Nature Scientific Reports* (2021, with V. Ram). Shows how contact patterns and age structure shape outcomes and policy trade‑offs.  
 
 **More applied →** [/publications/](/publications/)
-
----
-
-## Venues
-My work has appeared in the **Journal of Differential Geometry**, **Transactions of the AMS**, **Communications in Mathematical Physics**, **Advances in Theoretical and Mathematical Physics**, **Proceedings of the Royal Society A**, among other journals.
 
 ---
 
