@@ -3,14 +3,14 @@ layout: page
 permalink: /students/
 title: Students
 description:  
-years: [UIC, Other]
+years: [UIC, Postdoc, Other]
 nav: false
 heading: Students
 ---
 
 <div class="publications">
 
-In the last decade I have mentored several students at different levels. Below is a list of my former and current students.  To find more information about my broader "academic family" visit my <a href="https://www.mathgenealogy.org/id.php?id=171532">genealogy</a> entry. 
+Over the last decade, I have mentored numerous students at various levels. Below is a list of my former and current students.  To find more information about my broader "academic family," visit my <a href="https://www.mathgenealogy.org/id.php?id=171532">genealogy</a> entry. 
  
  <br>
  <hr>
