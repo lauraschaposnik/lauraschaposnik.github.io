@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /mathematics/research-overview/
+permalink: /research-overview/
 title: "Research overview"
 description: "Geometric models in pure and applied mathematics."
 nav: false
