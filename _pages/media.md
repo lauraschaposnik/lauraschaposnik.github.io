@@ -11,13 +11,14 @@ heading: Media
  
  My work within geometry as well as on interdisciplinary areas and outreach has been featured in <b> 40+ </b> media outlets.
  
- <div class="press-kit callout" style="border:1px solid #eee;border-radius:12px;padding:14px 16px;margin:18px 0;background:#fafafa">
-  <strong>Press kit</strong> — quick headshots, short/long bios, and copy‑ready facts for journalists & organizers.
+<!-- Paste near the top of /media/ to surface the kit -->
+<div class="press-kit callout" style="border:1px solid #eee;border-radius:12px;padding:14px 16px;margin:18px 0;background:#fafafa">
+  <strong>Press kit</strong> — quick headshot, bios, and copy‑ready facts for journalists & organizers.
   <br>
-  <a href="{{ '/media/press-kit/' | relative_url }}" class="btn">Open press kit →</a>
+  <a href="/media/press-kit/" class="btn">Open press kit →</a>
   <span style="margin-left:10px">
-    • <a href="{{ '/assets/img/prof_pic.jpg' | relative_url }}">Headshot (JPG)</a>
-    • <a href="{{ '/assets/cv/laura_schaposnik_cv.pdf' | relative_url }}"> CV</a>
+    • <a href="/assets/img/prof_pic.jpg">Headshot (JPG)</a>
+    • <a href="/">Full CV (About)</a>
   </span>
 </div>
 

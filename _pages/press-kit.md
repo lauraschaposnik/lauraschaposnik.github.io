@@ -10,8 +10,8 @@ description: "Downloadable headshots, short/long bios, and quick facts for press
 > Quick assets for journalists, conference organizers, and hosts. Everything below is copy‑paste ready.
 
 ## Downloads
-- **Headshot (color, JPG)** — [link]({ "/assets/img/prof_pic.jpg" | relative_url })  
-- **CV (PDF)** —  [link]({ "/assets/cv/laura_schaposnik_cv.pdf" | relative_url })
+- **Headshot (color, JPG)** — [link](/assets/img/prof_pic.jpg)  
+- **CV (full)** — see the **About** page for the current long‑form CV: [/about/](/)
 
 ## Short bio (≈75 words)
 Laura P. Schaposnik is an Argentine Professor of Mathematics at the University of Illinois Chicago. Her research sits at the intersection of geometry, topology, and mathematical physics, with a focus on moduli spaces of decorated bundles. She also leads applied work in network science and mathematical modeling. Her expertise spans geometric models at the extremes, bridging quantization of integrable systems with data‑informed models for complex networks and pattern formation. She is a PECASE (2025) awardee and NSF CAREER, Simons, and Humboldt Fellow.
