@@ -2,18 +2,21 @@
 layout: page
 permalink: /mathematics/research-overview/
 title: "Research overview"
-description:  "Geometry in pure and applied mathematics"
+description: "Geometric models in pure and applied mathematics."
 nav: false
-heading: "Research overview"
+heading: "Research Overview"
 ---
 
-I work on **geometric models at the extremes**, bridging pure advances in *quantizing integrable systems* with *data‑informed models* for complex networks and pattern formation. This page gives a one‑screen tour with a few representative papers in each lane and a link to the full list.
+I work across **geometry and mathematical physics**, focusing on the geometry of **moduli spaces of decorated bundles** and on **data‑informed models** for networks and pattern formation.
+
+In practice, I often start from simple, tractable settings and build toward more complex applications—because small changes in complex systems can have unpredictable effects, while simpler systems make those effects clearer.
 
 ---
 
 ## Geometry & Quantization (pure)
-Moduli of Higgs bundles, branes, spectral data, and the integrable system structure behind them.
+**Moduli spaces of decorated bundles.** I study the **geometry and topology of moduli spaces of decorated bundles**, especially Higgs bundles and Hitchin systems, and the geometric structures they parametrize. Research on the moduli spaces of Higgs bundles has yielded deep connections between fundamental areas of mathematics and theoretical physics, blending ideas from algebraic and differential geometry, Lie theory, representation theory, and string theory.
 
+**Representative papers**
 - **Nonabelianization of Higgs bundles** — *J. Differential Geom.* (2014, with N. Hitchin). A geometric mechanism that turns abelian data back into non‑abelian Higgs‑bundle data via spectral curves. <br>
   <small>JDG 97(1), 79–89.</small>
 
@@ -34,8 +37,9 @@ Moduli of Higgs bundles, branes, spectral data, and the integrable system struct
 ---
 
 ## Networks & Patterns (applied)
-Contagion on graphs, coupled dynamics, and nature‑inspired algorithms.
+**Geometric questions within different areas of science.** My current projects lie along two intertwined directions—**virus and society**—with the overall aim of building **novel techniques** useful across many domains. Themes include: **geometric insights** (symmetries and patterns), **repurposing stock‑market indicators** for time‑series data in the social and natural sciences, and **graph/network‑theoretic approaches** to contagion and collective behavior.
 
+**Representative papers**
 - **A carbon‑aware ant colony system (CAACS) for sustainable GTSP** — *Scientific Reports* (2025, with M. Lin). Bi‑objective routing balances solution quality and estimated carbon impact, offering a practical sustainability lens on GTSP.  
 
 - **Modeling social cohesion with coupled oscillators: synchrony & fragmentation** — *Chaos, Solitons & Fractals* (2025, with S. Hsu & R. Dunbar). A semicoupled‑oscillator model explains when activity schedule mismatch fractures groups—and how bonding mitigates it.  
@@ -47,6 +51,11 @@ Contagion on graphs, coupled dynamics, and nature‑inspired algorithms.
 - **Modified age‑structured SIR model for COVID‑19‑type viruses** — *Scientific Reports* (2021, with V. Ram). Shows how contact patterns and age structure shape outcomes and policy trade‑offs.  
 
 **More applied →** [/publications/](/publications/)
+
+---
+
+## Venues
+My work has appeared in the **Journal of Differential Geometry**, **Transactions of the AMS**, **Communications in Mathematical Physics**, **Advances in Theoretical and Mathematical Physics**, **Proceedings of the Royal Society A**, among other journals.
 
 ---
 
