@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Interactive Table: Top-k Overlap & MSE (Social Sphere Model)</title>
+<style>
+  :root {
+    --fg: #111;
+    --muted: #666;
+    --bg: #fff;
+    --card: #fafafa;
+    --border: #e6e6e6;
+    --accent: #0b4aa2;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0; padding: 18px;
+    color: var(--fg); background: var(--bg);
+  }
+  h1 { font-size: 18px; margin: 0 0 8px 0; }
+  p { margin: 6px 0 10px 0; color: var(--muted); line-height: 1.35; }
+  .card {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--card);
+    padding: 12px;
+    margin: 12px 0;
+  }
+  .controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 10px;
+    align-items: end;
+  }
+  label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+  select, input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: white;
+    font-size: 13px;
+  }
+  .btnbar {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  button {
+    border: 1px solid var(--border);
+    background: white;
+    border-radius: 10px;
+    padding: 8px 10px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  button:hover { border-color: #cfcfcf; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .tablewrap {
+    overflow: auto;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: white;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 820px;
+  }
+  thead th {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1;
+    border-bottom: 1px solid var(--border);
+    font-size: 12px;
+    text-align: left;
+    padding: 10px 10px;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  tbody td {
+    border-bottom: 1px solid var(--border);
+    padding: 9px 10px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  tbody tr:hover td { background: #fbfbff; }
+  .note { font-size: 12px; color: var(--muted); }
+  .pill {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    font-size: 12px;
+    color: var(--muted);
+    background: #fff;
+  }
+  @media (max-width: 920px) {
+    .controls { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+  <h1>Interactive Table: Top-k Overlap & MSE</h1>
+  <p>
+    Self-contained HTML supplement for <em>The Social Sphere Model: Heuristic Influence Prediction in Evolving Networks</em>.
+    All values are transcribed from the manuscript tables (GR-QC arXiv collaboration network; 70% and 90% observed-edge regimes).
+  </p>
+
+  <div class="card">
+    <div class="controls">
+      <div>
+        <label for="trainingSel">Sampling regime (observed edges)</label>
+        <select id="trainingSel">
+          <option value="70%">70%</option>
+          <option value="90%">90%</option>
+        </select>
+      </div>
+      <div>
+        <label for="measureSel">Table</label>
+        <select id="measureSel">
+          <option value="Top-k overlap">Top-k overlap (accuracy)</option>
+          <option value="MSE">MSE (by centrality)</option>
+          <option value="MSE summary (complex/simple)">MSE summary (complex / simple / overall)</option>
+        </select>
+      </div>
+      <div>
+        <label for="searchBox">Search centrality metric (or metric name)</label>
+        <input id="searchBox" type="text" placeholder="e.g., PageRank, k-core, RA-2">
+      </div>
+    </div>
+
+    <div class="btnbar">
+      <button id="copyBtn" type="button">Copy current table (TSV)</button>
+      <button id="csvBtn" type="button">Download full data CSV</button>
+      <span class="pill" id="statusPill">Ready</span>
+    </div>
+    <p class="note">
+      Tip: click a column header to sort. Use the search box to filter rows.
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="tablewrap">
+      <table id="dataTable" aria-label="Metrics table"></table>
+    </div>
+  </div>
+
+<script>
+const DATASETS = {"70%": {"Top-k overlap": {"Balanced Index": {"Common Neighbors": 0.3217, "Jaccard": 0.4166, "Local Path": 0.3091, "Quasi-local RA": 0.3714, "Quasi-local RA-2": 0.3691, "RA-2": 0.4086, "Resource Allocation": 0.4046, "Overall": 0.3716}, "Betweenness": {"Common Neighbors": 0.3811, "Jaccard": 0.3903, "Local Path": 0.3549, "Quasi-local RA": 0.3537, "Quasi-local RA-2": 0.3503, "RA-2": 0.3937, "Resource Allocation": 0.3943, "Overall": 0.374}, "Closeness": {"Common Neighbors": 0.2897, "Jaccard": 0.3371, "Local Path": 0.272, "Quasi-local RA": 0.312, "Quasi-local RA-2": 0.3154, "RA-2": 0.3463, "Resource Allocation": 0.3411, "Overall": 0.3162}, "ClusterRank": {"Common Neighbors": 0.2794, "Jaccard": 0.2731, "Local Path": 0.2217, "Quasi-local RA": 0.1891, "Quasi-local RA-2": 0.1806, "RA-2": 0.276, "Resource Allocation": 0.2714, "Overall": 0.2416}, "Complex Path Centrality": {"Common Neighbors": 0.2171, "Jaccard": 0.216, "Local Path": 0.1326, "Quasi-local RA": 0.132, "Quasi-local RA-2": 0.1343, "RA-2": 0.2171, "Resource Allocation": 0.2166, "Overall": 0.1808}, "Degree": {"Common Neighbors": 0.3634, "Jaccard": 0.352, "Local Path": 0.34, "Quasi-local RA": 0.3211, "Quasi-local RA-2": 0.3211, "RA-2": 0.3594, "Resource Allocation": 0.3594, "Overall": 0.3452}, "Eigenvector": {"Common Neighbors": 0.2691, "Jaccard": 0.2154, "Local Path": 0.2577, "Quasi-local RA": 0.2091, "Quasi-local RA-2": 0.2057, "RA-2": 0.224, "Resource Allocation": 0.2189, "Overall": 0.2286}, "H-index": {"Common Neighbors": 0.1846, "Jaccard": 0.1509, "Local Path": 0.0617, "Quasi-local RA": 0.0571, "Quasi-local RA-2": 0.056, "RA-2": 0.1509, "Resource Allocation": 0.1497, "Overall": 0.1158}, "k-core": {"Common Neighbors": 0.468, "Jaccard": 0.4623, "Local Path": 0.4417, "Quasi-local RA": 0.4394, "Quasi-local RA-2": 0.4371, "RA-2": 0.4634, "Resource Allocation": 0.4611, "Overall": 0.4533}, "LeaderRank": {"Common Neighbors": 0.3514, "Jaccard": 0.3491, "Local Path": 0.3297, "Quasi-local RA": 0.3177, "Quasi-local RA-2": 0.3154, "RA-2": 0.356, "Resource Allocation": 0.3531, "Overall": 0.3389}, "LocalRank": {"Common Neighbors": 0.3, "Jaccard": 0.2886, "Local Path": 0.22, "Quasi-local RA": 0.2057, "Quasi-local RA-2": 0.2017, "RA-2": 0.2977, "Resource Allocation": 0.3, "Overall": 0.2591}, "PageRank": {"Common Neighbors": 0.3766, "Jaccard": 0.3651, "Local Path": 0.3503, "Quasi-local RA": 0.3291, "Quasi-local RA-2": 0.3263, "RA-2": 0.3674, "Resource Allocation": 0.3674, "Overall": 0.3546}, "Overall": {"Common Neighbors": 0.3169, "Jaccard": 0.318, "Local Path": 0.2743, "Quasi-local RA": 0.2698, "Quasi-local RA-2": 0.2678, "RA-2": 0.3217, "Resource Allocation": 0.3198, "Overall": 0.2983}}, "MSE": {"Balanced Index": {"Common Neighbors": 0.0151, "Jaccard": 0.0106, "Local Path": 0.0292, "Quasi-local RA-2": 0.026, "Quasi-local RA": 0.0247, "RA-2": 0.0104, "Resource Allocation": 0.0116, "Overall": 0.0182}, "Betweenness": {"Common Neighbors": 0.011, "Jaccard": 0.0094, "Local Path": 0.0224, "Quasi-local RA-2": 0.0205, "Quasi-local RA": 0.0194, "RA-2": 0.0087, "Resource Allocation": 0.0092, "Overall": 0.0144}, "Closeness": {"Common Neighbors": 0.017, "Jaccard": 0.0138, "Local Path": 0.0295, "Quasi-local RA-2": 0.0262, "Quasi-local RA": 0.0249, "RA-2": 0.0133, "Resource Allocation": 0.0135, "Overall": 0.0197}, "ClusterRank": {"Common Neighbors": 0.0174, "Jaccard": 0.0151, "Local Path": 0.0301, "Quasi-local RA-2": 0.0296, "Quasi-local RA": 0.0287, "RA-2": 0.0146, "Resource Allocation": 0.0149, "Overall": 0.0215}, "Complex Path Centrality": {"Common Neighbors": 0.0475, "Jaccard": 0.048, "Local Path": 0.0442, "Quasi-local RA-2": 0.0434, "Quasi-local RA": 0.0431, "RA-2": 0.0486, "Resource Allocation": 0.0484, "Overall": 0.0462}, "Degree": {"Common Neighbors": 0.0107, "Jaccard": 0.0097, "Local Path": 0.0229, "Quasi-local RA-2": 0.0219, "Quasi-local RA": 0.0195, "RA-2": 0.0086, "Resource Allocation": 0.0084, "Overall": 0.0145}, "Eigenvector": {"Common Neighbors": 0.0109, "Jaccard": 0.0095, "Local Path": 0.024, "Quasi-local RA-2": 0.0223, "Quasi-local RA": 0.0212, "RA-2": 0.0091, "Resource Allocation": 0.0098, "Overall": 0.0152}, "H-index": {"Common Neighbors": 0.0156, "Jaccard": 0.0152, "Local Path": 0.0318, "Quasi-local RA-2": 0.0282, "Quasi-local RA": 0.0268, "RA-2": 0.015, "Resource Allocation": 0.0152, "Overall": 0.0211}, "k-core": {"Common Neighbors": 0.0117, "Jaccard": 0.0103, "Local Path": 0.0222, "Quasi-local RA-2": 0.0189, "Quasi-local RA": 0.0187, "RA-2": 0.0109, "Resource Allocation": 0.0107, "Overall": 0.0148}, "LeaderRank": {"Common Neighbors": 0.0108, "Jaccard": 0.0083, "Local Path": 0.0229, "Quasi-local RA-2": 0.0211, "Quasi-local RA": 0.0196, "RA-2": 0.0076, "Resource Allocation": 0.008, "Overall": 0.014}, "LocalRank": {"Common Neighbors": 0.0094, "Jaccard": 0.008, "Local Path": 0.0231, "Quasi-local RA-2": 0.0216, "Quasi-local RA": 0.0205, "RA-2": 0.0077, "Resource Allocation": 0.0079, "Overall": 0.014}, "PageRank": {"Common Neighbors": 0.013, "Jaccard": 0.0087, "Local Path": 0.0266, "Quasi-local RA-2": 0.024, "Quasi-local RA": 0.0237, "RA-2": 0.0099, "Resource Allocation": 0.0094, "Overall": 0.0165}, "Overall": {"Common Neighbors": 0.0158, "Jaccard": 0.0139, "Local Path": 0.0274, "Quasi-local RA-2": 0.0253, "Quasi-local RA": 0.0242, "RA-2": 0.0137, "Resource Allocation": 0.0139, "Overall": 0.0192}}, "MSE summary (complex/simple)": {"Common Neighbors": {"Complex": 0.02641, "Simple": 0.00557, "Overall": 0.01599}, "Jaccard": {"Complex": 0.02282, "Simple": 0.00493, "Overall": 0.01388}, "Local Path": {"Complex": 0.04713, "Simple": 0.00811, "Overall": 0.02762}, "Quasi-Local RA": {"Complex": 0.04289, "Simple": 0.00753, "Overall": 0.02521}, "Quasi-Local RA-2": {"Complex": 0.04081, "Simple": 0.00738, "Overall": 0.0241}, "RA-2": {"Complex": 0.02254, "Simple": 0.00635, "Overall": 0.01444}, "Resource Allocation": {"Complex": 0.02278, "Simple": 0.00543, "Overall": 0.01411}}}, "90%": {"Top-k overlap": {"Balanced Index": {"Common Neighbors": 0.4166, "Jaccard": 0.4869, "Local Path": 0.3989, "Quasi-local RA": 0.4589, "Quasi-local RA-2": 0.4571, "RA-2": 0.4857, "Resource Allocation": 0.4851, "Overall": 0.4556}, "Betweenness": {"Common Neighbors": 0.4743, "Jaccard": 0.4703, "Local Path": 0.4366, "Quasi-local RA": 0.4343, "Quasi-local RA-2": 0.4349, "RA-2": 0.4709, "Resource Allocation": 0.4697, "Overall": 0.4558}, "Closeness": {"Common Neighbors": 0.3874, "Jaccard": 0.3983, "Local Path": 0.3714, "Quasi-local RA": 0.3857, "Quasi-local RA-2": 0.3846, "RA-2": 0.4006, "Resource Allocation": 0.4, "Overall": 0.3897}, "ClusterRank": {"Common Neighbors": 0.2937, "Jaccard": 0.2743, "Local Path": 0.208, "Quasi-local RA": 0.196, "Quasi-local RA-2": 0.1903, "RA-2": 0.2743, "Resource Allocation": 0.2771, "Overall": 0.2448}, "Complex Path Centrality": {"Common Neighbors": 0.168, "Jaccard": 0.164, "Local Path": 0.156, "Quasi-local RA": 0.1566, "Quasi-local RA-2": 0.1571, "RA-2": 0.172, "Resource Allocation": 0.168, "Overall": 0.1631}, "Degree": {"Common Neighbors": 0.4606, "Jaccard": 0.4206, "Local Path": 0.4229, "Quasi-local RA": 0.3869, "Quasi-local RA-2": 0.3869, "RA-2": 0.4223, "Resource Allocation": 0.4194, "Overall": 0.4171}, "Eigenvector": {"Common Neighbors": 0.3789, "Jaccard": 0.3131, "Local Path": 0.36, "Quasi-local RA": 0.2977, "Quasi-local RA-2": 0.3029, "RA-2": 0.3217, "Resource Allocation": 0.3189, "Overall": 0.3276}, "H-index": {"Common Neighbors": 0.1834, "Jaccard": 0.1743, "Local Path": 0.0863, "Quasi-local RA": 0.0869, "Quasi-local RA-2": 0.0834, "RA-2": 0.1714, "Resource Allocation": 0.1726, "Overall": 0.1369}, "k-core": {"Common Neighbors": 0.5274, "Jaccard": 0.5217, "Local Path": 0.4909, "Quasi-local RA": 0.4829, "Quasi-local RA-2": 0.4857, "RA-2": 0.5211, "Resource Allocation": 0.5211, "Overall": 0.5073}, "LeaderRank": {"Common Neighbors": 0.464, "Jaccard": 0.4326, "Local Path": 0.4274, "Quasi-local RA": 0.4006, "Quasi-local RA-2": 0.4006, "RA-2": 0.436, "Resource Allocation": 0.4349, "Overall": 0.428}, "LocalRank": {"Common Neighbors": 0.328, "Jaccard": 0.3194, "Local Path": 0.2246, "Quasi-local RA": 0.22, "Quasi-local RA-2": 0.2183, "RA-2": 0.3194, "Resource Allocation": 0.3194, "Overall": 0.2784}, "PageRank": {"Common Neighbors": 0.4851, "Jaccard": 0.448, "Local Path": 0.4497, "Quasi-local RA": 0.4143, "Quasi-local RA-2": 0.4177, "RA-2": 0.4509, "Resource Allocation": 0.4486, "Overall": 0.4449}, "Overall": {"Common Neighbors": 0.3806, "Jaccard": 0.3686, "Local Path": 0.336, "Quasi-local RA": 0.3267, "Quasi-local RA-2": 0.3266, "RA-2": 0.3705, "Resource Allocation": 0.3696, "Overall": 0.3541}}, "MSE": {"Balanced Index": {"Common Neighbors": 0.0132, "Jaccard": 0.0132, "Local Path": 0.0221, "Quasi-local RA-2": 0.0221, "Quasi-local RA": 0.0218, "RA-2": 0.0129, "Resource Allocation": 0.0132, "Overall": 0.0169}, "Betweenness": {"Common Neighbors": 0.0114, "Jaccard": 0.0107, "Local Path": 0.0199, "Quasi-local RA-2": 0.0192, "Quasi-local RA": 0.0198, "RA-2": 0.0102, "Resource Allocation": 0.0111, "Overall": 0.0146}, "Closeness": {"Common Neighbors": 0.0123, "Jaccard": 0.0117, "Local Path": 0.0201, "Quasi-local RA-2": 0.0198, "Quasi-local RA": 0.0197, "RA-2": 0.0111, "Resource Allocation": 0.0116, "Overall": 0.0152}, "ClusterRank": {"Common Neighbors": 0.012, "Jaccard": 0.012, "Local Path": 0.0206, "Quasi-local RA-2": 0.0202, "Quasi-local RA": 0.0204, "RA-2": 0.012, "Resource Allocation": 0.0118, "Overall": 0.0156}, "Complex Path Centrality": {"Common Neighbors": 0.0732, "Jaccard": 0.0732, "Local Path": 0.0376, "Quasi-local RA-2": 0.0374, "Quasi-local RA": 0.0377, "RA-2": 0.0733, "Resource Allocation": 0.0734, "Overall": 0.058}, "Degree": {"Common Neighbors": 0.0107, "Jaccard": 0.0102, "Local Path": 0.0172, "Quasi-local RA-2": 0.0169, "Quasi-local RA": 0.017, "RA-2": 0.0099, "Resource Allocation": 0.0101, "Overall": 0.0131}, "Eigenvector": {"Common Neighbors": 0.0077, "Jaccard": 0.0074, "Local Path": 0.012, "Quasi-local RA-2": 0.0117, "Quasi-local RA": 0.0116, "RA-2": 0.0069, "Resource Allocation": 0.0072, "Overall": 0.0092}, "H-index": {"Common Neighbors": 0.0125, "Jaccard": 0.0126, "Local Path": 0.0182, "Quasi-local RA-2": 0.0179, "Quasi-local RA": 0.0177, "RA-2": 0.0122, "Resource Allocation": 0.0124, "Overall": 0.0148}, "k-core": {"Common Neighbors": 0.003, "Jaccard": 0.0029, "Local Path": 0.0048, "Quasi-local RA-2": 0.0045, "Quasi-local RA": 0.0046, "RA-2": 0.0031, "Resource Allocation": 0.0029, "Overall": 0.0037}, "LeaderRank": {"Common Neighbors": 0.0115, "Jaccard": 0.0108, "Local Path": 0.0179, "Quasi-local RA-2": 0.0175, "Quasi-local RA": 0.0181, "RA-2": 0.0104, "Resource Allocation": 0.0105, "Overall": 0.0138}, "LocalRank": {"Common Neighbors": 0.0107, "Jaccard": 0.0109, "Local Path": 0.0198, "Quasi-local RA-2": 0.0193, "Quasi-local RA": 0.0195, "RA-2": 0.0103, "Resource Allocation": 0.0105, "Overall": 0.0144}, "PageRank": {"Common Neighbors": 0.0122, "Jaccard": 0.0116, "Local Path": 0.0204, "Quasi-local RA-2": 0.0199, "Quasi-local RA": 0.0199, "RA-2": 0.0113, "Resource Allocation": 0.0117, "Overall": 0.0153}, "Overall": {"Common Neighbors": 0.0159, "Jaccard": 0.0156, "Local Path": 0.0192, "Quasi-local RA-2": 0.0189, "Quasi-local RA": 0.019, "RA-2": 0.0153, "Resource Allocation": 0.0155, "Overall": 0.017}}, "MSE summary (complex/simple)": {"Common Neighbors": {"Complex": 0.01914, "Simple": 0.01368, "Overall": 0.01641}, "Jaccard": {"Complex": 0.01854, "Simple": 0.01334, "Overall": 0.01594}, "Local Path": {"Complex": 0.02607, "Simple": 0.01365, "Overall": 0.01986}, "Quasi-Local RA": {"Complex": 0.02539, "Simple": 0.01392, "Overall": 0.01966}, "Quasi-Local RA-2": {"Complex": 0.02558, "Simple": 0.01371, "Overall": 0.01965}, "RA-2": {"Complex": 0.01804, "Simple": 0.01372, "Overall": 0.01588}, "Resource Allocation": {"Complex": 0.01846, "Simple": 0.01414, "Overall": 0.0163}}}};
+
+const trainingSel = document.getElementById('trainingSel');
+const measureSel  = document.getElementById('measureSel');
+const searchBox   = document.getElementById('searchBox');
+const tableEl     = document.getElementById('dataTable');
+const statusPill  = document.getElementById('statusPill');
+
+let currentSort = {col: null, asc: true};
+let currentMatrix = null; // holds last rendered 2D array for copy
+
+function fmt(x) {
+  if (x === null || x === undefined) return '';
+  if (typeof x === 'number') {
+    return (x < 1 ? x.toFixed(4) : x.toString());
+  }
+  return String(x);
+}
+
+function buildMatrix(training, measure) {
+  const obj = DATASETS[training][measure];
+
+  // Summary table: Metric -> {Complex, Simple, Overall}
+  if (measure.startsWith("MSE summary")) {
+    const cols = ["Prediction metric","Complex","Simple","Overall"];
+    const rows = Object.keys(obj).map(m => [m, obj[m]["Complex"], obj[m]["Simple"], obj[m]["Overall"]]);
+    return [cols, ...rows];
+  }
+
+  // Centrality-by-metric tables
+  const firstKey = Object.keys(obj)[0];
+  const metrics = Object.keys(obj[firstKey]);
+  const cols = ["Centrality metric", ...metrics];
+  const rows = Object.keys(obj).map(c => {
+    const r = [c];
+    for (const m of metrics) r.push(obj[c][m]);
+    return r;
+  });
+  return [cols, ...rows];
+}
+
+function renderTable(matrix) {
+  currentMatrix = matrix;
+
+  const [header, ...rows] = matrix;
+  const search = searchBox.value.trim().toLowerCase();
+
+  // filter rows by search
+  const filtered = rows.filter(r => {
+    if (!search) return true;
+    return r.some(cell => String(cell).toLowerCase().includes(search));
+  });
+
+  // sort
+  let sorted = filtered.slice();
+  if (currentSort.col !== null) {
+    const idx = currentSort.col;
+    sorted.sort((a,b) => {
+      const av = a[idx], bv = b[idx];
+      const an = (typeof av === 'number'), bn = (typeof bv === 'number');
+      if (an && bn) return currentSort.asc ? av - bv : bv - av;
+      return currentSort.asc
+        ? String(av).localeCompare(String(bv))
+        : String(bv).localeCompare(String(av));
+    });
+  }
+
+  // build HTML
+  let thead = '<thead><tr>';
+  header.forEach((h,i) => {
+    thead += `<th data-col="${i}" title="Click to sort">${h}</th>`;
+  });
+  thead += '</tr></thead>';
+
+  let tbody = '<tbody>';
+  sorted.forEach(r => {
+    tbody += '<tr>';
+    r.forEach(cell => {
+      tbody += `<td>${fmt(cell)}</td>`;
+    });
+    tbody += '</tr>';
+  });
+  tbody += '</tbody>';
+
+  tableEl.innerHTML = thead + tbody;
+
+  // attach sort handlers
+  tableEl.querySelectorAll('thead th').forEach(th => {
+    th.addEventListener('click', () => {
+      const col = parseInt(th.getAttribute('data-col'), 10);
+      if (currentSort.col === col) currentSort.asc = !currentSort.asc;
+      else { currentSort.col = col; currentSort.asc = true; }
+      renderTable(matrix);
+    });
+  });
+
+  statusPill.textContent = `Rows: ${sorted.length}`;
+}
+
+function refresh() {
+  currentSort = {col: null, asc: true};
+  const training = trainingSel.value;
+  const measure = measureSel.value;
+  const matrix = buildMatrix(training, measure);
+  currentMatrix = matrix;
+  renderTable(matrix);
+}
+
+trainingSel.addEventListener('change', refresh);
+measureSel.addEventListener('change', refresh);
+searchBox.addEventListener('input', () => renderTable(currentMatrix));
+
+document.getElementById('copyBtn').addEventListener('click', async () => {
+  if (!currentMatrix) return;
+  const [header, ...rows] = currentMatrix;
+  const search = searchBox.value.trim().toLowerCase();
+  const filtered = rows.filter(r => !search || r.some(cell => String(cell).toLowerCase().includes(search)));
+
+  const lines = [
+    header.join('\t'),
+    ...filtered.map(r => r.map(c => (typeof c === 'number' ? fmt(c) : String(c))).join('\t'))
+  ];
+  const tsv = lines.join('\n');
+  try {
+    await navigator.clipboard.writeText(tsv);
+    statusPill.textContent = "Copied";
+    setTimeout(() => statusPill.textContent = `Rows: ${filtered.length}`, 1000);
+  } catch(e) {
+    statusPill.textContent = "Copy failed (browser)";
+  }
+});
+
+document.getElementById('csvBtn').addEventListener('click', () => {
+  const a = document.createElement('a');
+  a.href = 'metrics_table_data.csv';
+  a.download = 'metrics_table_data.csv';
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+});
+
+refresh();
+</script>
+</body>
+</html>
