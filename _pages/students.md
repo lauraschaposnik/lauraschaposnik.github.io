@@ -3,7 +3,7 @@ layout: page
 permalink: /students/
 title: Students
 description:  
-years: [UIC, Postdoc, Other]
+years: [UIC, Postdoc, GIMS, Other]
 nav: false
 heading: Students
 ---
