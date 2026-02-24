@@ -149,7 +149,7 @@ The boys love playing together.
 <hr>
 <span style="font-size:15px">
  
-My brother [Fidel I. Schaposnik](https://fidel-schaposnik.github.io/) is a high-energy physicist and artificial intelligence expert. My father [Fidel A. Schaposnik](https://sites.google.com/site/schaposnik/)  and my mother [Patricia Massolo](https://es.wikipedia.org/wiki/Claudia_Patricia_Massolo) were also physicists. 
+My brother [Fidel I. Schaposnik](https://fidel-schaposnik.github.io/) is a high-energy physicist and artificial intelligence expert. My father [Fidel A. Schaposnik](https://sites.google.com/site/schaposnik/)  and my mother [Patricia Massolo](https://es.wikipedia.org/wiki/Claudia_Patricia_Massolo) were also physicists. Here are some [words about my father](https://lauraschaposnik.com/fidel.a.schaposnik/), which I prepared back in 2023 after his sudden passing. 
 
 
  
