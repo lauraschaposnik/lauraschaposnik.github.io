@@ -1,8 +1,7 @@
 ---
 layout: post
-title: MathFest 2026 and Upcoming Talks & Events
 date: 2026-01-1 15:10:00-0600
-inline: false
+inline: true
 related_posts: false
 ---
 
