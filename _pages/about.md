@@ -47,7 +47,8 @@ During the Fall 2022 I was a visiting professor at the Department of Mathematics
 <hr>
 <span style="font-size:15px">
 
-I am on the incoming <b>editorial board</b> of [Notices of the AMS](https://www.ams.org/notices), of the current <b>editorial board</b> of  [Nature's Scientific Reports](https://www.nature.com/srep/) and of [Geometriae Dedicata](https://www.springer.com/journal/10711/editors).  
+I am in the  <b>editorial board</b> of [Notices of the AMS](https://www.ams.org/notices), and of [Geometriae Dedicata](https://www.springer.com/journal/10711/editors). Since 2026 I am also in the Governing Board of the 
+[Institute of the Mathematical Sciences of the Americas (IMSA)](https://www.imsa.miami.edu/). 
 
 <hr>
 <span style="font-size:15px">
