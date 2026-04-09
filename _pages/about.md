@@ -2,7 +2,11 @@
 layout: about
 title: About
 permalink: /
-subtitle:  <b>Professor</b> of <a href="https://mscs.uic.edu">Mathematics, Statistics, and Computer Science</a>, University of Illinois Chicago
+subtitle:  <b>Professor</b> of <a href="https://mscs.uic.edu">Mathematics, Statistics, and Computer Science</a>, University of Illinois Chicago <br>
+  <b>Faculty, </b> <a href="https://www.nitmb.org/">National Institute for Theory and Mathematics in Biology (NITMB)</a>
+  <br>
+    <b>Governing Board Member, </b>  <a href="https://www.imsa.miami.edu/directory/governing-board/"> 
+Institute of the Mathematical Sciences of the Americas</a>
 
 profile:
   align: right
