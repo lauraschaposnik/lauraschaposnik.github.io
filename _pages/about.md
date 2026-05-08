@@ -41,7 +41,7 @@ A driving force behind my research is the idea that when a system is complex, ma
 <hr>
 <span style="font-size:15px">
 
-During the Fall 2022 I was a visiting professor at the Department of Mathematics of the University of California, Berkeley, and a Research Professor at MSRI, Berkeley, USA. During the Spring 2023 I was a <b> Visiting Fellow</b> at <a href="https://www.asc.ox.ac.uk">All Souls College, Oxford</a> , and a visiting member of the Mathematical Institute, at the University of Oxford. During the summer 2023 was in Paris, partly as a visiting member of the Institut Henri Poincaré. 
+During the Fall 2022 I was a visiting professor at the Department of Mathematics of the University of California, Berkeley, and a Research Professor at MSRI, Berkeley, USA. During the Spring 2023 I was a <b> Visiting Fellow</b> at <a href="https://www.asc.ox.ac.uk">All Souls College, Oxford</a> , and a visiting member of the Mathematical Institute, at the University of Oxford. During the summer 2023 I was in Paris, partly as a visiting member of the Institut Henri Poincaré. During the Fall 2026 I will be a Short Term Visiting Fellow at Jesus College,  and also a visiting faculty at the Mathematical Institute, University of Oxford, UK.  
 
 <hr>
 <span style="font-size:15px">
