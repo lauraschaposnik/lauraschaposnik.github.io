@@ -18,7 +18,7 @@ I have given <b>150+ talks</b> on my research area as well as outreach talks ove
 
 <div style="padding: 1rem; border: 1px solid #ddd; border-radius: 12px; margin: 1.5rem 0; background: #fafafa;">
   <strong>Interactive work travel map.</strong>
-  I also keep an interactive map of the cities I have visited for talks, conferences, workshops, and organized events.
+  I also keep an interactive map of the cities I have visited for doing research, giving talks, conferences, workshops, and organizing events.
   <br>
   <a href="/travelmap/">Open the map</a>
 </div>
