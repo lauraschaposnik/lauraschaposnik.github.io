@@ -1,11 +1,11 @@
 ---
 layout: page
-permalink: /hitchintree/
-title:  Interactive Hitchin tree 
+permalink: /travelmap/
+title:  My Travel Map 
 nav: false
-heading: Interactive Hitchin tree
+heading: My Travel Map
 ---
-Interactive map of cities I've visited to see collaborators, give talks, and attend conferences. Online-only entries are excluded. Future 2026 entries are available as a toggle.
+An interactive map of cities I've visited to see collaborators, give talks, and attend conferences. Online-only entries are excluded. Future 2026 entries are available as a toggle.
   
   
   <iframe
