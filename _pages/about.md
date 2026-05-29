@@ -49,17 +49,26 @@ social: true  # includes social icons at the bottom of the page
 
 I am a Professor of Mathematics at the University of Illinois Chicago. My research lies at the interface of geometry, topology, and mathematical physics, with a focus on moduli spaces of decorated bundles, Higgs bundles, Hitchin systems, branes, and geometric structures, together with applications of geometric thinking to complex systems in science and society.
 
+<div style="margin: 1rem 0 1.5rem 0; font-size: 14px;">
+  <a href="/publications/" style="display:inline-block; margin:.2rem .35rem .2rem 0; padding:.38rem .7rem; border:1px solid #d8e7e4; border-radius:999px; background:#ffffff; text-decoration:none;">Publications</a>
+  <a href="/talks/" style="display:inline-block; margin:.2rem .35rem .2rem 0; padding:.38rem .7rem; border:1px solid #d8e7e4; border-radius:999px; background:#ffffff; text-decoration:none;">Talks & trips</a>
+    <a href="/books/" style="display:inline-block; margin:.2rem .35rem .2rem 0; padding:.38rem .7rem; border:1px solid #d8e7e4; border-radius:999px; background:#ffffff; text-decoration:none;">Children Books</a>
+</div>
+
 I received my Licenciada en Matemáticas from the University of La Plata and my DPhil from the University of Oxford under the supervision of [Nigel Hitchin](https://people.maths.ox.ac.uk/hitchin/). I was then a postdoctoral researcher at Heidelberg University in [Anna Wienhard's group](https://www.mathi.uni-heidelberg.de/~wienhard/) and at the University of Illinois Urbana-Champaign in [Steve Bradlow's group](https://faculty.math.illinois.edu/~bradlow/bradlow_index2.html). I moved to Chicago to take up a faculty position at UIC in 2015. I live with my [family](https://lauraschaposnik.github.io/family/) in downtown Chicago.
 
 My research focuses on the study of geometric properties of different spaces: 
 
-<b>Moduli spaces of decorated bundles</b>: The geometry and topology of the moduli spaces of decorated bundles, especially Higgs bundles and Hitchin systems, and geometric structures they parametrize.  Research on  the moduli spaces of Higgs bundles has yielded connections between fundamental areas of mathematics and theoretical physics, blending ideas from algebraic and differential geometry, Lie theory, representation theory, and string theory.      
+**Geometry, moduli spaces, and Higgs bundles.**  
+I study the geometry and topology of moduli spaces of decorated bundles, especially Higgs bundles and Hitchin systems, and the geometric structures they parametrize. This work connects algebraic and differential geometry, Lie theory, representation theory, and mathematical physics.
 
+**Geometry across science and society.**  
+A second direction in my work uses geometric and network-theoretic ideas to study complex systems, including models related to viruses, collective behavior, social dynamics, and sustainability.
 
-<b>Geometric questions across science and society</b>: In particular, my current projects lie within the two directions: related to <i>virus</i> and <i>society</i> , with an overall aim of building novel techniques that can be used in a vast array of areas, related to: Geometric insights, in particular symmetries and patterns; Repurposing stock market indicators for time series data in social and natural sciences. Graph and network theoretic approaches. 
+**Simplicity inside complexity.**  
+A recurring theme in my research is that, in complex systems, small changes can have unpredictable effects. I often begin by isolating simple geometric or dynamical mechanisms, then use them to build toward richer applications.
         
-        
-A driving force behind my research is the idea that when a system is complex, making a small change can cause it to react in unpredictable and uncontrollable ways. But within a simple system, the effects of small changes tend to be clearer. This is one of the reasons why I often focus on seeking simplicity within the initial projects, subsequently building to more complicated applications.   My  work has appeared in the Journal of Differential Geometry, Transactions of the AMS, Communications in Mathematical Physics, Advances in Theoretical and Mathematical Physics,  Proceedings of the Royal Society A, among other journals.
+My research has appeared in leading journals in geometry, mathematical physics, and applied mathematics, including the Journal of Differential Geometry, Transactions of the AMS, Communications in Mathematical Physics, Advances in Theoretical and Mathematical Physics, Nature' Scientific Reports and Proceedings of the Royal Society A.
 
 
 <hr>
@@ -72,6 +81,8 @@ During the Fall 2022 I was a visiting professor at the Department of Mathematics
 I am in the  <b>editorial board</b> of [Notices of the AMS](https://www.ams.org/notices), and of [Geometriae Dedicata](https://www.springer.com/journal/10711/editors). Since 2026 I am also in the Governing Board of the 
 [Institute of the Mathematical Sciences of the Americas (IMSA)](https://www.imsa.miami.edu/). 
 
+
+
 <hr>
 <span style="font-size:15px">
 My research at UIC has been supported by the following sources: [NSF FRG Award DMS- 2152107](https://sites.google.com/view/frg-ciq/home?authuser=0) (<a href="https://sites.google.com/view/frg-ciq/home?authuser=0">PI</a>), 2022-2027; 
@@ -83,6 +94,11 @@ My research at UIC has been supported by the following sources: [NSF FRG Award D
 </span>
 <!--<span style="font-size:13px">
 Note: my role is specified in parentheses, where PI = "Principal Investigator," Co-PI = "Co-Principal Investigator," and "KP=Key Person." 
+</span>-->
+
+
+I also enjoy building public mathematical resources, including an [interactive Hitchin genealogy tree](https://lauraschaposnik.github.io/hitchintree/) and a [travel guide to La Plata](https://lauraschaposnik.github.io/laplata/), as well as my [Interactive work travel map](https://lauraschaposnik.com/travelmap/).
+
 </span>-->
 
 <hr>
