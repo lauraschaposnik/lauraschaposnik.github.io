@@ -23,7 +23,6 @@ social: true  # includes social icons at the bottom of the page
   gtag('config', 'G-FZGCT9KEL3');
 </script>
 
-
 <div style="
   margin: 1.2rem 0 1.4rem 0;
   padding: 1rem 1.15rem;
@@ -41,23 +40,23 @@ social: true  # includes social icons at the bottom of the page
   Recipient of the highest honor bestowed by the U.S. government on outstanding scientists and engineers early in their careers.
 
   <div style="margin-top: .65rem;">
-    <span style="display:inline-block; margin-right:.5rem;">Alexander von Humboldt Fellow</span>
-    <span style="display:inline-block; margin-right:.5rem;">Simons Fellow in Mathematics</span>
-    <span style="display:inline-block; margin-right:.5rem;">NSF CAREER Awardee</span>
-    <span style="display:inline-block; margin-right:.5rem;">Clarendon Scholar, Oxford</span>
+    <span style="display:inline-block; margin-right:.7rem;">Alexander von Humboldt Fellow</span>
+    <span style="display:inline-block; margin-right:.7rem;">Simons Fellow in Mathematics</span>
+    <span style="display:inline-block; margin-right:.7rem;">NSF CAREER Awardee</span>
+    <span style="display:inline-block; margin-right:.7rem;">Clarendon Scholar, Oxford</span>
   </div>
 </div>
 
-I am a Professor of Mathematics at the University of Illinois Chicago. In 2025, I received the Presidential Early Career Award for Scientists and Engineers (PECASE), the highest honor bestowed by the U.S. government on outstanding scientists and engineers early in their careers. My research lies at the interface of geometry, topology, and mathematical physics, with a focus on moduli spaces of decorated bundles, Higgs bundles, Hitchin systems, branes, and geometric structures, together with applications of geometric thinking to complex systems in science and society.
+I am a Professor of Mathematics at the University of Illinois Chicago. My research lies at the interface of geometry, topology, and mathematical physics, with a focus on moduli spaces of decorated bundles, Higgs bundles, Hitchin systems, branes, and geometric structures, together with applications of geometric thinking to complex systems in science and society.
 
- I received my Licenciada en Matemáticas from the University of La Plata and my DPhil from the University of Oxford under the supervision of [Nigel Hitchin](https://people.maths.ox.ac.uk/hitchin/). I was then a postdoctoral researcher at Heidelberg University in [Anna Wienhard's group](https://www.mathi.uni-heidelberg.de/~wienhard/) and at the University of Illinois Urbana-Champaign in [Steve Bradlow's group](https://faculty.math.illinois.edu/~bradlow/bradlow_index2.html). I moved to Chicago to take up a faculty position at UIC in 2015, where I  am a Professor in Mathematics.  I live with my [Family](https://lauraschaposnik.github.io/family/) in downtown Chicago. 
+I received my Licenciada en Matemáticas from the University of La Plata and my DPhil from the University of Oxford under the supervision of [Nigel Hitchin](https://people.maths.ox.ac.uk/hitchin/). I was then a postdoctoral researcher at Heidelberg University in [Anna Wienhard's group](https://www.mathi.uni-heidelberg.de/~wienhard/) and at the University of Illinois Urbana-Champaign in [Steve Bradlow's group](https://faculty.math.illinois.edu/~bradlow/bradlow_index2.html). I moved to Chicago to take up a faculty position at UIC in 2015. I live with my [family](https://lauraschaposnik.github.io/family/) in downtown Chicago.
 
 My research focuses on the study of geometric properties of different spaces: 
 
-<b>Moduli spaces of decorated Bundles</b>: The geometry and topology of the moduli spaces of decorated bundles, especially Higgs bundles and Hitchin systems, and geometric structures they parametrize.  Research on  the moduli spaces of Higgs bundles has yielded connections between fundamental areas of mathematics and theoretical physics, blending ideas from algebraic and differential geometry, Lie theory, representation theory, and string theory.      
+<b>Moduli spaces of decorated bundles</b>: The geometry and topology of the moduli spaces of decorated bundles, especially Higgs bundles and Hitchin systems, and geometric structures they parametrize.  Research on  the moduli spaces of Higgs bundles has yielded connections between fundamental areas of mathematics and theoretical physics, blending ideas from algebraic and differential geometry, Lie theory, representation theory, and string theory.      
 
 
-<b>Geometric questions within different areas of science</b> In particular, my current projects lie within the two directions: related to <i>virus</i> and <i>society</i> , with an overall aim of building novel techniques that can be used in a vast array of areas, related to: Geometric insights, in particular symmetries and patterns; Repurposing stock market indicators for time series data in social and natural sciences. Graph and network theoretic approaches. 
+<b>Geometric questions across science and society</b>: In particular, my current projects lie within the two directions: related to <i>virus</i> and <i>society</i> , with an overall aim of building novel techniques that can be used in a vast array of areas, related to: Geometric insights, in particular symmetries and patterns; Repurposing stock market indicators for time series data in social and natural sciences. Graph and network theoretic approaches. 
         
         
 A driving force behind my research is the idea that when a system is complex, making a small change can cause it to react in unpredictable and uncontrollable ways. But within a simple system, the effects of small changes tend to be clearer. This is one of the reasons why I often focus on seeking simplicity within the initial projects, subsequently building to more complicated applications.   My  work has appeared in the Journal of Differential Geometry, Transactions of the AMS, Communications in Mathematical Physics, Advances in Theoretical and Mathematical Physics,  Proceedings of the Royal Society A, among other journals.
@@ -66,8 +65,7 @@ A driving force behind my research is the idea that when a system is complex, ma
 <hr>
 <span style="font-size:15px">
 
-During the Fall 2022 I was a visiting professor at the Department of Mathematics of the University of California, Berkeley, and a Research Professor at MSRI, Berkeley, USA. During the Spring 2023 I was a <b> Visiting Fellow</b> at <a href="https://www.asc.ox.ac.uk">All Souls College, Oxford</a> , and a visiting member of the Mathematical Institute, at the University of Oxford. During the summer 2023 I was in Paris, partly as a visiting member of the Institut Henri Poincaré. During the Fall 2026 I will be a Short Term Visiting Fellow at Jesus College,  and also a visiting faculty at the Mathematical Institute, University of Oxford, UK.  
-
+During the Fall 2022 I was a visiting professor at the Department of Mathematics of the University of California, Berkeley, and a Research Professor at MSRI, Berkeley, USA. During the Spring 2023 I was a <b> Visiting Fellow</b> at <a href="https://www.asc.ox.ac.uk">All Souls College, Oxford</a> , and a visiting member of the Mathematical Institute, at the University of Oxford. During the summer 2023 I was in Paris, partly as a visiting member of the Institut Henri Poincaré. During the Fall 2026 I will be a visiting faculty member at the Mathematical Institute, University of Oxford,  and a visiting fellow at Magdalen College, Oxford.
 <hr>
 <span style="font-size:15px">
 
@@ -76,11 +74,10 @@ I am in the  <b>editorial board</b> of [Notices of the AMS](https://www.ams.org/
 
 <hr>
 <span style="font-size:15px">
-My research at UIC has been supported by the following sources: [NSF FRG Award DMS- 2152107](https://sites.google.com/view/frg-ciq/home?authuser=0) (<a href="https://sites.google.com/view/frg-ciq/home?authuser=0">PI</a>), 2022-2025; 
+My research at UIC has been supported by the following sources: [NSF FRG Award DMS- 2152107](https://sites.google.com/view/frg-ciq/home?authuser=0) (<a href="https://sites.google.com/view/frg-ciq/home?authuser=0">PI</a>), 2022-2027; 
   [Simons Fellowship](https://www.simonsfoundation.org/mathematics-physical-sciences/simons-fellows/
 ) (<a href="https://ras.mit.edu/education-and-career-resources/glossary#term165">PI</a>), 2022-2023;
- [NSF CAREER Award DMS 1749013](https://nsf.gov/awardsearch/showAward?AWD_ID=1749013) (<a href="https://ras.mit.edu/education-and-career-resources/glossary#term165">PI</a>), 2018-2023;
-[NSF  Award DMS 1749013](https://nsf.gov/awardsearch/showAward?AWD_ID=1749013) (<a href="https://ras.mit.edu/education-and-career-resources/glossary#term165">PI</a>), 2019;   [Alexander von Humboldt Fellowship](https://today.uic.edu/uic-mathematician-physicist-named-humboldt-fellows) (<a href="https://ras.mit.edu/education-and-career-resources/glossary#term165">PI</a>), 2017-2019;
+ [NSF CAREER Award DMS 1749013](https://nsf.gov/awardsearch/showAward?AWD_ID=1749013) (<a href="https://ras.mit.edu/education-and-career-resources/glossary#term165">PI</a>), 2018-2027;   [Alexander von Humboldt Fellowship](https://today.uic.edu/uic-mathematician-physicist-named-humboldt-fellows) (<a href="https://ras.mit.edu/education-and-career-resources/glossary#term165">PI</a>), 2017-2019;
 [NSF  Award DMS 1611835](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1611835) (<a href="https://ras.mit.edu/education-and-career-resources/glossary#term165">PI</a>), 2015-2019;  
   <br>
 </span>
