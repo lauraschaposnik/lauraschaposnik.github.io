@@ -26,11 +26,11 @@ social: true  # includes social icons at the bottom of the page
 
 
 
-I am a Professor of Mathematics at the University of Illinois Chicago. My research lies at the interface of geometry, topology, and mathematical physics, with a focus on moduli spaces of decorated bundles, Higgs bundles, Hitchin systems, branes, and geometric structures, as well as on the application of geometric thinking to complex systems in science and society. My research has appeared in leading journals in geometry, mathematical physics, and applied mathematics, including the Journal of Differential Geometry, Transactions of the AMS, Communications in Mathematical Physics, Advances in Theoretical and Mathematical Physics, Nature's Scientific Reports and Proceedings of the Royal Society A.
+I am a Professor of Mathematics at the University of Illinois Chicago. My research lies at the interface of geometry, topology, and mathematical physics, with a focus on moduli spaces of decorated bundles, Higgs bundles, Hitchin systems, branes, and geometric structures, as well as on the application of geometric thinking to complex systems in science and society.  
 
 
 <div style="
-  margin: 1.2rem 0 1.4rem 0;
+  margin: 1.2rem 340px 1.4rem 0;
   padding: 1rem 1.15rem;
   border: 1px solid #d8e7e4;
   border-radius: 16px;
