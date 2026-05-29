@@ -58,7 +58,7 @@ I am a Professor of Mathematics at the University of Illinois Chicago. My resear
     <a href="/books/" style="display:inline-block; margin:.2rem .35rem .2rem 0; padding:.38rem .7rem; border:1px solid #d8e7e4; border-radius:999px; background:#ffffff; text-decoration:none;">Children Books</a>
 </div>
 
-I received my Licenciada en Matemáticas from the University of La Plata and my DPhil from the University of Oxford under the supervision of [Nigel Hitchin](https://people.maths.ox.ac.uk/hitchin/). I was then a postdoctoral researcher at Heidelberg University in [Anna Wienhard's group](https://www.mathi.uni-heidelberg.de/~wienhard/) and at the University of Illinois Urbana-Champaign in [Steve Bradlow's group](https://faculty.math.illinois.edu/~bradlow/bradlow_index2.html). I moved to Chicago to take up a faculty position at UIC in 2015. I live with my [family](https://lauraschaposnik.github.io/family/) in downtown Chicago.
+I received my degree of Licenciada en Matemáticas from the University of La Plata under the supervision of Jorge Solomin, and my DPhil from the University of Oxford under the supervision of [Nigel Hitchin](https://people.maths.ox.ac.uk/hitchin/). I was then a postdoctoral researcher at Heidelberg University in [Anna Wienhard's group](https://www.mathi.uni-heidelberg.de/~wienhard/) and at the University of Illinois Urbana-Champaign in [Steve Bradlow's group](https://faculty.math.illinois.edu/~bradlow/bradlow_index2.html). I moved to Chicago to take up a faculty position at UIC in 2015. I live with my [family](https://lauraschaposnik.github.io/family/) in downtown Chicago.
 
          
 
