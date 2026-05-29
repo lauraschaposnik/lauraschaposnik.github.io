@@ -36,14 +36,14 @@ social: true  # includes social icons at the bottom of the page
     Selected honors
   </div>
 
-  <b>Presidential Early Career Award for Scientists and Engineers (PECASE), 2025</b><br>
+  <b>Presidential Early Career Award for Scientists and Engineers (PECASE)</b><br>
   Recipient of the highest honor bestowed by the U.S. government on outstanding scientists and engineers early in their careers.
 
   <div style="margin-top: .65rem;">
-    <span style="display:inline-block; margin-right:.7rem;">Alexander von Humboldt Fellow</span>
-    <span style="display:inline-block; margin-right:.7rem;">Simons Fellow in Mathematics</span>
-    <span style="display:inline-block; margin-right:.7rem;">NSF CAREER Awardee</span>
-    <span style="display:inline-block; margin-right:.7rem;">Clarendon Scholar, Oxford</span>
+    <span style="display:inline-block; margin-right:.7rem;">Alexander von Humboldt Fellow</span> <br>
+    <span style="display:inline-block; margin-right:.7rem;">Simons Fellow in Mathematics</span> <br>
+    <span style="display:inline-block; margin-right:.7rem;">NSF CAREER Awardee</span> <br>
+    <span style="display:inline-block; margin-right:.7rem;">Clarendon Scholar, Oxford</span> 
   </div>
 </div>
 
