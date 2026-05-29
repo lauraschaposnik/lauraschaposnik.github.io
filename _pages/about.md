@@ -23,9 +23,34 @@ social: true  # includes social icons at the bottom of the page
   gtag('config', 'G-FZGCT9KEL3');
 </script>
 
-<i> Photo by [Max Telford](https://www.ucl.ac.uk/biosciences/people/max-telford), at All Souls' Visiting Fellows Farewell night,  June 2023. </i>
 
-After receiving a degree of Licenciada en Matemáticas from the University of La Plata (here is a [travel guide to La Plata](https://lauraschaposnik.github.io/laplata/) I wrote), I obtained my DPhil from the University of Oxford under the supervision of [Nigel Hitchin](https://people.maths.ox.ac.uk/hitchin/): here is an [Interactive Hitchin genealogy tree](https://lauraschaposnik.github.io/hitchintree/) I made. I was then a post-doctoral researcher at the University of Heidelberg in [Anna Wiennhard's group](https://www.mathi.uni-heidelberg.de/~wienhard/), and the University of Illinois at Urbana Champaign in [Steve Bradlow's group](https://faculty.math.illinois.edu/~bradlow/bradlow_index2.html).  I moved to Chicago to take up a faculty position at the University of Illinois at Chicago (UIC) in 2015, where I  am a Professor in Mathematics.  I live with my [Family](https://lauraschaposnik.github.io/family/) in downtown Chicago. 
+<div style="
+  margin: 1.2rem 0 1.4rem 0;
+  padding: 1rem 1.15rem;
+  border: 1px solid #d8e7e4;
+  border-radius: 16px;
+  background: #f7fbfa;
+  font-size: 15px;
+  line-height: 1.45;
+">
+  <div style="font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: #5c6f73; margin-bottom: .35rem;">
+    Selected honors
+  </div>
+
+  <b>Presidential Early Career Award for Scientists and Engineers (PECASE), 2025</b><br>
+  Recipient of the highest honor bestowed by the U.S. government on outstanding scientists and engineers early in their careers.
+
+  <div style="margin-top: .65rem;">
+    <span style="display:inline-block; margin-right:.5rem;">Alexander von Humboldt Fellow</span>
+    <span style="display:inline-block; margin-right:.5rem;">Simons Fellow in Mathematics</span>
+    <span style="display:inline-block; margin-right:.5rem;">NSF CAREER Awardee</span>
+    <span style="display:inline-block; margin-right:.5rem;">Clarendon Scholar, Oxford</span>
+  </div>
+</div>
+
+I am a Professor of Mathematics at the University of Illinois Chicago. In 2025, I received the Presidential Early Career Award for Scientists and Engineers (PECASE), the highest honor bestowed by the U.S. government on outstanding scientists and engineers early in their careers. My research lies at the interface of geometry, topology, and mathematical physics, with a focus on moduli spaces of decorated bundles, Higgs bundles, Hitchin systems, branes, and geometric structures, together with applications of geometric thinking to complex systems in science and society.
+
+ I received my Licenciada en Matemáticas from the University of La Plata and my DPhil from the University of Oxford under the supervision of [Nigel Hitchin](https://people.maths.ox.ac.uk/hitchin/). I was then a postdoctoral researcher at Heidelberg University in [Anna Wienhard's group](https://www.mathi.uni-heidelberg.de/~wienhard/) and at the University of Illinois Urbana-Champaign in [Steve Bradlow's group](https://faculty.math.illinois.edu/~bradlow/bradlow_index2.html). I moved to Chicago to take up a faculty position at UIC in 2015, where I  am a Professor in Mathematics.  I live with my [Family](https://lauraschaposnik.github.io/family/) in downtown Chicago. 
 
 My research focuses on the study of geometric properties of different spaces: 
 
@@ -64,4 +89,9 @@ Note: my role is specified in parentheses, where PI = "Principal Investigator," 
 </span>-->
 
 <hr>
+<p style="font-size:12px; color:#777; margin-top:2rem;">
+  Photo credit: <a href="https://www.ucl.ac.uk/biosciences/people/max-telford">Max Telford</a>,
+  All Souls' Visiting Fellows Farewell night, June 2023.
+</p>
+
 <span style="font-size:15px">
