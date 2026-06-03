@@ -29,29 +29,56 @@ social: true  # includes social icons at the bottom of the page
 I am a Professor of Mathematics at the University of Illinois Chicago. My research lies at the interface of geometry, topology, and mathematical physics, with a focus on moduli spaces of decorated bundles, Higgs bundles, Hitchin systems, branes, and geometric structures, as well as on the application of geometric thinking to complex systems in science and society.  
 
 
-<div style="
-  margin: 1.2rem 340px 1.4rem 0;
-  padding: 1rem 1.15rem;
-  border: 1px solid #d8e7e4;
-  border-radius: 16px;
-  background: #f7fbfa;
-  font-size: 15px;
-  line-height: 1.45;
-">
-  <div style="font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: #5c6f73; margin-bottom: .35rem;">
-    Selected honors
-  </div>
+<style>
+  .honors-section {
+    margin: 1.1rem 340px 1.3rem 0;
+    font-size: 15px;
+    line-height: 1.5;
+  }
 
-  <b>Presidential Early Career Award for Scientists and Engineers (PECASE)</b><br>
-  Recipient of the highest honor bestowed by the U.S. government on outstanding scientists and engineers early in their careers.
+  .honors-title {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: #5c6f73;
+    margin-bottom: .55rem;
+  }
 
-  <div style="margin-top: .65rem;">
-    <span style="display:inline-block; margin-right:.7rem;">Alexander von Humboldt Fellow</span> <br>
-    <span style="display:inline-block; margin-right:.7rem;">Simons Fellow in Mathematics</span> <br>
-    <span style="display:inline-block; margin-right:.7rem;">NSF CAREER Awardee</span> <br>
-    <span style="display:inline-block; margin-right:.7rem;">Clarendon Scholar, Oxford</span> 
-  </div>
+  .honors-section ul {
+    margin-top: 0;
+    padding-left: 1.25rem;
+  }
+
+  .honors-section li {
+    margin-bottom: .35rem;
+  }
+
+  @media (max-width: 768px) {
+    .honors-section {
+      margin-right: 0;
+      font-size: 14px;
+    }
+  }
+</style>
+
+<hr>
+
+<div class="honors-section">
+  <div class="honors-title">Selected honors and fellowships</div>
+
+  <ul>
+    <li>
+      <b>Presidential Early Career Award for Scientists and Engineers (PECASE).</b>
+      Recipient of the highest honor bestowed by the U.S. government on outstanding scientists and engineers early in their careers.
+    </li>
+    <li><b>Alexander von Humboldt Fellow</b>, 2017–2019.</li>
+    <li><b>Simons Fellow in Mathematics</b>, 2022–2023.</li>
+    <li><b>NSF CAREER Awardee</b>, 2018–2023.</li>
+    <li><b>Clarendon Scholar</b>, University of Oxford.</li>
+  </ul>
 </div>
+
+<hr>
 
 <div style="margin: 1rem 0 1.5rem 0; font-size: 14px;">
   <a href="/research-overview/" style="display:inline-block; margin:.2rem .35rem .2rem 0; padding:.38rem .7rem; border:1px solid #d8e7e4; border-radius:999px; background:#ffffff; text-decoration:none;">Research Overview</a>
