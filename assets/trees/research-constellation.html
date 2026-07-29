@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laura P. Schaposnik — Research Constellation</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--paper:#F5F8F8;--ink:#22333F;--muted:#5b6b77;--line:#dfe7e8}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Karla',sans-serif;color:var(--ink);
+    background:radial-gradient(70rem 50rem at 15% -10%,rgba(46,126,140,.10),transparent 60%),
+      radial-gradient(60rem 44rem at 105% 15%,rgba(132,116,161,.10),transparent 55%),
+      radial-gradient(56rem 48rem at 50% 110%,rgba(217,142,74,.09),transparent 60%),var(--paper);
+    min-height:100vh;overflow-x:hidden}
+  .wrap{max-width:1240px;margin:0 auto;padding:0 1.2rem}
+  header{padding:2.1rem 0 .5rem}
+  .eyebrow{font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;font-weight:700;color:#2E7E8C;margin-bottom:.5rem}
+  h1{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(1.65rem,4.6vw,2.7rem);line-height:1.09}
+  h1 em{font-style:italic}
+  .sub{margin-top:.75rem;max-width:62ch;font-size:.97rem;line-height:1.58;color:#3d4d59}
+  .bar{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:1.1rem 0 .3rem}
+  .bar button{font:600 .78rem 'Karla',sans-serif;cursor:pointer;border:1.5px solid #b9c6c9;
+    background:rgba(255,255,255,.6);color:#3d4d59;border-radius:99px;padding:.34rem .78rem;transition:.16s}
+  .bar button:hover{border-color:#2E7E8C;color:#2E7E8C}
+  .bar button.on{background:#27496D;border-color:#27496D;color:#fff}
+  .legend{display:flex;flex-wrap:wrap;gap:.45rem 1.15rem;font-size:.77rem;color:#4a5a66;margin:.5rem 0 .1rem}
+  .legend .chip{display:inline-flex;align-items:center;gap:.38rem;cursor:pointer}
+  .legend .dot{width:.72rem;height:.72rem;border-radius:50%}
+  .legend .chip.dim{opacity:.32}
+  .hint{font-size:.76rem;color:#7b8994;margin:.45rem 0 .2rem}
+
+  #frame{position:relative;margin-top:.5rem;border-radius:12px;overflow:hidden;
+    background:rgba(255,255,255,.35);border:1px solid var(--line);touch-action:none}
+  svg#sky{width:100%;height:auto;display:block;cursor:grab}
+  svg#sky.drag{cursor:grabbing}
+  .zoom{position:absolute;right:.7rem;bottom:.7rem;display:flex;flex-direction:column;gap:.35rem}
+  .zoom button{width:2rem;height:2rem;border-radius:6px;border:1px solid #c3ced1;background:#fff;
+    font:700 1rem 'Karla',sans-serif;color:#3d4d59;cursor:pointer}
+  .zoom button:hover{border-color:#2E7E8C;color:#2E7E8C}
+
+  .spoke{fill:none;stroke-linecap:round}
+  .hubdisc{cursor:pointer}
+  .hubring{fill:#fff;fill-opacity:.62}
+  .hublab{font-family:'Fraunces',serif;font-weight:600;text-anchor:middle;pointer-events:none}
+  .hubn{font-size:11px;font-weight:700;fill:#6b7a85;text-anchor:middle;pointer-events:none;letter-spacing:.06em}
+  .pnode circle.hit{cursor:pointer}
+  .pnode{cursor:pointer}
+  .pnode circle.core{transition:r .16s,fill-opacity .16s}
+  .pnode:hover circle.core,.pnode:focus circle.core{fill-opacity:1}
+  .pnode:focus{outline:none}
+  .pnode:focus circle.halo{stroke:#27496D;stroke-width:2;stroke-dasharray:2 3;fill:none}
+  .ptip{font-size:11.5px;font-weight:600;fill:#33434f;text-anchor:middle;pointer-events:none;
+    paint-order:stroke;stroke:#F5F8F8;stroke-width:3.5px;stroke-linejoin:round}
+  .ptip2{font-size:10px;fill:#7b8994;text-anchor:middle;pointer-events:none;
+    paint-order:stroke;stroke:#F5F8F8;stroke-width:3px;stroke-linejoin:round}
+  .pnode .lbl{opacity:0;transition:opacity .15s}
+  .pnode.major .lbl{opacity:1}
+  svg.zoomed .pnode .lbl,svg.labels .pnode .lbl{opacity:1}
+  .pnode:hover .lbl,.pnode:focus .lbl{opacity:1}
+  .pnode:hover,.pnode:focus{}
+  .faded{opacity:.13;transition:opacity .2s}
+  .lit{opacity:1;transition:opacity .2s}
+
+  /* list view */
+  #list{display:none}
+  #list.on{display:block}
+  #sky-wrap.off{display:none}
+  section.cluster{padding:1.6rem 0 .2rem}
+  .chead{display:flex;align-items:baseline;gap:.7rem;flex-wrap:wrap;border-top:2px solid;padding-top:.7rem}
+  .chead h2{font-family:'Fraunces',serif;font-weight:600;font-size:1.24rem}
+  .chead .n{font-size:.73rem;font-weight:700;letter-spacing:.1em;color:var(--muted)}
+  .grid{margin-top:.9rem;display:grid;gap:.75rem;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+  .card{background:rgba(255,255,255,.72);border:1px solid var(--line);border-left:4px solid;
+    border-radius:9px;padding:.8rem .9rem .85rem;cursor:pointer;text-align:left;font:inherit;color:inherit;
+    width:100%;transition:transform .16s,box-shadow .16s}
+  .card:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(34,51,63,.1)}
+  .card .yr{font-size:.69rem;font-weight:700;letter-spacing:.1em;color:var(--muted)}
+  .card h3{font-family:'Fraunces',serif;font-weight:600;font-size:.95rem;line-height:1.25;margin:.2rem 0 .25rem}
+  .card .au{font-size:.77rem;color:#5b6b77}
+
+  /* drawer */
+  .scrim{position:fixed;inset:0;background:rgba(34,51,63,.34);opacity:0;pointer-events:none;transition:.24s;z-index:40}
+  .scrim.on{opacity:1;pointer-events:auto}
+  #drawer{position:fixed;inset:auto 0 0 0;z-index:50;background:#fff;border-top:4px solid;
+    border-radius:14px 14px 0 0;box-shadow:0 -14px 44px rgba(34,51,63,.2);transform:translateY(103%);
+    transition:transform .3s cubic-bezier(.2,.8,.25,1);max-height:80vh;overflow-y:auto;padding:1.35rem 1.35rem 1.7rem}
+  #drawer.on{transform:translateY(0)}
+  @media(min-width:860px){#drawer{inset:0 0 0 auto;width:29rem;max-height:100vh;border-radius:0;
+    border-top:none;border-left:4px solid;transform:translateX(103%)}#drawer.on{transform:translateX(0)}}
+  #drawer .tag{display:inline-block;color:#fff;font-size:.64rem;font-weight:700;letter-spacing:.14em;
+    text-transform:uppercase;padding:.23rem .58rem;border-radius:99px;margin-bottom:.65rem}
+  #drawer .tag2{margin-left:.3rem}
+  #drawer h2{font-family:'Fraunces',serif;font-weight:600;font-size:1.28rem;line-height:1.22;margin-bottom:.4rem}
+  #drawer .au{font-size:.89rem;color:#4a5a66}
+  #drawer .ven{font-size:.84rem;color:#79878f;font-style:italic;margin-bottom:.9rem}
+  #drawer .abs{font-size:.93rem;line-height:1.62;color:#33434f}
+  #drawer .acts{margin-top:1.2rem;display:flex;flex-direction:column;gap:.5rem}
+  #drawer .acts a,#drawer .acts button{font:700 .86rem 'Karla',sans-serif;text-decoration:none;
+    border-radius:7px;padding:.58rem .8rem;text-align:center;cursor:pointer;border:2px solid;background:transparent}
+  #drawer .acts .primary{color:#fff}
+  #drawer .acts .disabled{opacity:.45;cursor:default;border-style:dashed}
+  #drawer .close{position:absolute;top:.75rem;right:.9rem;border:none;background:none;font-size:1.3rem;color:#8b98a1;cursor:pointer}
+
+  /* citation map view */
+  #mapview{display:none}
+  #mapview.on{display:block}
+  #main.off{display:none}
+  .backbar{padding:1.4rem 0 .2rem}
+  .backbar button{font:700 .83rem 'Karla',sans-serif;cursor:pointer;background:none;border:none;color:#2E7E8C}
+  svg#stage{width:100%;height:auto;display:block}
+  .link-branch{fill:none;stroke:#27496D;stroke-opacity:.22;stroke-width:1.3;stroke-dasharray:4 6}
+  .hit{cursor:pointer}
+  .hit circle.halo{fill:#fff;fill-opacity:.5;transition:fill-opacity .22s}
+  .hit:hover circle.halo,.hit.active circle.halo,.hit:focus circle.halo{fill-opacity:.93}
+  .hit:focus{outline:none}
+  .nlab{font-size:12.5px;font-weight:700;fill:#22333F;text-anchor:middle;pointer-events:none}
+  .nsub{font-size:10.5px;font-weight:500;fill:#5b6b77;text-anchor:middle;pointer-events:none}
+  .flake line,.flake polygon{fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .grow{stroke-dasharray:620;stroke-dashoffset:620;animation:gr 1.5s ease-out forwards}
+  @keyframes gr{to{stroke-dashoffset:0}}
+  @media(prefers-reduced-motion:reduce){.grow{animation:none;stroke-dashoffset:0}}
+  footer{padding:1.8rem 0 3rem;font-size:.77rem;color:#7b8994;line-height:1.6}
+</style>
+</head>
+<body>
+
+<div id="main">
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Research constellation</div>
+    <h1>The work of <em>Laura&nbsp;P.&nbsp;Schaposnik</em></h1>
+    <p class="sub">Nine areas, each a star of papers around its hub. Papers that belong to two areas sit between them and hold both together. Tap any disc twice for the paper; tap a hub to isolate its area.</p>
+    <div class="bar">
+      <button id="btn-sky" class="on" onclick="setView('sky')">Constellation</button>
+      <button id="btn-list" onclick="setView('list')">List</button>
+      <button onclick="resetView()">Reset view</button>
+      <button id="btn-lab" onclick="toggleLabels()">Show all labels</button>
+    </div>
+    <div class="legend" id="legend"></div>
+    <div class="hint" id="hint"></div>
+  </header>
+</div>
+
+<div class="wrap" id="sky-wrap">
+  <div id="frame">
+    <svg id="sky" viewBox="0 0 1760 1280" role="application" aria-label="Research constellation"></svg>
+    <div class="zoom">
+      <button onclick="zoomBy(1.25)" aria-label="Zoom in">+</button>
+      <button onclick="zoomBy(0.8)" aria-label="Zoom out">−</button>
+    </div>
+  </div>
+</div>
+
+<div class="wrap" id="list"></div>
+<div class="wrap"><footer id="foot"></footer></div>
+</div>
+
+<div id="mapview">
+  <div class="wrap">
+    <div class="backbar"><button onclick="showMain()">← Back to the constellation</button></div>
+    <div class="eyebrow">Citation map</div>
+    <h1 style="font-size:clamp(1.35rem,4vw,2.1rem)" id="m-title"></h1>
+    <div style="margin-top:.45rem;font-size:.9rem;color:#4c5b66" id="m-meta"></div>
+    <p class="sub" style="font-size:.94rem" id="m-hl"></p>
+    <div class="legend">
+      <span class="chip"><span class="dot" style="background:#27496D"></span>The paper</span>
+      <span class="chip"><span class="dot" style="background:#2E7E8C"></span>Cellular automata</span>
+      <span class="chip"><span class="dot" style="background:#8474A1"></span>Phase field</span>
+      <span class="chip"><span class="dot" style="background:#D98E4A"></span>Reviews</span>
+      <span class="chip"><span class="dot" style="background:#5E9C76"></span>Applications</span>
+    </div>
+    <svg id="stage" viewBox="0 0 1100 880"></svg>
+    <footer>Tap a snowflake for what that paper did with the result.</footer>
+  </div>
+</div>
+
+<div class="scrim" id="scrim" onclick="closeDrawer()"></div>
+<aside id="drawer">
+  <button class="close" onclick="closeDrawer()" aria-label="Close">✕</button>
+  <div><span class="tag" id="d-tag"></span><span class="tag tag2" id="d-tag2"></span></div>
+  <h2 id="d-title"></h2>
+  <div class="au" id="d-au"></div>
+  <div class="ven" id="d-ven"></div>
+  <div class="abs" id="d-abs"></div>
+  <div class="acts" id="d-acts"></div>
+</aside>
+
+<script>
+const DATA={"clusters": [["spectral", "Spectral data & Hitchin systems", "#2E7E8C", "Understanding G-Higgs bundles through the spectral data of the Hitchin fibration — the thread running from the DPhil to the present."], ["branes", "Branes, real structures & moduli", "#27496D", "Subspaces of the moduli space cut out by involutions and group actions: (A,B,A) and (B,B,B) branes, real forms, automorphisms."], ["opers", "Opers, hyperpolygons & quivers", "#8474A1", "Generalizations of opers, and the quiver-variety side: hyperpolygons as rigid geometric figures carrying Higgs data."], ["physics", "Geometry & physics", "#5B6BB5", "Where the moduli space meets string theory: T-branes, wild Hitchin systems, and F-theory compactifications."], ["networks", "Networks, epidemics & social dynamics", "#5E9C76", "Percolation, contagion and influence on graphs — from gossip and trust to multi-pathogen epidemics."], ["patterns", "Pattern formation & living systems", "#D98E4A", "Growth rules and symmetry in nature: snow crystals, viral capsids, slime mould networks, herd cohesion."], ["data", "Data, algorithms & forecasting", "#B5566E", "Optimization and prediction: carbon-aware routing, housing forecasts, colour–emotion learning."], ["writing", "Writing, community & books", "#7A8A94", "Expository notes, lecture courses, editorial volumes, and children's books about mathematics."], ["books", "Children's books", "#C9922E", "Mathematics and science for young readers — Ene the mouse, and the life of Sonia Kovalevsky."]], "papers": [{"t": "Spectral data for G-Higgs bundles", "a": "Laura P. Schaposnik", "v": "Oxford University DPhil", "y": 2013, "c": "spectral", "link": "https://arxiv.org/abs/1301.1981", "note": "The thesis: a geometric method for understanding principal G-Higgs bundles through spectral data, for G a real form of a complex Lie group.", "map": false, "c2": null, "cit": 44, "short": "Spectral data (thesis)", "wth": ""}, {"t": "Monodromy of the SL(2) Hitchin fibration", "a": "Laura P. Schaposnik", "v": "International Journal of Mathematics", "y": 2013, "c": "spectral", "link": "https://arxiv.org/abs/1111.2550", "note": "Computes the monodromy action on mod 2 cohomology for SL(2,C) Hitchin systems, with an application to semistable SL(2,R)-Higgs bundles.", "map": false, "c2": null, "cit": 22, "short": "SL(2) monodromy", "wth": ""}, {"t": "Nonabelianization of Higgs bundles", "a": "Nigel Hitchin & Laura P. Schaposnik", "v": "Journal of Differential Geometry", "y": 2014, "c": "spectral", "link": "https://arxiv.org/abs/1307.0960", "note": "Restricting the integrable system to representations into certain noncompact real forms, the fibres become moduli of rank bundles on a spectral curve rather than abelian varieties.", "map": false, "c2": null, "cit": 33, "short": "Nonabelianization", "wth": "w/ Hitchin"}, {"t": "Spectral data for U(m,m)-Higgs bundles", "a": "Laura P. Schaposnik", "v": "International Mathematics Research Notices", "y": 2015, "c": "spectral", "link": "https://arxiv.org/abs/1307.4419", "note": "Spectral data for U(m,m)-Higgs bundles, with a new interpretation of the topological invariants and a geometric description of the moduli space.", "map": false, "c2": null, "cit": 26, "short": "U(m,m) spectral data", "wth": ""}, {"t": "Higgs bundles and exceptional isogenies", "a": "Steven Bradlow & Laura P. Schaposnik", "v": "Research in the Mathematical Sciences", "y": 2016, "c": "spectral", "link": "https://arxiv.org/abs/1508.02650", "note": "Isogenies onto SO(4,C) and SO(6,C) yield, via fibre products of spectral curves, desingularizations of singular orthogonal spectral curves — and a new take on Recillas' trigonal construction.", "map": false, "c2": null, "cit": 11, "short": "Exceptional isogenies", "wth": "w/ Bradlow"}, {"t": "Monodromy of rank 2 twisted Hitchin systems and real character varieties", "a": "David Baraglia & Laura P. Schaposnik", "v": "Transactions of the AMS", "y": 2017, "c": "spectral", "link": "https://arxiv.org/abs/1506.00372", "note": "A new approach to the monodromy of the Hitchin map, determining component counts for GL(2,R), SL(2,R), PGL(2,R), PSL(2,R) and maximal Sp(4,R) character varieties.", "map": false, "c2": null, "cit": 24, "short": "Rank 2 monodromy", "wth": "w/ Baraglia"}, {"t": "A geometric approach to orthogonal Higgs bundles", "a": "Laura P. Schaposnik", "v": "European Journal of Mathematics", "y": 2018, "c": "spectral", "link": "https://arxiv.org/abs/1608.00300", "note": "Topological invariants of SO(m,m+1)-Higgs bundles via KO-theory and the Langlands correspondence, giving a natural grading of the moduli space.", "map": false, "c2": null, "cit": 7, "short": "Orthogonal, geometric", "wth": ""}, {"t": "Cayley and Langlands type correspondences for orthogonal Higgs bundles", "a": "David Baraglia & Laura P. Schaposnik", "v": "Transactions of the AMS", "y": 2019, "c": "spectral", "link": "https://arxiv.org/abs/1708.08828", "note": "A geometric description of real orthogonal and symplectic Higgs bundles of any signature in regular Hitchin fibres, completing the abelianization of quasi-split real slices.", "map": false, "c2": null, "cit": 25, "short": "Cayley & Langlands", "wth": "w/ Baraglia"}, {"t": "Orthogonal Higgs bundles with singular spectral curves", "a": "Steven Bradlow, Lucas Branco & Laura P. Schaposnik", "v": "Communications in Analysis and Geometry", "y": 2020, "c": "spectral", "link": "https://arxiv.org/abs/1909.03994", "note": "Non-compact real forms of SO(4,C) and the isogenous SL(2,C)×SL(2,C): non-regular fibres and interesting examples of non-abelian spectral data.", "map": false, "c2": null, "cit": 7, "short": "Singular spectral curves", "wth": "w/ Bradlow & Branco"}, {"t": "Triality for homogeneous polynomials", "a": "Laura P. Schaposnik & Sebastian Schulz", "v": "SIGMA", "y": 2021, "c": "spectral", "link": "https://www.emis.de/journals/SIGMA/2021/079/", "note": "Through the triality of SO(8,C), three interrelated homogeneous bases of the ring of invariant polynomials — three Hitchin fibrations and the automorphisms relating them.", "map": false, "c2": "opers", "cit": 8, "short": "Triality", "wth": "w/ Schulz"}, {"t": "Higgs bundles and (A,B,A)-branes", "a": "David Baraglia & Laura P. Schaposnik", "v": "Communications in Mathematical Physics", "y": 2014, "c": "branes", "link": "https://arxiv.org/abs/1305.4638", "note": "Anti-holomorphic involutions on a compact Riemann surface produce families of (A,B,A)-branes in the moduli space of G_C-Higgs bundles, with the structure of real integrable systems.", "map": false, "c2": null, "cit": 66, "short": "(A,B,A)-branes", "wth": "w/ Baraglia"}, {"t": "Real structures on moduli spaces of Higgs bundles", "a": "David Baraglia & Laura P. Schaposnik", "v": "Advances in Theoretical and Mathematical Physics", "y": 2016, "c": "branes", "link": "https://arxiv.org/abs/1309.1195", "note": "Triples of commuting real structures whose fixed loci are branes of type (B,A,A), (A,B,A) and (A,A,B), with invariants described via KO, KR and equivariant K-theory.", "map": false, "c2": null, "cit": 72, "short": "Real structures", "wth": "w/ Baraglia"}, {"t": "Automorphisms of C* moduli spaces associated to a Riemann surface", "a": "David Baraglia, Indranil Biswas & Laura P. Schaposnik", "v": "SIGMA", "y": 2016, "c": "branes", "link": "https://www.emis.de/journals/SIGMA/2016/007/", "note": "The automorphism groups of the Dolbeault, de Rham and Betti moduli spaces for the multiplicative group C*.", "map": false, "c2": null, "cit": 3, "short": "C* automorphisms", "wth": "w/ Baraglia & Biswas"}, {"t": "Branes through finite group actions", "a": "Sebastian Heller & Laura P. Schaposnik", "v": "Journal of Geometry and Physics", "y": 2018, "c": "branes", "link": "https://arxiv.org/abs/1611.00391", "note": "Mid-dimensional (A,B,A) and (B,B,B)-branes arising from finite group actions on compact Riemann surfaces, described via Higgs bundles and Hitchin fibrations.", "map": false, "c2": null, "cit": 31, "short": "Finite group actions", "wth": "w/ Heller"}, {"t": "Brauer group of moduli of Higgs bundles and connections", "a": "David Baraglia, Indranil Biswas & Laura P. Schaposnik", "v": "A Festschrift in Honour of Nigel Hitchin (OUP)", "y": 2018, "c": "branes", "link": "https://arxiv.org/abs/1609.00454", "note": "Computes the Brauer group of the smooth locus of the moduli spaces of Higgs bundles and of connections.", "map": false, "c2": null, "cit": 2, "short": "Brauer group", "wth": "w/ Baraglia & Biswas"}, {"t": "Branes and moduli spaces of Higgs bundles on smooth projective varieties", "a": "Indranil Biswas, Sebastian Heller & Laura P. Schaposnik", "v": "Research in the Mathematical Sciences", "y": 2021, "c": "branes", "link": "https://link.springer.com/article/10.1007/s40687-021-00286-z", "note": "The restriction map from Higgs bundles on a projective variety to those on a closed curve, and its interplay with the various types of branes.", "map": false, "c2": null, "cit": 2, "short": "Projective varieties", "wth": "w/ Biswas & Heller"}, {"t": "Generalized B-opers", "a": "Indranil Biswas, Laura P. Schaposnik & Mengxue Yang", "v": "SIGMA", "y": 2020, "c": "opers", "link": "https://arxiv.org/abs/1911.11842", "note": "Opers whose underlying bundle carries a bilinear form compatible with both the filtration and the connection — related to jet bundles and geometric structures on a Riemann surface.", "map": false, "c2": null, "cit": 10, "short": "B-opers", "wth": "w/ Biswas & Yang"}, {"t": "Moduli spaces of generalized hyperpolygons", "a": "Steven Rayan & Laura P. Schaposnik", "v": "The Quarterly Journal of Mathematics", "y": 2021, "c": "opers", "link": "https://arxiv.org/abs/2001.06911", "note": "Representations of comet-shaped quivers identified with pairs of polygons, embedding the Nakajima quiver variety into a Hitchin system on a punctured genus-g surface; a completely integrable system of Gelfand–Tsetlin type.", "map": false, "c2": "spectral", "cit": 15, "short": "Hyperpolygons", "wth": "w/ Rayan"}, {"t": "On the generalized SO(2n,C)-opers", "a": "Indranil Biswas, Laura P. Schaposnik & Mengxue Yang", "v": "Annals of Global Analysis and Geometry", "y": 2021, "c": "opers", "link": "https://link.springer.com/article/10.1007/s10455-021-09783-4", "note": "Extends generalized B-opers to the even orthogonal groups, showing their close relationship with geometric structures on a Riemann surface.", "map": false, "c2": null, "cit": 3, "short": "SO(2n,C)-opers", "wth": "w/ Biswas & Yang"}, {"t": "What is… a hyperpolygon?", "a": "Steven Rayan & Laura P. Schaposnik", "v": "Notices of the AMS", "y": 2021, "c": "opers", "link": "https://www.ams.org/notices/202101/rnoti-p94.pdf", "note": "A short introduction to hyperpolygons for a general mathematical audience.", "map": false, "c2": null, "cit": null, "short": "What is… hyperpolygon", "wth": "w/ Rayan"}, {"t": "Generalized hyperpolygons and applications", "a": "Laura P. Schaposnik", "v": "ZAG volume", "y": 2022, "c": "opers", "link": "https://lauraschaposnik.com/assets/pdf/ZAG2022_Schaposnik.pdf", "note": "An overview of generalized hyperpolygons and their relation to Higgs bundles and F-theory.", "map": false, "c2": "physics", "cit": null, "short": "Hyperpolygons, applied", "wth": ""}, {"t": "Real slices of SL(r,C)-opers", "a": "Indranil Biswas, Sebastian Heller & Laura P. Schaposnik", "v": "SIGMA", "y": 2023, "c": "opers", "link": "https://arxiv.org/abs/2212.01695", "note": "Real structures acting on SL(r,C)-opers, with the fixed loci parametrized naturally via differentials on the Riemann surface.", "map": false, "c2": "branes", "cit": 2, "short": "Real slices of opers", "wth": "w/ Biswas & Heller"}, {"t": "T-branes at the limits of geometry", "a": "Lara B. Anderson, Jonathan Heckman, Sheldon Katz & Laura P. Schaposnik", "v": "Journal of High Energy Physics", "y": 2017, "c": "physics", "link": "https://arxiv.org/abs/1702.06137", "note": "Singular limits of 6D F-theory compactifications as Hitchin-like systems with irregular poles — a geometric mechanism to engineer wild Higgs bundles.", "map": false, "c2": "spectral", "cit": 59, "short": "T-branes", "wth": "w/ Anderson +2"}, {"t": "Singular geometry and Higgs bundles in string theory", "a": "Lara B. Anderson, Mboyo Esole, Laura Fredrickson & Laura P. Schaposnik", "v": "SIGMA", "y": 2018, "c": "physics", "link": "https://arxiv.org/abs/1710.08453", "note": "A curated survey of advances and open problems where gauge fields and matter representations are described by intersecting branes.", "map": false, "c2": "branes", "cit": 42, "short": "Singular geometry", "wth": "w/ Anderson +2"}, {"t": "Modeling epidemics on d-cliqued graphs", "a": "Laura P. Schaposnik & Anlin Zhang", "v": "Letters in Biomathematics", "y": 2018, "c": "networks", "link": "https://arxiv.org/abs/1802.00102", "note": "d-cliqued tree graphs as a more realistic model for outbreaks originating in a family or classroom, with the notion of a safe zone.", "map": false, "c2": null, "cit": 3, "short": "d-cliqued graphs", "wth": "w/ Zhang"}, {"t": "A trust model for spreading gossip in social networks", "a": "Rinni Bhansali & Laura P. Schaposnik", "v": "Proceedings of the Royal Society A", "y": 2020, "c": "networks", "link": "https://arxiv.org/abs/1905.11204", "note": "T-Bootstrap Percolation: gossip propagates only when transmitted by a threshold of vertices carrying *different* labels — applied to rumour spread, fake news and marketing.", "map": false, "c2": null, "cit": 18, "short": "Gossip & trust", "wth": "w/ Bhansali"}, {"t": "Minimal percolating sets for mutating infectious diseases", "a": "Yuyuan Luo & Laura P. Schaposnik", "v": "Physical Review Research", "y": 2020, "c": "networks", "link": "https://arxiv.org/abs/1911.01988", "note": "F(t)-bootstrap percolation, where the infection threshold itself varies in time, with a polynomial-time algorithm for smallest minimal percolating sets on finite trees.", "map": false, "c2": null, "cit": 9, "short": "Percolating sets", "wth": "w/ Luo"}, {"t": "A modified age-structured SIR model for COVID-19 type viruses", "a": "Vishaal Ram & Laura P. Schaposnik", "v": "Nature Scientific Reports", "y": 2021, "c": "networks", "link": "https://arxiv.org/abs/2009.12219", "note": "Population age-distribution significantly affects spread and mortality; the model assesses age-targeted contact measures and vaccine distributions.", "map": false, "c2": null, "cit": 136, "short": "Age-structured SIR", "wth": "w/ Ram"}, {"t": "Correlations between COVID-19 and dengue", "a": "Paula Bergero, Laura P. Schaposnik & Grace Wang", "v": "Nature Scientific Reports", "y": 2023, "c": "networks", "link": "https://arxiv.org/abs/2207.13561", "note": "A neural-network correlation model showing the two diseases follow very similar trends, extended to an LSTM that estimates dengue from COVID data where dengue data is scarce.", "map": false, "c2": "data", "cit": 3, "short": "COVID & dengue", "wth": "w/ Bergero & Wang"}, {"t": "The Social Sphere Model: heuristic influence prediction in evolving networks", "a": "Laura P. Schaposnik, Marina Lin & Raina Wu", "v": "preprint", "y": 2024, "c": "networks", "link": "https://arxiv.org/abs/2402.03522", "note": "Combines path-based link prediction with heuristic influence maximization to identify future vital nodes in weighted networks, at lower computational cost.", "map": false, "c2": "data", "cit": 1, "short": "Social Sphere Model", "wth": "w/ Lin & Wu"}, {"t": "Spatial super-infection and co-infection dynamics in networks", "a": "Alyssa Yu & Laura P. Schaposnik", "v": "preprint", "y": 2025, "c": "networks", "link": "https://arxiv.org/abs/2508.15740", "note": "Two Multiplex Bi-Virus Reaction–Diffusion models on metapopulation networks, with conditions for Turing and Turing–Hopf instabilities and evidence of epidemic pattern formation.", "map": false, "c2": null, "cit": 4, "short": "Super-infection", "wth": "w/ Yu"}, {"t": "Influence prediction in collaboration networks: an empirical study on arXiv", "a": "Laura P. Schaposnik, Marina Lin & Raina Wu", "v": "Physica A", "y": 2026, "c": "networks", "link": "https://arxiv.org/abs/2508.13029", "note": "The Social Sphere Model applied to the arXiv gr-qc collaboration network: it identifies latent influencers — nodes not initially central but later influential.", "map": false, "c2": null, "cit": 1, "short": "Influence on arXiv", "wth": "w/ Lin & Wu"}, {"t": "Dynamics of infection spread and hotspot growth in bi-pathogen networks", "a": "Alyssa Yu & Laura P. Schaposnik", "v": "Physics Open (Elsevier)", "y": 2026, "c": "networks", "link": "https://arxiv.org/abs/2509.03374", "note": "How virulence, diffusion and cross-diffusion drive hotspot formation and long-term prevalence in super-infection and co-infection models.", "map": false, "c2": null, "cit": 0, "short": "Hotspot growth", "wth": "w/ Yu"}, {"t": "Interface control and snow crystal growth", "a": "Jessica Li & Laura P. Schaposnik", "v": "Physical Review E 93, 023302", "y": 2016, "c": "patterns", "link": "https://arxiv.org/abs/1505.02042", "note": "A new geometric rule incorporating interface control into Reiter's local model, via growth latency and growth direction — one model producing both dendrite and plate forms.", "map": true, "c2": "data", "cit": 9, "short": "Snow crystals", "wth": "w/ Li"}, {"t": "On the geometry of regular icosahedral capsids containing disymmetrons", "a": "Kai-Siang Ang & Laura P. Schaposnik", "v": "Journal of Structural Biology", "y": 2017, "c": "patterns", "link": "https://par.nsf.gov/servlets/purl/10118179", "note": "A geometric classification of large icosahedral viruses built from regular penta-, tri- and disymmetrons, with formulas for symmetron sizes and parity restrictions on h, k, T.", "map": false, "c2": "spectral", "cit": 4, "short": "Icosahedral capsids", "wth": "w/ Ang"}, {"t": "The phone walkers: human dependence on inactive mobile devices", "a": "Laura P. Schaposnik & James Unwin", "v": "Behaviour", "y": 2018, "c": "patterns", "link": "https://arxiv.org/abs/1804.08753", "note": "Census data on casual social groups reveals a clear pattern of phones carried in hand but unused — and a tendency to stop when joining members of the opposite sex.", "map": false, "c2": null, "cit": 14, "short": "Phone walkers", "wth": "w/ Unwin"}, {"t": "Cell fusion through slime mould network dynamics", "a": "Sheryl Hsu & Laura P. Schaposnik", "v": "Journal of the Royal Society Interface", "y": 2022, "c": "patterns", "link": "https://arxiv.org/abs/2106.11371", "note": "Extends the CELL unicellular automaton to multiple Physarum cells, studying mobility, merge speed and cytoplasm mixing between organisms.", "map": false, "c2": null, "cit": 10, "short": "Slime mould fusion", "wth": "w/ Hsu"}, {"t": "The power of many: a Physarum swarm Steiner tree algorithm", "a": "Sheryl Hsu, Fidel I. Schaposnik Massolo & Laura P. Schaposnik", "v": "Nature Scientific Reports", "y": 2022, "c": "patterns", "link": "https://arxiv.org/abs/2110.08233", "note": "A swarm of fusing Physarum organisms that share intelligence to solve the Euclidean Steiner tree problem, including with obstacle avoidance.", "map": false, "c2": "data", "cit": 12, "short": "Physarum swarm", "wth": "w/ Hsu & Massolo"}, {"t": "Modeling social cohesion with coupled oscillators", "a": "Laura P. Schaposnik, Sheryl Hsu & Robin I. M. Dunbar", "v": "Chaos, Solitons and Fractals", "y": 2025, "c": "patterns", "link": "https://arxiv.org/abs/2212.07505", "note": "A group as semicoupled oscillators on a disc: differing rates of gut fill decouple members until the herd fragments, while social bonding acts as a stickiness that reduces fragmentation.", "map": false, "c2": "networks", "cit": 8, "short": "Coupled oscillators", "wth": "w/ Hsu & Dunbar"}, {"t": "Extrapolating continuous colour emotions through deep learning", "a": "Vishaal Ram, Laura P. Schaposnik, Nikos Konstantinou, Eliz Volkan, Marietta Papadatou-Pastou, Banu Manav, Domicele Jonauskaite & Christine Mohr", "v": "Physical Review Research", "y": 2020, "c": "data", "link": "https://arxiv.org/abs/2009.04519", "note": "An RGB extrapolation of emotions associated with colour, revealing gender and age trends in brightness association, and which colours are weakly or confusably associated.", "map": false, "c2": "patterns", "cit": 21, "short": "Colour emotions", "wth": "w/ Ram +6"}, {"t": "Housing forecasts via stock market indicators", "a": "Varun Mittal & Laura P. Schaposnik", "v": "Heliyon", "y": 2023, "c": "data", "link": "https://arxiv.org/abs/2210.10146", "note": "Reinterpreting housing data as candlesticks lets MACD, RSI and candlestick patterns forecast the market; bearish indicators prove far more statistically significant than bullish ones.", "map": false, "c2": null, "cit": 6, "short": "Zillow & the market", "wth": "w/ Mittal"}, {"t": "CAACS: a carbon-aware ant colony system", "a": "Marina Lin & Laura P. Schaposnik", "v": "Nature Scientific Reports", "y": 2025, "c": "data", "link": "https://arxiv.org/abs/2407.09404", "note": "Bi-objective ant colony optimization for the Generalized Traveling Salesman Problem, balancing route efficiency against carbon emissions.", "map": false, "c2": "networks", "cit": 3, "short": "Carbon-aware ants", "wth": "w/ Lin"}, {"t": "Higgs bundles and applications", "a": "Laura P. Schaposnik", "v": "Oberwolfach Reports", "y": 2015, "c": "writing", "link": "https://arxiv.org/abs/1603.06691", "note": "An overview of how a few conjectures and theorems of the author and collaborators fit together.", "map": false, "c2": null, "cit": 3, "short": "Higgs, applications", "wth": ""}, {"t": "Bridges between worlds, from past to present", "a": "Laura P. Schaposnik", "v": "AIMatters", "y": 2016, "c": "writing", "link": "https://aimath.org", "note": "A piece for the AIM newsletter on connections between mathematical worlds, past and present.", "map": false, "c2": null, "cit": null, "short": "Bridges between worlds", "wth": ""}, {"t": "An introduction to spectral data for Higgs bundles", "a": "Laura P. Schaposnik", "v": "Lecture Notes Series, NUS", "y": 2017, "c": "writing", "link": "https://arxiv.org/abs/1408.0333", "note": "Mini-course notes from the Summer School on the moduli space of Higgs bundles, National University of Singapore.", "map": false, "c2": "spectral", "cit": 13, "short": "Spectral data, intro", "wth": ""}, {"t": "Geometry and Physics of Hitchin Systems", "a": "Lara B. Anderson & Laura P. Schaposnik", "v": "SIGMA special volume", "y": 2019, "c": "writing", "link": "https://www.emis.de/journals/SIGMA/hitchin-systems.html", "note": "The volume based on minicourses from the Geometry and Physics of Higgs Bundles workshop series, organized in cooperation with the AWM.", "map": false, "c2": null, "cit": null, "short": "Hitchin systems (ed.)", "wth": "w/ Anderson"}, {"t": "Geometry and Physics of Higgs Bundles", "a": "Lara B. Anderson, Tamás Hausel, Rafe Mazzeo & Laura P. Schaposnik", "v": "Oberwolfach Reports", "y": 2019, "c": "writing", "link": "https://www.ems-ph.org/journals/show_abstract.php?issn=1660-8933&vol=16&iss=2&rank=9", "note": "The report from the Oberwolfach workshop of the same name, gathering the talks and problem sessions.", "map": false, "c2": null, "cit": 2, "short": "Oberwolfach report", "wth": "w/ Anderson +2"}, {"t": "Higgs bundles — recent applications", "a": "Laura P. Schaposnik", "v": "Notices of the AMS", "y": 2020, "c": "writing", "link": "https://arxiv.org/abs/1909.10543", "note": "An introduction to Higgs bundles and the Hitchin fibration, focusing on the integrable system structure carried by their moduli spaces.", "map": false, "c2": "spectral", "cit": 17, "short": "Recent applications", "wth": ""}, {"t": "Higgs bundles without geometry", "a": "Steven Rayan & Laura P. Schaposnik", "v": "Snapshots of Modern Mathematics (MFO)", "y": 2020, "c": "writing", "link": "https://arxiv.org/abs/1910.06099", "note": "An informal stroll through aspects of linear algebra that anticipate the deeper structure of the moduli space — written for the interested public.", "map": false, "c2": "spectral", "cit": 1, "short": "Without geometry", "wth": "w/ Rayan"}, {"t": "Working from home: four months and still counting", "a": "Alessandra Frabetti, Vladimir Salnikov & Laura P. Schaposnik", "v": "EMS Newsletter", "y": 2020, "c": "writing", "link": "https://hal.archives-ouvertes.fr/hal-03033294/document", "note": "A reflection, written four months into the pandemic, on what remote working was doing to mathematical life.", "map": false, "c2": null, "cit": null, "short": "Working from home", "wth": "w/ Frabetti & Salnikov"}, {"t": "Advanced topics in gauge theory: mathematics and physics of Higgs bundles", "a": "Laura P. Schaposnik", "v": "Park City Mathematics Series", "y": 2021, "c": "writing", "link": "https://arxiv.org/abs/1907.09800", "note": "Four lectures from the PCMI Graduate Summer School: Higgs bundles, the Hitchin fibration, branes, and correspondences between them.", "map": false, "c2": "branes", "cit": 3, "short": "PCMI lectures", "wth": ""}, {"t": "Writing for Mathematics", "a": "Laura P. Schaposnik", "v": "ISBN 979-8-7814575-9-5", "y": 2022, "c": "writing", "link": "https://www.amazon.com/gp/product/B09P732LDG", "note": "Lecture notes for a class on how to write about mathematics.", "map": false, "c2": null, "cit": null, "short": "Writing for Maths", "wth": ""}, {"t": "Focus on a scientist: Rafe Mazzeo", "a": "Laura Fredrickson & Laura P. Schaposnik", "v": "Emissary (MSRI)", "y": 2022, "c": "writing", "link": "https://www.msri.org/system/cms/files/1263/files/original/Emissary-2022-Fall-Web.pdf", "note": "A profile of Rafe Mazzeo for the MSRI Emissary, written during the gauge theory semester.", "map": false, "c2": null, "cit": null, "short": "Focus: Rafe Mazzeo", "wth": "w/ Fredrickson"}, {"t": "How AI is shaping everyday research", "a": "Lara B. Anderson, Steven Bradlow, Yang-Hui He, Laura P. Schaposnik & Max J. Telford", "v": "Notices of the AMS", "y": 2025, "c": "writing", "link": "https://www.ams.org/notices", "note": "Opening with Roald Dahl's Great Automatic Grammatizator, an examination of what machine assistance is doing to research practice.", "map": false, "c2": null, "cit": null, "short": "AI & research", "wth": "w/ Anderson +3"}, {"t": "Entendiendo la P y el intervalo de confianza del 95%", "a": "Paula Caporal, Laura P. Schaposnik & Daniela Bozzacchi", "v": "Editorial Médica Panamericana (PROTIPED)", "y": 2021, "c": "writing", "link": "https://www.medicapanamericana.com/mx", "note": "A chapter explaining p-values and 95% confidence intervals for a clinical audience.", "map": false, "c2": null, "cit": null, "short": "La P y el IC 95%", "wth": "w/ Caporal & Bozzacchi"}, {"t": "An introduction to complex Lagrangians, quantization, and integrable systems", "a": "Olivia Dumitrescu, Motohico Mulase, Justin Sawon & Laura P. Schaposnik", "v": "Advances on Complex Lagrangians, Integrable Systems and Quantization (World Scientific)", "y": 2026, "c": "writing", "link": "https://scholar.google.com/scholar?q=An+introduction+to+complex+lagrangians+quantization+and+integrable+systems", "note": "An introductory chapter for the World Scientific volume on complex Lagrangians, integrable systems and quantization.", "map": false, "c2": "spectral", "cit": 3, "short": "Complex Lagrangians", "wth": "w/ Dumitrescu +2"}, {"t": "Advances on Complex Lagrangians, Integrable Systems and Quantization", "a": "Edited with Motohico Mulase, Justin Sawon & Olivia Dumitrescu", "v": "World Scientific", "y": 2026, "c": "writing", "link": "https://scholar.google.com/scholar?q=Advances+on+Complex+Lagrangians+Integrable+Systems+and+Quantization", "note": "An edited volume gathering lectures on complex Lagrangians, integrable systems and quantization.", "map": false, "c2": null, "cit": null, "short": "Advances (ed.)", "wth": "w/ Mulase +2"}, {"t": "Stabilizing role of uninformed participants in collective decision making", "a": "Lorenzo Colombo, M. E. E. Irazu, Laura P. Schaposnik & James Unwin", "v": "preprint", "y": 2026, "c": "patterns", "link": "https://arxiv.org/abs/2606.11259", "note": "How participants without information can stabilize, rather than degrade, a group's collective decision.", "map": false, "c2": "networks", "cit": 0, "short": "Uninformed participants", "wth": "w/ Colombo +2"}, {"t": "All together now: activity synchrony and social cohesion in group-living animals", "a": "Laura P. Schaposnik, Sheryl Hsu & Robin I. M. Dunbar", "v": "preprint", "y": 2025, "c": "patterns", "link": "https://scholar.google.com/scholar?q=All+Together+Now+Activity+Synchrony+and+Social+Cohesion+in+Group-Living+Animals", "note": "A companion to the coupled-oscillator work, on how synchrony of activity underwrites cohesion in group-living animals.", "map": false, "c2": "networks", "cit": 1, "short": "Activity synchrony", "wth": "w/ Hsu & Dunbar"}, {"t": "Ene and the Magic Boxes: an odyssey through the world of artisans", "a": "Laura P. Schaposnik, illustrated by Cecilia La Rosa", "v": "Children's book", "y": 2021, "c": "books", "c2": null, "link": "https://www.amazon.com/Laura-P-Schaposnik/e/B099PYGQ3D", "note": "Ene the mouse travels through the world of artisans.", "map": false, "cit": null, "short": "Ene: Magic Boxes", "wth": ""}, {"t": "Ene and the Magic Tree: a mathematical adventure", "a": "Laura P. Schaposnik, illustrated by Cecilia La Rosa", "v": "Children's book", "y": 2021, "c": "books", "c2": null, "link": "https://www.amazon.com/Laura-P-Schaposnik/e/B099PYGQ3D", "note": "A little mouse called Ene explores a magic tree in a mathematical adventure.", "map": false, "cit": null, "short": "Ene: Magic Tree", "wth": ""}, {"t": "Ene and the Magic Steps: a scientific adventure", "a": "Laura P. Schaposnik, illustrated by Cecilia La Rosa", "v": "Children's book", "y": 2023, "c": "books", "c2": null, "link": "https://www.amazon.com/Laura-P-Schaposnik/e/B099PYGQ3D", "note": "A children's book about scientific vocabulary.", "map": false, "cit": null, "short": "Ene: Magic Steps", "wth": ""}, {"t": "Roku Raccoon's difficult day", "a": "Laura P. Schaposnik, illustrated by Martina Peškar-Rusznák", "v": "Children's book", "y": 2023, "c": "books", "c2": null, "link": "https://www.amazon.com/Laura-P-Schaposnik/e/B099PYGQ3D", "note": "A picture book about a raccoon having a hard day.", "map": false, "cit": null, "short": "Roku Raccoon", "wth": ""}, {"t": "The potential to inspire: Sonia Kovalevsky's journey to become a scientist", "a": "Laura P. Schaposnik", "v": "Children's book", "y": 2023, "c": "books", "c2": null, "link": "https://www.amazon.com/Laura-P-Schaposnik/e/B099PYGQ3D", "note": "The story of the first woman to receive a doctorate in modern Europe.", "map": false, "cit": null, "short": "Sonia Kovalevsky", "wth": ""}, {"t": "Puedo Leer con Paco: Libro de actividades", "a": "Laura P. Schaposnik", "v": "Children's book", "y": 2024, "c": "books", "c2": null, "link": "https://www.amazon.com/Laura-P-Schaposnik/e/B099PYGQ3D", "note": "An early Spanish reader for children. The activity book for the series — puzzles and exercises to accompany Paco's adventures.", "map": false, "cit": null, "short": "Paco: Libro de actividades", "wth": ""}, {"t": "Puedo Leer con Paco: La Tormenta", "a": "Laura P. Schaposnik", "v": "Children's book", "y": 2024, "c": "books", "c2": null, "link": "https://www.amazon.com/Laura-P-Schaposnik/e/B099PYGQ3D", "note": "An early Spanish reader for children. Paco meets a storm.", "map": false, "cit": null, "short": "Paco: La Tormenta", "wth": ""}, {"t": "Puedo Leer con Paco: La Nieve", "a": "Laura P. Schaposnik", "v": "Children's book", "y": 2024, "c": "books", "c2": null, "link": "https://www.amazon.com/Laura-P-Schaposnik/e/B099PYGQ3D", "note": "An early Spanish reader for children. Paco discovers snow.", "map": false, "cit": null, "short": "Paco: La Nieve", "wth": ""}, {"t": "Puedo Leer con Paco: El Auto", "a": "Laura P. Schaposnik", "v": "Children's book", "y": 2024, "c": "books", "c2": null, "link": "https://www.amazon.com/Laura-P-Schaposnik/e/B099PYGQ3D", "note": "An early Spanish reader for children. Paco and the car.", "map": false, "cit": null, "short": "Paco: El Auto", "wth": ""}, {"t": "Puedo Leer con Paco: La Luna", "a": "Laura P. Schaposnik", "v": "Children's book", "y": 2024, "c": "books", "c2": null, "link": "https://www.amazon.com/Laura-P-Schaposnik/e/B099PYGQ3D", "note": "An early Spanish reader for children. Paco looks at the moon.", "map": false, "cit": null, "short": "Paco: La Luna", "wth": ""}, {"t": "Puedo Leer con Paco: El Museo", "a": "Laura P. Schaposnik", "v": "Children's book", "y": 2024, "c": "books", "c2": null, "link": "https://www.amazon.com/Laura-P-Schaposnik/e/B099PYGQ3D", "note": "An early Spanish reader for children. Paco visits a museum.", "map": false, "cit": null, "short": "Paco: El Museo", "wth": ""}, {"t": "Puedo Leer con Paco: El Circo", "a": "Laura P. Schaposnik", "v": "Children's book", "y": 2024, "c": "books", "c2": null, "link": "https://www.amazon.com/Laura-P-Schaposnik/e/B099PYGQ3D", "note": "An early Spanish reader for children. Paco goes to the circus.", "map": false, "cit": null, "short": "Paco: El Circo", "wth": ""}, {"t": "Puedo Leer con Paco: La Playa", "a": "Laura P. Schaposnik", "v": "Children's book", "y": 2024, "c": "books", "c2": null, "link": "https://www.amazon.com/Laura-P-Schaposnik/e/B099PYGQ3D", "note": "An early Spanish reader for children. Paco at the beach.", "map": false, "cit": null, "short": "Paco: La Playa", "wth": ""}, {"t": "Puedo Leer con Paco: El Bosque", "a": "Laura P. Schaposnik", "v": "Children's book", "y": 2024, "c": "books", "c2": null, "link": "https://www.amazon.com/Laura-P-Schaposnik/e/B099PYGQ3D", "note": "An early Spanish reader for children. Paco in the forest.", "map": false, "cit": null, "short": "Paco: El Bosque", "wth": ""}, {"t": "Puedo Leer con Paco: El Mar", "a": "Laura P. Schaposnik", "v": "Children's book", "y": 2024, "c": "books", "c2": null, "link": "https://www.amazon.com/Laura-P-Schaposnik/e/B099PYGQ3D", "note": "An early Spanish reader for children. Paco and the sea.", "map": false, "cit": null, "short": "Paco: El Mar", "wth": ""}, {"t": "Puedo Leer con Paco: La Pluma", "a": "Laura P. Schaposnik", "v": "Children's book", "y": 2024, "c": "books", "c2": null, "link": "https://www.amazon.com/Laura-P-Schaposnik/e/B099PYGQ3D", "note": "An early Spanish reader for children. Paco and the feather.", "map": false, "cit": null, "short": "Paco: La Pluma", "wth": ""}, {"t": "Puedo Leer con Paco: La Primavera", "a": "Laura P. Schaposnik", "v": "Children's book", "y": 2025, "c": "books", "c2": null, "link": "https://www.amazon.com/Laura-P-Schaposnik/e/B099PYGQ3D", "note": "An early Spanish reader for children. Paco and the arrival of spring.", "map": false, "cit": null, "short": "Paco: La Primavera", "wth": ""}, {"t": "Puedo Leer con Paco: El Volcán", "a": "Laura P. Schaposnik", "v": "Children's book", "y": 2025, "c": "books", "c2": null, "link": "https://www.amazon.com/Laura-P-Schaposnik/e/B099PYGQ3D", "note": "An early Spanish reader for children. Paco and the volcano.", "map": false, "cit": null, "short": "Paco: El Volcán", "wth": ""}, {"t": "Puedo Leer con Paco: Level I Chapter book", "a": "Laura P. Schaposnik", "v": "Children's book", "y": 2025, "c": "books", "c2": null, "link": "https://www.amazon.com/Laura-P-Schaposnik/e/B099PYGQ3D", "note": "An early Spanish reader for children. The first chapter book in the series, for readers moving beyond picture books.", "map": false, "cit": null, "short": "Paco: Level I Chapter book", "wth": ""}, {"t": "Puedo Leer con Paco: El Regalo Rojo", "a": "Laura P. Schaposnik", "v": "Children's book", "y": 2026, "c": "books", "c2": null, "link": "https://www.amazon.com/Laura-P-Schaposnik/e/B099PYGQ3D", "note": "An early Spanish reader for children. Paco and the red gift.", "map": false, "cit": null, "short": "Paco: El Regalo Rojo", "wth": ""}, {"t": "Lectures on Complex Lagrangians, Integrable Systems and Quantization", "a": "Editor-in-Chief, with Mengxue Yang", "v": "World Scientific (in production)", "y": 2026, "c": "writing", "c2": null, "link": "https://www.worldscientific.com", "note": "A companion lecture volume to the Advances collection, in production with World Scientific.", "map": false, "cit": null, "short": "Lectures (ed.)", "wth": "w/ Yang"}], "maps": {"Interface control and snow crystal growth": {"centre": {"t": "Interface control and snow crystal growth", "m": "Jessica Li & Laura P. Schaposnik · Phys. Rev. E 93, 023302 (2016)", "hl": "A geometric interface-control rule on top of Reiter's local two-dimensional model, via growth latency and growth direction — one realistic model for both dendrite and plate morphologies.", "u": "https://arxiv.org/abs/1505.02042"}, "citers": [{"t": "Physical Dynamics of Ice Crystal Growth", "m": "K. G. Libbrecht · Annual Review of Materials Research 47 (2017)", "k": "review", "morph": "sectored", "lab": "Libbrecht", "sub": "Annu. Rev. 2017", "hl": "The field's definitive review places the Li–Schaposnik model in the lineage of computational approaches that captured diffusion-limited growth of structures both faceted and dendritic.", "u": "https://www.annualreviews.org/content/journals/10.1146/annurev-matsci-070616-124135"}, {"t": "Analysis of mechanical properties and ontological relationships of snow crystals", "m": "X. Chen, Z. Xiao, X. Dong · Cold Regions Science and Technology (2025)", "k": "review", "morph": "plate", "lab": "Chen et al.", "sub": "Cold Reg. Sci. 2025", "hl": "Surveys snow as a heterogeneous material, connecting microscopic crystal structure to macroscopic mechanical properties.", "u": "https://scholar.google.com/scholar?q=Analysis+of+mechanical+properties+and+ontological+relationships+of+snow+crystals"}, {"t": "Growth kinetics and morphology of snowflakes using a 3D phase-field model", "m": "G. Demange, H. Zapolsky, R. Patte, M. Brunel · Phys. Rev. E 96, 022803 (2017)", "k": "pf", "morph": "plate", "lab": "Demange et al.", "sub": "Phys. Rev. E 2017", "hl": "A three-dimensional phase-field model reproducing morphology and growth kinetics in supersaturated atmosphere — the continuum counterpart to the discrete interface-control picture.", "u": "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.96.022803", "img": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41524-017-0015-1/MediaObjects/41524_2017_15_Fig3_HTML.jpg", "cr": "Fig. 3, Demange et al., npj Comput. Mater. 3:15 (2017), CC BY 4.0 — companion paper, same model"}, {"t": "Experimental study of carbon dioxide desublimation and sublimation on low temperature surface", "m": "Y. N. Wang, J. M. Pfotenhauer, L. M. Qiu et al. · IOP Conf. Series (2020)", "k": "other", "morph": "sectored", "lab": "Wang et al.", "sub": "IOP Conf. Ser. 2020", "hl": "Cryogenic CO₂ capture by desublimation on cold surfaces, where the same interface physics that shapes snowflakes governs frost-like deposit growth.", "u": "https://scholar.google.com/scholar?q=Experimental+study+of+carbon+dioxide+desublimation+and+sublimation+process+on+low+temperature+surface"}, {"t": "Layered growth of 3D snowflake subject to membrane effect and more than one nucleation center", "m": "C. R. Acosta, I. Martín, G. Rivadeneyra · Mathematics (MDPI, 2025)", "k": "ca", "morph": "dendrite", "lab": "Acosta et al.", "sub": "Mathematics 2025", "hl": "Pushes the cellular-automaton approach into 3D with ellipsoidal droplets, membrane effects and multiple nucleation centres — a direct descendant of the local-rule tradition.", "u": "https://www.mdpi.com/2227-7390/13/3/433", "img": "https://pub.mdpi-res.com/mathematics/mathematics-13-00433/article_deploy/html/images/mathematics-13-00433-g014.png?1738042206", "cr": "Fig. 14, Acosta et al., Mathematics 13:433 (2025), CC BY"}, {"t": "Growth of a long bone section based on inorganic hydroxyapatite crystals as cellular automata", "m": "C. R. Acosta, I. Martín, G. Rivadeneyra · AppliedMath (MDPI, 2025)", "k": "other", "morph": "sectored", "lab": "Acosta et al.", "sub": "AppliedMath 2025", "hl": "The most unexpected offspring: the same crystal-growth machinery applied to bone morphogenesis, modelling how hydroxyapatite assembles the mineral matrix of a growing femur.", "u": "https://www.mdpi.com/2673-9909/5/3/85", "img": "https://pub.mdpi-res.com/appliedmath/appliedmath-05-00085/article_deploy/html/images/appliedmath-05-00085-g005.png?1751624756", "cr": "Fig. 5, Acosta et al., AppliedMath 5:85 (2025), CC BY"}, {"t": "Nonisothermal cellular automata simulation of two-dimensional snow crystal growth", "m": "X. Y. Xu & W. Wang · Phys. Rev. E 106, 055309 (2022)", "k": "ca", "morph": "dendrite", "lab": "Xu & Wang", "sub": "Phys. Rev. E 2022", "hl": "Couples vapour diffusion with heat diffusion, showing latent-heat release shapes the fine structure of the crystal — a mechanism layered onto the same class of local models.", "u": "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.106.055309"}, {"t": "Novel morphologies including cowry-like crystal of polyoxometalate derivatives", "m": "R. Y. Zhen, X. Z. Ge, L. Zhu, J. Hao · Journal of Solid State Chemistry (2020)", "k": "other", "morph": "plate", "lab": "Zhen et al.", "sub": "J. Solid State Chem. 2020", "hl": "Experimental crystal chemistry: exotic cowry-like morphologies produced by coupled twinning between enantiomers, where interface mechanisms select the emerging shape.", "u": "https://scholar.google.com/scholar?q=Novel+morphologies+including+cowry-like+crystal+of+polyoxometalates+derivatives"}]}}, "order": ["books", "writing", "spectral", "branes", "opers", "physics", "patterns", "networks", "data"]}, NS="http://www.w3.org/2000/svg";
+function el(n,a){const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);return e;}
+const C={}; DATA.clusters.forEach(c=>C[c[0]]={name:c[1],col:c[2],desc:c[3]});
+const ORDER=DATA.order;
+const cits=DATA.papers.map(p=>p.cit).filter(v=>v!=null);
+const MAXC=cits.length?Math.max.apply(null,cits):1;
+
+(function(){
+  const tot=DATA.papers.reduce((a,p)=>a+(p.cit||0),0);
+  document.getElementById('hint').textContent =
+    "Disc size and colour depth track citations (Google Scholar, "+tot+" in total). Labels show for the most-cited work and on hover \u2014 zoom in, or use \u2018Show all labels\u2019, to see them all. Dashed discs sit between two areas.";
+})();
+document.getElementById('foot').textContent =
+  DATA.papers.length+" pieces, compiled from lauraschaposnik.com and Google Scholar. Drag to pan, scroll or use + / − to zoom.";
+
+/* ---------------- geometry of the constellation ---------------- */
+const W=2000,H=1480,CXX=W/2,CYY=H/2, RX=740, RY=530;
+const hub={}, nodes=[], edges=[];
+
+ORDER.forEach((k,i)=>{
+  const a=-Math.PI/2 + i*(2*Math.PI/ORDER.length);
+  hub[k]={x:CXX+RX*Math.cos(a), y:CYY+RY*Math.sin(a), a:a, k:k,
+          col:C[k].col, name:C[k].name, n:0};
+});
+
+const solo={}, bridges=[];
+DATA.papers.forEach(p=>{ if(p.c2 && hub[p.c2]) bridges.push(p); else (solo[p.c]=solo[p.c]||[]).push(p); });
+ORDER.forEach(k=>{ hub[k].n = DATA.papers.filter(p=>p.c===k||p.c2===k).length; });
+
+// satellites: two staggered rings around each hub, biased away from the centre
+ORDER.forEach(k=>{
+  const list=(solo[k]||[]).sort((a,b)=>b.y-a.y), h=hub[k], n=list.length;
+  const rings = n>12 ? 3 : (n>6 ? 2 : 1);
+  const R1=112+Math.min(n,8)*5, R2=R1+52, R3=R2+52;
+  list.forEach((p,i)=>{
+    const spread = n>12 ? Math.PI*1.75 : Math.PI*1.55;
+    const t = n===1 ? 0 : (i/(n-1)-0.5);
+    const ang = h.a + t*spread;
+    const R = rings===1 ? R1 : (rings===2 ? (i%2?R2:R1) : [R1,R2,R3][i%3]);
+    const x=h.x+R*Math.cos(ang), y=h.y+R*Math.sin(ang);
+    nodes.push({p:p,x:x,y:y,k:k});
+    edges.push({x1:h.x,y1:h.y,x2:x,y2:y,col:C[k].col,br:false});
+  });
+});
+// bridge papers: between their two hubs, nudged off the straight line
+bridges.forEach((p,i)=>{
+  const A=hub[p.c], B=hub[p.c2];
+  const mx=(A.x+B.x)/2, my=(A.y+B.y)/2;
+  const dx=B.x-A.x, dy=B.y-A.y, L=Math.hypot(dx,dy)||1;
+  const off=((i%3)-1)*54;
+  const x=mx-dy/L*off, y=my+dx/L*off;
+  nodes.push({p:p,x:x,y:y,k:p.c,k2:p.c2,bridge:true});
+  edges.push({x1:A.x,y1:A.y,x2:x,y2:y,col:C[p.c].col,br:true});
+  edges.push({x1:B.x,y1:B.y,x2:x,y2:y,col:C[p.c2].col,br:true});
+});
+
+/* ---------------- draw ---------------- */
+const sky=document.getElementById('sky');
+const root=el('g',{});
+sky.appendChild(root);
+
+edges.forEach(e=>{
+  root.appendChild(el('line',{class:'spoke',x1:e.x1,y1:e.y1,x2:e.x2,y2:e.y2,
+    stroke:e.col,'stroke-width':e.br?1.9:1.3,'stroke-opacity':e.br?.42:.28,
+    'stroke-dasharray':e.br?'6 5':'none'}));
+});
+
+const hubG={}, nodeG=[];
+ORDER.forEach(k=>{
+  const h=hub[k];
+  const g=el('g',{class:'hubdisc',transform:'translate('+h.x+','+h.y+')',tabindex:0,
+    role:'button','aria-label':'Area: '+h.name});
+  const R=30+Math.min(h.n,14)*1.7;
+  g.appendChild(el('circle',{class:'hubring',cx:0,cy:0,r:R+9}));
+  g.appendChild(el('circle',{cx:0,cy:0,r:R,fill:h.col,'fill-opacity':.90}));
+  g.appendChild(el('circle',{cx:0,cy:0,r:R+5,fill:'none',stroke:h.col,'stroke-width':1.6,'stroke-opacity':.45}));
+  const nn=el('text',{class:'hubn',x:0,y:5,fill:'#fff'}); nn.textContent=h.n; g.appendChild(nn);
+  // hub label, wrapped, placed outward
+  const out=(h.y<CYY)? -(R+26) : (R+34);
+  const words=h.name.split(' '); const lines=[]; let cur='';
+  words.forEach(w=>{ if((cur+' '+w).trim().length>17){lines.push(cur.trim());cur=w;} else cur+=' '+w; });
+  if(cur.trim())lines.push(cur.trim());
+  lines.forEach((ln,i)=>{
+    const t=el('text',{class:'hublab',x:0,y:out+i*19,fill:h.col,'font-size':'15px'});
+    t.textContent=ln; g.appendChild(t);
+  });
+  g.addEventListener('click',()=>{ if(moved) return; toggleArea(k); });
+  g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();toggleArea(k);}});
+  root.appendChild(g); hubG[k]=g;
+});
+
+nodes.forEach(nd=>{
+  const col=C[nd.k].col;
+  const known = nd.p.cit!=null;
+  const frac = known ? Math.min(1, Math.sqrt(nd.p.cit)/Math.sqrt(MAXC)) : 0;
+  const r  = 7.5 + frac*15;
+  const op = known ? .30+frac*.65 : .22;
+  const g=el('g',{class:'pnode',transform:'translate('+nd.x+','+nd.y+')',tabindex:0,
+    role:'button','aria-label':nd.p.t});
+  g.appendChild(el('circle',{class:'halo',cx:0,cy:0,r:r+7,fill:'#fff','fill-opacity':.55}));
+  g.appendChild(el('circle',{class:'hit',cx:0,cy:0,r:Math.max(r+12,22),fill:'transparent'}));
+  g.appendChild(el('circle',{class:'core',cx:0,cy:0,r:r,fill:col,'fill-opacity':op,
+    stroke:col,'stroke-width':nd.bridge?2.2:1.2,'stroke-opacity':.85,
+    'stroke-dasharray':nd.bridge?'3 2.5':'none'}));
+  if(nd.p.map){
+    g.appendChild(el('circle',{cx:0,cy:0,r:r+5.5,fill:'none',stroke:col,'stroke-width':1.4,'stroke-opacity':.9}));
+  }
+  if((nd.p.cit||0)>=10) g.classList.add('major');
+  const t1=el('text',{class:'ptip lbl',x:0,y:r+14}); t1.textContent=nd.p.short; g.appendChild(t1);
+  if(nd.p.wth){const t2=el('text',{class:'ptip2 lbl',x:0,y:r+25});t2.textContent=nd.p.wth;g.appendChild(t2);}
+  const open=()=>{ if(moved) return; openDrawer(nd.p); };
+  g.addEventListener('pointerenter',()=>{ if(!down && g.parentNode) g.parentNode.appendChild(g); });
+  g.addEventListener('click',open);
+  g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open();}});
+  root.appendChild(g); nodeG.push({g:g,nd:nd});
+});
+
+/* ---------------- legend + area isolation ---------------- */
+const lg=document.getElementById('legend');
+ORDER.forEach(k=>{
+  const s=document.createElement('span'); s.className='chip'; s.dataset.k=k;
+  s.innerHTML='<span class="dot" style="background:'+C[k].col+'"></span>'+C[k].name;
+  s.onclick=()=>toggleArea(k); lg.appendChild(s);
+});
+let active=null;
+function toggleArea(k){
+  active = (active===k)? null : k;
+  lg.querySelectorAll('.chip').forEach(c=>c.classList.toggle('dim', active!=null && c.dataset.k!==active));
+  ORDER.forEach(kk=>hubG[kk].classList.toggle('faded', active!=null && kk!==active));
+  nodeG.forEach(o=>{
+    const inA = active==null || o.nd.k===active || o.nd.k2===active;
+    o.g.classList.toggle('faded', !inA);
+  });
+  root.querySelectorAll('line.spoke').forEach((ln,i)=>{
+    const e=edges[i];
+    const on = active==null || e.col===C[active].col;
+    ln.style.opacity = on? '' : '.08';
+  });
+}
+
+/* ---------------- pan & zoom ---------------- */
+const BASE=(function(){
+  const xs=[],ys=[];
+  nodes.forEach(n=>{xs.push(n.x);ys.push(n.y);});
+  ORDER.forEach(k=>{xs.push(hub[k].x);ys.push(hub[k].y);});
+  const pad=170;
+  const x0=Math.min.apply(null,xs)-pad, x1=Math.max.apply(null,xs)+pad;
+  const y0=Math.min.apply(null,ys)-pad, y1=Math.max.apply(null,ys)+pad;
+  return {x:x0,y:y0,w:x1-x0,h:y1-y0};
+})();
+let vb=Object.assign({},BASE);
+function applyVB(){
+  sky.setAttribute('viewBox',vb.x+' '+vb.y+' '+vb.w+' '+vb.h);
+  sky.classList.toggle('zoomed', BASE.w/vb.w > 1.55);
+}
+function zoomBy(f,cx,cy){
+  const nw=Math.max(BASE.w*0.22,Math.min(BASE.w*1.3,vb.w/f)), nh=nw*BASE.h/BASE.w;
+  const px=(cx==null? vb.x+vb.w/2 : cx), py=(cy==null? vb.y+vb.h/2 : cy);
+  vb.x = px-(px-vb.x)*(nw/vb.w); vb.y = py-(py-vb.y)*(nh/vb.h);
+  vb.w=nw; vb.h=nh; applyVB();
+}
+function resetView(){vb=Object.assign({},BASE);applyVB();if(active)toggleArea(active);}
+function toggleLabels(){
+  const on=sky.classList.toggle('labels');
+  const b=document.getElementById('btn-lab');
+  b.classList.toggle('on',on); b.textContent = on ? 'Hide small labels' : 'Show all labels';
+}
+applyVB();
+let down=null, moved=false;
+const DRAG_PX=5;
+function pt(ev){const r=sky.getBoundingClientRect();
+  const cx=ev.clientX-r.left, cy=ev.clientY-r.top;
+  return {x:vb.x+cx/r.width*vb.w, y:vb.y+cy/r.height*vb.h};}
+sky.addEventListener('pointerdown',e=>{
+  down={id:e.pointerId, sx:e.clientX, sy:e.clientY, v:pt(e)};
+  moved=false;                       // no capture yet: a plain press must reach the disc
+});
+sky.addEventListener('pointermove',e=>{
+  if(!down || e.pointerId!==down.id) return;
+  if(!moved){
+    if(Math.hypot(e.clientX-down.sx, e.clientY-down.sy) < DRAG_PX) return;
+    moved=true; sky.classList.add('drag');
+    try{sky.setPointerCapture(down.id);}catch(_){}
+  }
+  const q=pt(e);
+  vb.x-=q.x-down.v.x; vb.y-=q.y-down.v.y; applyVB();
+});
+function endPan(e){
+  if(down && moved){ try{sky.releasePointerCapture(down.id);}catch(_){} }
+  sky.classList.remove('drag');
+  down=null;
+  setTimeout(()=>{moved=false;},0);   // let the click fire first, then clear
+}
+sky.addEventListener('pointerup',endPan);
+sky.addEventListener('pointercancel',endPan);
+sky.addEventListener('wheel',e=>{e.preventDefault();const q=pt(e);zoomBy(e.deltaY<0?1.12:0.89,q.x,q.y);},{passive:false});
+
+/* ---------------- list view ---------------- */
+const listEl=document.getElementById('list');
+ORDER.forEach(k=>{
+  const list=DATA.papers.filter(p=>p.c===k).sort((a,b)=>b.y-a.y);
+  const sec=document.createElement('section'); sec.className='cluster';
+  const hd=document.createElement('div'); hd.className='chead'; hd.style.borderTopColor=C[k].col;
+  hd.innerHTML='<h2 style="color:'+C[k].col+'">'+C[k].name+'</h2><span class="n">'+list.length+'</span>';
+  const gr=document.createElement('div'); gr.className='grid';
+  list.forEach(p=>{
+    const b=document.createElement('button'); b.className='card'; b.style.borderLeftColor=C[k].col;
+    b.innerHTML='<div class="yr">'+p.y+'</div><h3></h3><div class="au"></div>';
+    b.querySelector('h3').textContent=p.t; b.querySelector('.au').textContent=p.a;
+    b.onclick=()=>openDrawer(p); gr.appendChild(b);
+  });
+  sec.appendChild(hd); sec.appendChild(gr); listEl.appendChild(sec);
+});
+function setView(v){
+  document.getElementById('btn-sky').classList.toggle('on',v==='sky');
+  document.getElementById('btn-list').classList.toggle('on',v==='list');
+  document.getElementById('sky-wrap').classList.toggle('off',v!=='sky');
+  listEl.classList.toggle('on',v==='list');
+}
+
+/* ---------------- drawer ---------------- */
+const drawer=document.getElementById('drawer'), scrim=document.getElementById('scrim');
+function openDrawer(p){
+  const col=C[p.c].col;
+  drawer.style.borderColor=col;
+  const t1=document.getElementById('d-tag'), t2=document.getElementById('d-tag2');
+  t1.textContent=C[p.c].name; t1.style.background=col;
+  if(p.c2){t2.textContent=C[p.c2].name;t2.style.background=C[p.c2].col;t2.style.display='';}
+  else t2.style.display='none';
+  document.getElementById('d-title').textContent=p.t;
+  document.getElementById('d-au').textContent=p.a;
+  document.getElementById('d-ven').textContent=p.v+' · '+p.y+
+    (p.cit!=null?('  ·  cited '+p.cit+'×'):'  ·  not indexed on Scholar');
+  document.getElementById('d-abs').textContent=p.note||'';
+  const acts=document.getElementById('d-acts'); acts.innerHTML='';
+  if(p.link){const a=document.createElement('a');a.href=p.link;a.target='_blank';a.rel='noopener';
+    a.style.color=col;a.style.borderColor=col;a.textContent='Read the paper →';acts.appendChild(a);}
+  const b=document.createElement('button');
+  if(p.map&&DATA.maps[p.t]){b.className='primary';b.style.background=col;b.style.borderColor=col;
+    b.textContent='Open the citation map →';b.onclick=()=>{closeDrawer();showMap(p.t);};}
+  else{b.className='disabled';b.style.color=col;b.style.borderColor=col;b.textContent='Citation map not built yet';}
+  acts.appendChild(b);
+  drawer.classList.add('on'); scrim.classList.add('on');
+}
+function closeDrawer(){drawer.classList.remove('on');scrim.classList.remove('on');}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer();});
+
+/* ---------------- citation map (unchanged) ---------------- */
+const KCOL={ca:'#2E7E8C',pf:'#8474A1',review:'#D98E4A',other:'#5E9C76',centre:'#27496D'};
+const KNAME={ca:'Cellular-automaton model',pf:'Phase-field model',review:'Review / survey',other:'Applications & other',centre:'The paper'};
+let clipN=0;
+function hexPts(r){const q=[];for(let i=0;i<6;i++){const a=i*Math.PI/3;q.push([r*Math.sin(a),-r*Math.cos(a)].join(','));}return q.join(' ');}
+function mkFlake(morph,r,color){
+  const g=el('g',{class:'flake'}),sw=Math.max(1.6,r*.055),S={stroke:color,'stroke-width':sw};
+  if(morph==='plate'){
+    g.appendChild(el('polygon',Object.assign({},S,{points:hexPts(r),class:'grow'})));
+    g.appendChild(el('polygon',Object.assign({},S,{'stroke-width':sw*.6,points:hexPts(r*.62),class:'grow','stroke-opacity':.75})));
+    for(let i=0;i<6;i++){const a=i*Math.PI/3;
+      g.appendChild(el('line',Object.assign({},S,{'stroke-width':sw*.55,x1:r*.62*Math.sin(a),y1:-r*.62*Math.cos(a),x2:r*Math.sin(a),y2:-r*Math.cos(a),class:'grow'})));}
+  }else if(morph==='sectored'){
+    g.appendChild(el('polygon',Object.assign({},S,{points:hexPts(r),class:'grow'})));
+    for(let i=0;i<6;i++){const a=i*Math.PI/3;
+      g.appendChild(el('line',Object.assign({},S,{'stroke-width':sw*.6,x1:0,y1:0,x2:r*Math.sin(a),y2:-r*Math.cos(a),class:'grow'})));}
+  }else{
+    for(let i=0;i<6;i++){
+      const arm=el('g',{transform:'rotate('+i*60+')'});
+      arm.appendChild(el('line',Object.assign({},S,{x1:0,y1:0,x2:0,y2:-r,class:'grow'})));
+      [[.35,.30,40],[.55,.24,42],[.75,.16,45]].forEach(v=>{
+        const y=-r*v[0],L=r*v[1],a=v[2]*Math.PI/180;
+        arm.appendChild(el('line',Object.assign({},S,{'stroke-width':sw*.8,x1:0,y1:y,x2:-L*Math.sin(a),y2:y-L*Math.cos(a),class:'grow'})));
+        arm.appendChild(el('line',Object.assign({},S,{'stroke-width':sw*.8,x1:0,y1:y,x2:L*Math.sin(a),y2:y-L*Math.cos(a),class:'grow'})));});
+      g.appendChild(arm);}
+    g.appendChild(el('polygon',Object.assign({},S,{'stroke-width':sw*.55,points:hexPts(r*.22),class:'grow','stroke-opacity':.8})));}
+  return g;
+}
+function wrapT(g,text,y,cls,maxc){
+  const w=text.split(' ');let line='',lines=[];
+  w.forEach(x=>{if((line+' '+x).trim().length>maxc){lines.push(line.trim());line=x;}else line+=' '+x;});
+  if(line.trim())lines.push(line.trim());
+  lines.slice(0,2).forEach((ln,i)=>{const t=el('text',{class:cls,x:0,y:y+i*14});t.textContent=ln;g.appendChild(t);});
+  return lines.length>1;
+}
+function showMap(title){
+  const M=DATA.maps[title]; if(!M)return;
+  document.getElementById('main').classList.add('off');
+  document.getElementById('mapview').classList.add('on');
+  document.getElementById('m-title').textContent=M.centre.t;
+  document.getElementById('m-meta').textContent=M.centre.m;
+  document.getElementById('m-hl').textContent=M.centre.hl;
+  const svg=document.getElementById('stage'); svg.innerHTML=''; clipN=0;
+  const CX=550,CY=440,RI=272,RO=364,SR=46,CR=76,n=M.citers.length;
+  const pos=i=>{const a=-Math.PI/2+i*(2*Math.PI/n),R=(n>4&&i%2)?RO:RI;
+    return [CX+R*Math.cos(a),CY+R*Math.sin(a)*.86];};
+  M.citers.forEach((c,i)=>{const q=pos(i),mx=(CX+q[0])/2,my=(CY+q[1])/2,
+    dx=q[0]-CX,dy=q[1]-CY,L=Math.hypot(dx,dy)||1,o=24;
+    svg.appendChild(el('path',{class:'link-branch',d:'M '+CX+' '+CY+' Q '+(mx-dy/L*o)+' '+(my+dx/L*o)+' '+q[0]+' '+q[1]}));});
+  const node=(x,y,r,d,centre)=>{
+    const col=centre?KCOL.centre:KCOL[d.k];
+    const g=el('g',{class:'hit',transform:'translate('+x+','+y+')',tabindex:0});
+    g.appendChild(el('circle',{class:'halo',cx:0,cy:0,r:r+18}));
+    if(d.img){
+      const id='cl'+(++clipN),cp=el('clipPath',{id:id});
+      cp.appendChild(el('circle',{cx:0,cy:0,r:r+6}));g.appendChild(cp);
+      const im=el('image',{x:-(r+6),y:-(r+6),width:2*(r+6),height:2*(r+6),
+        'clip-path':'url(#'+id+')',preserveAspectRatio:'xMidYMid slice'});
+      im.setAttribute('href',d.img);im.setAttributeNS('http://www.w3.org/1999/xlink','href',d.img);
+      const ring=el('circle',{cx:0,cy:0,r:r+6,fill:'none',stroke:col,'stroke-width':3.5});
+      im.addEventListener('error',()=>{im.remove();ring.remove();
+        g.insertBefore(mkFlake(d.morph,r,col),g.firstChild.nextSibling);});
+      g.appendChild(im);g.appendChild(ring);
+    }else g.appendChild(mkFlake(centre?'dendrite':d.morph,r,col));
+    const nm=centre?'Li & Schaposnik':d.lab, sb=centre?'Phys. Rev. E 2016':d.sub;
+    const two=wrapT(g,nm,r+32,'nlab',16);
+    const t2=el('text',{class:'nsub',x:0,y:r+32+(two?28:16)});t2.textContent=sb;g.appendChild(t2);
+    const open=()=>{
+      drawer.style.borderColor=col;
+      const t1=document.getElementById('d-tag'),tt2=document.getElementById('d-tag2');
+      t1.textContent=centre?KNAME.centre:KNAME[d.k];t1.style.background=col;tt2.style.display='none';
+      document.getElementById('d-title').textContent=d.t;
+      document.getElementById('d-au').textContent=d.m||'';
+      document.getElementById('d-ven').textContent=d.cr?('Figure: '+d.cr):'';
+      document.getElementById('d-abs').textContent=d.hl;
+      const acts=document.getElementById('d-acts');acts.innerHTML='';
+      if(d.u){const a=document.createElement('a');a.href=d.u;a.target='_blank';a.rel='noopener';
+        a.style.color=col;a.style.borderColor=col;a.textContent='Read the paper →';acts.appendChild(a);}
+      drawer.classList.add('on');scrim.classList.add('on');};
+    g.addEventListener('click',open);
+    g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open();}});
+    svg.appendChild(g);};
+  node(CX,CY,CR,M.centre,true);
+  M.citers.forEach((c,i)=>{const q=pos(i);node(q[0],q[1],SR,c,false);});
+  window.scrollTo({top:0});
+}
+function showMain(){
+  document.getElementById('mapview').classList.remove('on');
+  document.getElementById('main').classList.remove('off');
+  closeDrawer();window.scrollTo({top:0});
+}
+</script>
+</body>
+</html>

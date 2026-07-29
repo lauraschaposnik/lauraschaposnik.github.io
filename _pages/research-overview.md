@@ -7,7 +7,16 @@ nav: false
 heading: "Research Overview"
 ---
 
-I work across **geometry and mathematical physics**, focusing on the geometry of **moduli spaces of decorated bundles** and on **data‑informed models** for networks and pattern formation.
+I work across **geometry and mathematical physics**, focusing on the geometry of **moduli spaces of decorated bundles** and on **data‑informed models** for networks and pattern formation. Here is a small overview of my  [research world]('/assets/trees/research-constellation.html'):
+
+  <iframe
+  src="{{ '/assets/trees/research-constellation.html' | relative_url }}"
+  width="100%"
+  height="900"
+  style="border:1px solid rgba(0,0,0,0.15); border-radius:12px;">
+</iframe>
+
+
 
 In practice, I often start from simple, tractable settings and build toward more complex applications—because small changes in complex systems can have unpredictable effects, while simpler systems make those effects clearer.
 
