@@ -156,25 +156,25 @@ for semester- or year-long projects.
 
 
     
-<hr>
+ 
 <span style="font-size:15px">
 <hr>
 <h2>Academic Background</h2>
 
 I received my degree of Licenciada en Matemáticas from the University of La Plata under the supervision of Jorge Solomin, and my DPhil from the University of Oxford under the supervision of [Nigel Hitchin](https://people.maths.ox.ac.uk/hitchin/). I was then a postdoctoral researcher at Heidelberg University in [Anna Wienhard's group](https://www.mathi.uni-heidelberg.de/~wienhard/) and at the University of Illinois Urbana-Champaign in [Steve Bradlow's group](https://faculty.math.illinois.edu/~bradlow/bradlow_index2.html). I moved to Chicago to take up a faculty position at UIC in 2015. I live with my [family](https://lauraschaposnik.github.io/family/) in downtown Chicago.
 
- <h2>Visiting Appointments</h2>
+ <h3>Visiting Appointments</h3>
 
 During the Fall 2018 I was a <b> Visiting Fellow </b>  at <a href="https://www.new.ox.ac.uk">New College, Oxford</a> visiting faculty member at the Mathematical Institute, University of Oxford. During the Spring 2019, I was an visiting member of the SCGP and organizer of a semester on the <a href="https://scgp.stonybrook.edu/archives/24984">Geometry and Physics of Hitchin Systems systems</a>. During the Summer 2019 I was a <a href="https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship">Humboldt Fellow</a> at  Freie Universitat Berlin. During the Fall 2019 I was a Research Member at MSRI within the semester on <a href="https://www.slmath.org/programs/310">Holomorphic Differentials in Mathematics and Physics</a> .
 During the Fall 2022 I was a visiting professor at the Department of Mathematics of the University of California, Berkeley, and a Research Professor at MSRI, Berkeley, USA, organizing a semester on <a href="https://www.slmath.org/programs/340"> Analytic and Geometric Aspects of Gauge Theory </a>. During the Spring 2023 I was a <b> Visiting Fellow</b> at <a href="https://www.asc.ox.ac.uk">All Souls College, Oxford</a> , and a visiting member of the Mathematical Institute, at the University of Oxford. During the summer 2023 I was in Paris, partly as a visiting member of the Institut Henri Poincaré, as part of their Visiting Pairs Program. During the Fall 2026 I was  a visiting faculty member at the Mathematical Institute, University of Oxford,  and a visiting fellow at <a href="https://www.magd.ox.ac.uk/">Magdalen College, Oxford.</a>
  
-<h2>Editorial and Leadership Roles</h2>
+<h3>Editorial and Leadership Roles</h3>
 I am in the  <b>editorial board</b> of [Notices of the AMS](https://www.ams.org/notices), and of [Geometriae Dedicata](https://www.springer.com/journal/10711/editors). Since 2026 I am also in the Governing Board of the 
 [Institute of the Mathematical Sciences of the Americas (IMSA)](https://www.imsa.miami.edu/). 
 
 
 
-<h2>Research Support</h2>
+<h3>Research Support</h3>
 My research at UIC has been supported by the following sources: [NSF FRG Award DMS- 2152107](https://sites.google.com/view/frg-ciq/home?authuser=0) (<a href="https://sites.google.com/view/frg-ciq/home?authuser=0">PI</a>), 2022-2027; 
   [Simons Fellowship](https://www.simonsfoundation.org/mathematics-physical-sciences/simons-fellows/
 ) (<a href="https://ras.mit.edu/education-and-career-resources/glossary#term165">PI</a>), 2022-2023;
@@ -187,7 +187,7 @@ Note: my role is specified in parentheses, where PI = "Principal Investigator," 
 </span>-->
 <hr>
 
-<h2>Explore My Projects</h2>
+<h3>Explore My Projects</h3>
 
 <p>
 I enjoy creating opportunities to discover, learn, and explore:
