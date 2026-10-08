@@ -28,7 +28,7 @@ social: true  # includes social icons at the bottom of the page
 
 I am a <b>Professor of Mathematics</b> at the University of Illinois Chicago and <b>Director of the AI+Math Initiative</b> at <a href="https://www.equitechfutures.com/">Equitech Futures</a>. My research spans pure and applied mathematics, from Higgs bundles, moduli spaces, and mathematical physics to network dynamics, optimization, and data-informed models of complex systems.
 
-Collaboration and mentoring are central to my work. Alongside my research, I build initiatives and resources that create opportunities for discovery: rom student research programs and mathematical communities to children’s books and creative STEM projects.
+Collaboration and mentoring are central to my work. Alongside my research, I build initiatives and resources that create opportunities for discovery: from student research programs and mathematical communities to children’s books and creative STEM projects.
 
 
 <style>
@@ -89,8 +89,10 @@ Collaboration and mentoring are central to my work. Alongside my research, I bui
     <a href="/books/" style="display:inline-block; margin:.2rem .35rem .2rem 0; padding:.38rem .7rem; border:1px solid #d8e7e4; border-radius:999px; background:#ffffff; text-decoration:none;">Children Books</a>
 </div>
 
-<h3>AI + Mathematics</h3>
+<hr>
+<h2>Initiatives</h2>
 
+<h3>AI + Mathematics</h3>
 <p>
 As Director of the <b>AI+Math Initiative</b> at
 <a href="https://www.equitechfutures.com/">Equitech Futures</a>,
@@ -102,28 +104,40 @@ asking meaningful questions, developing proof strategies,
 and critically evaluating AI-generated arguments.
 </p>
 
+<h3>Student Research Fellowships</h3>
+<p>
+I founded the
+<a href="https://globalims.org/home">Global Institute for Mathematical Science (GIMS)</a>,
+which supports student research through fellowships
+for semester- or year-long projects.
+</p>
+
+
+
+ 
+
+
+
+    
+<hr>
+<span style="font-size:15px">
+<hr>
+<h2>Academic Background</h2>
 
 I received my degree of Licenciada en Matemáticas from the University of La Plata under the supervision of Jorge Solomin, and my DPhil from the University of Oxford under the supervision of [Nigel Hitchin](https://people.maths.ox.ac.uk/hitchin/). I was then a postdoctoral researcher at Heidelberg University in [Anna Wienhard's group](https://www.mathi.uni-heidelberg.de/~wienhard/) and at the University of Illinois Urbana-Champaign in [Steve Bradlow's group](https://faculty.math.illinois.edu/~bradlow/bradlow_index2.html). I moved to Chicago to take up a faculty position at UIC in 2015. I live with my [family](https://lauraschaposnik.github.io/family/) in downtown Chicago.
 
-         
-
-
-
-<hr>
-<span style="font-size:15px">
+ <h2>Visiting Appointments</h2>
 
 During the Fall 2018 I was a <b> Visiting Fellow </b>  at <a href="https://www.new.ox.ac.uk">New College, Oxford</a> visiting faculty member at the Mathematical Institute, University of Oxford. During the Spring 2019, I was an visiting member of the SCGP and organizer of a semester on the <a href="https://scgp.stonybrook.edu/archives/24984">Geometry and Physics of Hitchin Systems systems</a>. During the Summer 2019 I was a <a href="https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship">Humboldt Fellow</a> at  Freie Universitat Berlin. During the Fall 2019 I was a Research Member at MSRI within the semester on <a href="https://www.slmath.org/programs/310">Holomorphic Differentials in Mathematics and Physics</a> .
 During the Fall 2022 I was a visiting professor at the Department of Mathematics of the University of California, Berkeley, and a Research Professor at MSRI, Berkeley, USA, organizing a semester on <a href="https://www.slmath.org/programs/340"> Analytic and Geometric Aspects of Gauge Theory </a>. During the Spring 2023 I was a <b> Visiting Fellow</b> at <a href="https://www.asc.ox.ac.uk">All Souls College, Oxford</a> , and a visiting member of the Mathematical Institute, at the University of Oxford. During the summer 2023 I was in Paris, partly as a visiting member of the Institut Henri Poincaré, as part of their Visiting Pairs Program. During the Fall 2026 I was  a visiting faculty member at the Mathematical Institute, University of Oxford,  and a visiting fellow at <a href="https://www.magd.ox.ac.uk/">Magdalen College, Oxford.</a>
-<hr>
-<span style="font-size:15px">
-
+ 
+<h2>Editorial and Leadership Roles</h2>
 I am in the  <b>editorial board</b> of [Notices of the AMS](https://www.ams.org/notices), and of [Geometriae Dedicata](https://www.springer.com/journal/10711/editors). Since 2026 I am also in the Governing Board of the 
 [Institute of the Mathematical Sciences of the Americas (IMSA)](https://www.imsa.miami.edu/). 
 
 
 
-<hr>
-<span style="font-size:15px">
+<h2>Research Support</h2>
 My research at UIC has been supported by the following sources: [NSF FRG Award DMS- 2152107](https://sites.google.com/view/frg-ciq/home?authuser=0) (<a href="https://sites.google.com/view/frg-ciq/home?authuser=0">PI</a>), 2022-2027; 
   [Simons Fellowship](https://www.simonsfoundation.org/mathematics-physical-sciences/simons-fellows/
 ) (<a href="https://ras.mit.edu/education-and-career-resources/glossary#term165">PI</a>), 2022-2023;
@@ -136,6 +150,7 @@ Note: my role is specified in parentheses, where PI = "Principal Investigator," 
 </span>-->
 <hr>
 
+<h2>Explore My Projects</h2>
 I also enjoy building public mathematical resources, including an [interactive Hitchin genealogy tree](https://lauraschaposnik.github.io/hitchintree/) and a [travel guide to La Plata](https://lauraschaposnik.github.io/laplata/), as well as my [Interactive work travel map](https://lauraschaposnik.com/travelmap/).
 
  
