@@ -61,6 +61,30 @@ Collaboration and mentoring are central to my work. Alongside my research, I bui
       font-size: 14px;
     }
   }
+  
+  .about-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.about-links a {
+  display: inline-block;
+  padding: .38rem .75rem;
+  border: 1px solid #a9c5bf;
+  border-radius: 999px;
+  color: var(--global-text-color, #333);
+  background: var(--global-bg-color, #fff);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.about-links a:hover,
+.about-links a:focus-visible {
+  border-color: currentColor;
+  text-decoration: underline;
+}
 </style>
 
 <hr>
@@ -82,12 +106,13 @@ Collaboration and mentoring are central to my work. Alongside my research, I bui
 
 <hr>
 
-<div style="margin: 1rem 0 1.5rem 0; font-size: 14px;">
-  <a href="/research-overview/" style="display:inline-block; margin:.2rem .35rem .2rem 0; padding:.38rem .7rem; border:1px solid #d8e7e4; border-radius:999px; background:#ffffff; text-decoration:none;">Research Overview</a>
-  <a href="/publications/" style="display:inline-block; margin:.2rem .35rem .2rem 0; padding:.38rem .7rem; border:1px solid #d8e7e4; border-radius:999px; background:#ffffff; text-decoration:none;">Publications</a>
-  <a href="/talks/" style="display:inline-block; margin:.2rem .35rem .2rem 0; padding:.38rem .7rem; border:1px solid #d8e7e4; border-radius:999px; background:#ffffff; text-decoration:none;">Talks & trips</a>
-    <a href="/books/" style="display:inline-block; margin:.2rem .35rem .2rem 0; padding:.38rem .7rem; border:1px solid #d8e7e4; border-radius:999px; background:#ffffff; text-decoration:none;">Children Books</a>
-</div>
+<nav class="about-links" aria-label="Research and people">
+  <a href="/research-overview/">Research Overview</a>
+  <a href="/publications/">Publications</a>
+  <a href="/group/">People &amp; Mentoring</a>
+  <a href="/collaborators/">Collaborators</a>
+  <a href="/talks/">Talks &amp; Trips</a>
+</nav>
 
 <hr>
 <h2>Initiatives</h2>
@@ -151,7 +176,22 @@ Note: my role is specified in parentheses, where PI = "Principal Investigator," 
 <hr>
 
 <h2>Explore My Projects</h2>
-I also enjoy building public mathematical resources, including an [interactive Hitchin genealogy tree](https://lauraschaposnik.github.io/hitchintree/) and a [travel guide to La Plata](https://lauraschaposnik.github.io/laplata/), as well as my [Interactive work travel map](https://lauraschaposnik.com/travelmap/).
+
+<p>
+I enjoy creating opportunities to discover, learn, and explore:
+through children’s books, creative STEM activities, interactive
+mathematical resources, and guides to places that matter to me.
+Here are a few starting points.
+</p>
+
+<nav class="about-links" aria-label="Explore my projects">
+  <a href="/books/">Children’s Books</a>
+  <a href="https://craftcookcreate.com/">Craft Cook Create</a>
+  <a href="/outreach/">Mathematical Outreach</a>
+  <a href="https://lauraschaposnik.github.io/hitchintree/">Hitchin Genealogy Tree</a>
+  <a href="https://lauraschaposnik.github.io/laplata/">Discover La Plata</a>
+  <a href="/travelmap/">My Travel Map</a>
+</nav>
 
  
 
