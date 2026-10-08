@@ -44,10 +44,11 @@ function filterSubject(filter) {
 </script>
 
 
+My research spans pure and applied mathematics. In geometry and mathematical physics, I study Higgs bundles, Hitchin systems, and moduli spaces of decorated bundles, with particular interests in spectral data, branes, geometric structures, and their connections to representation theory and the Langlands program.
 
+In applied mathematics, I develop and study mathematical models and algorithms for complex systems. My work includes network dynamics and contagion, synchronization and collective behavior, optimization and sensor placement, and data-informed forecasting. These projects combine mathematical analysis, computation, and collaboration across disciplines, with applications in the natural and social sciences.
 
-
-My research is both in geometry (moduli spaces, Higgs bundles and related fields) and more applied mathematics. I am interested in the study of the geometry and topology of the moduli spaces of Higgs bundles, integrable systems and decorated bundles, and the geometric structures they parametrize.   In particular, I am interested in understanding  of branes of Higgs bundles,  dualities within quiver varieties in general, and within generalized hyperpolygons in particular, with views towards applications to the Langlands program for wild Hitchin systems. In a different direction, I am interested in the appearances  of  geometric structures and symmetries within different areas of sciences, which has led to some publications in applied mathematics. You can see my work in each area by clicking on the links below (I have included here the children books I have published to teach mathematics or about mathematics -- for a complete list of my children books, please visit my  <a href="https://lauraschaposnik.com/books/">Children Books page</a>.
+Below you can explore my publications by research area. I have also included the children’s books I have published to teach mathematics or introduce mathematical ideas. For the complete collection, please visit my <a href="https://lauraschaposnik.com/books/">Children’s Books page</a>.
 
 <center>
 <p>
