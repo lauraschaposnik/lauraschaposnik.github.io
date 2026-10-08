@@ -26,7 +26,7 @@ social: true  # includes social icons at the bottom of the page
 
 
 
-I am a <b>Professor of Mathematics</b> at the University of Illinois Chicago and <b>Director of the AI+Math Initiative</b> at Equitech Futures. My research spans pure and applied mathematics, from Higgs bundles, moduli spaces, and mathematical physics to network dynamics, optimization, and data-informed models of complex systems.
+I am a <b>Professor of Mathematics</b> at the University of Illinois Chicago and <b>Director of the AI+Math Initiative</b> at <a href="https://www.equitechfutures.com/">Equitech Futures</a>. My research spans pure and applied mathematics, from Higgs bundles, moduli spaces, and mathematical physics to network dynamics, optimization, and data-informed models of complex systems.
 
 Collaboration and mentoring are central to my work. Alongside my research, I build initiatives and resources that create opportunities for discovery: rom student research programs and mathematical communities to children’s books and creative STEM projects.
 
@@ -88,6 +88,20 @@ Collaboration and mentoring are central to my work. Alongside my research, I bui
   <a href="/talks/" style="display:inline-block; margin:.2rem .35rem .2rem 0; padding:.38rem .7rem; border:1px solid #d8e7e4; border-radius:999px; background:#ffffff; text-decoration:none;">Talks & trips</a>
     <a href="/books/" style="display:inline-block; margin:.2rem .35rem .2rem 0; padding:.38rem .7rem; border:1px solid #d8e7e4; border-radius:999px; background:#ffffff; text-decoration:none;">Children Books</a>
 </div>
+
+<h3>AI + Mathematics</h3>
+
+<p>
+As Director of the <b>AI+Math Initiative</b> at
+<a href="https://www.equitechfutures.com/">Equitech Futures</a>,
+I bring together mathematicians, educators, and AI researchers
+to explore how artificial intelligence can support mathematical
+discovery and help identify and develop emerging mathematical talent.
+Our focus is on the human judgment that guides this work:
+asking meaningful questions, developing proof strategies,
+and critically evaluating AI-generated arguments.
+</p>
+
 
 I received my degree of Licenciada en Matemáticas from the University of La Plata under the supervision of Jorge Solomin, and my DPhil from the University of Oxford under the supervision of [Nigel Hitchin](https://people.maths.ox.ac.uk/hitchin/). I was then a postdoctoral researcher at Heidelberg University in [Anna Wienhard's group](https://www.mathi.uni-heidelberg.de/~wienhard/) and at the University of Illinois Urbana-Champaign in [Steve Bradlow's group](https://faculty.math.illinois.edu/~bradlow/bradlow_index2.html). I moved to Chicago to take up a faculty position at UIC in 2015. I live with my [family](https://lauraschaposnik.github.io/family/) in downtown Chicago.
 
