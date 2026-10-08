@@ -85,6 +85,18 @@ Collaboration and mentoring are central to my work. Alongside my research, I bui
   border-color: currentColor;
   text-decoration: underline;
 }
+.post-content h2 {
+  font-size: 26px;
+  margin-top: 1.8rem;
+  margin-bottom: .8rem;
+}
+
+.post-content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 1.2rem;
+  margin-bottom: .5rem;
+}
 </style>
 
 <hr>
@@ -169,7 +181,7 @@ My research at UIC has been supported by the following sources: [NSF FRG Award D
  [NSF CAREER Award DMS 1749013](https://nsf.gov/awardsearch/showAward?AWD_ID=1749013) (<a href="https://ras.mit.edu/education-and-career-resources/glossary#term165">PI</a>), 2018-2027;   [Alexander von Humboldt Fellowship](https://today.uic.edu/uic-mathematician-physicist-named-humboldt-fellows) (<a href="https://ras.mit.edu/education-and-career-resources/glossary#term165">PI</a>), 2017-2019;
 [NSF  Award DMS 1611835](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1611835) (<a href="https://ras.mit.edu/education-and-career-resources/glossary#term165">PI</a>), 2015-2019;  
   <br>
-</span>
+ 
 <!--<span style="font-size:13px">
 Note: my role is specified in parentheses, where PI = "Principal Investigator," Co-PI = "Co-Principal Investigator," and "KP=Key Person." 
 </span>-->
