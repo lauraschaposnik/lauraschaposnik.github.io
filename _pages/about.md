@@ -26,7 +26,9 @@ social: true  # includes social icons at the bottom of the page
 
 
 
-I am a Professor of Mathematics at the University of Illinois Chicago. My research lies at the interface of geometry, topology, and mathematical physics, with a focus on moduli spaces of decorated bundles, Higgs bundles, Hitchin systems, branes, and geometric structures, as well as on the application of geometric thinking to complex systems in science and society.  
+I am a <b>Professor of Mathematics</b> at the University of Illinois Chicago and <b>Director of the AI+Math Initiative</b> at Equitech Futures. My research spans pure and applied mathematics, from Higgs bundles, moduli spaces, and mathematical physics to network dynamics, optimization, and data-informed models of complex systems.
+
+Collaboration and mentoring are central to my work. Alongside my research, I build initiatives and resources that create opportunities for discovery: rom student research programs and mathematical communities to children’s books and creative STEM projects.
 
 
 <style>
