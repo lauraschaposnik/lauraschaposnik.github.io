@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /group/
-title: Research Group
+title: Research Group and Mentoring
 description:  
 years: [Postdoc, UIC, Other]
 nav: false
@@ -10,7 +10,9 @@ heading: Research Group
 
 <div class="publications">
 
-In the last decade I have mentored several students at different levels, and more recently, I have slowly started to build a research group at UIC working on geometric problems in the interface of mathematical physics, string theory and other areas of science. Below you can find the current members of the group, and you can see a <a href="https://lauraschaposnik.com/collaborators/"> list of collaborators here</a> and a <a href="https://lauraschaposnik.com/visitors/"> list of visitors here</a>. 
+Collaboration and mentoring are central to my research. I work with students and researchers across institutions and career stages, from high school research programs to graduate study and postdoctoral research. Our projects span geometry and mathematical physics, network dynamics, optimization, and mathematical modeling in the natural and social sciences.
+
+Below you can meet my current and former students and postdoctoral researchers. You can also explore my <a href="/collaborators/">collaborators</a> and <a href="/visitors/">research visitors</a>.
  
  <br>
  <hr>
