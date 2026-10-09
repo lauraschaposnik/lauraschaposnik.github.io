@@ -30,7 +30,16 @@ I grew up watching my aunt Viviana, my father's sister, making beautiful art and
   {% include figure.liquid path="/assets/img/2025/berry4.png" alt="The finished berry bowl." caption="The finished berry bowl." class="img-fluid rounded" loading="lazy" avoid_scaling=true %}
   {% include figure.liquid path="/assets/img/2025/berry3.png" alt="A view from above, showing the central dome and side attachment." caption="A view from above, showing the central dome and side attachment." class="img-fluid rounded" loading="lazy" avoid_scaling=true %}
 </div>
+<video controls playsinline preload="metadata"
+       poster="/assets/img/2025/berry4.png"
+       style="display:block; width:100%; max-width:800px; margin:1.5rem auto; border-radius:8px;">
+  <source src="/assets/img/2025/berry.mp4" type="video/mp4">
+  Your browser does not support embedded video.
+</video>
 
+<p style="font-size:13px; text-align:center;">
+  My berry bowl in action.
+</p>
 <h3>From clay to the finished piece</h3>
 
 <div class="pottery-gallery">
