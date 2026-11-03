@@ -112,6 +112,9 @@ Collaboration and mentoring are central to my work. Alongside my research, I bui
     <li><b>Alexander von Humboldt Fellow</b>, 2017–2019.</li>
     <li><b>Simons Fellow in Mathematics</b>, 2022–2023.</li>
     <li><b>NSF CAREER Awardee</b>, 2018–2023.</li>
+    <li><b>Visiting Fellowship</b>, <a href="https://www.magd.ox.ac.uk/">Magdalen College</a>, University of Oxford, 2026.</li>
+<li><b>Visiting Fellowship</b>, <a href="https://www.asc.ox.ac.uk/">All Souls College</a>, University of Oxford, 2023.</li>
+<li><b>Visiting Fellowship</b>, <a href="https://www.new.ox.ac.uk/">New College</a>, University of Oxford, 2018.</li>
     <li><b>Clarendon Scholar</b>, University of Oxford.</li>
   </ul>
 </div>
@@ -168,11 +171,35 @@ I received my degree of Licenciada en Matemáticas from the University of La Pla
 During the Fall 2018 I was a <b> Visiting Fellow </b>  at <a href="https://www.new.ox.ac.uk">New College, Oxford</a> visiting faculty member at the Mathematical Institute, University of Oxford. During the Spring 2019, I was an visiting member of the SCGP and organizer of a semester on the <a href="https://scgp.stonybrook.edu/archives/24984">Geometry and Physics of Hitchin Systems systems</a>. During the Summer 2019 I was a <a href="https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship">Humboldt Fellow</a> at  Freie Universitat Berlin. During the Fall 2019 I was a Research Member at MSRI within the semester on <a href="https://www.slmath.org/programs/310">Holomorphic Differentials in Mathematics and Physics</a> .
 During the Fall 2022 I was a visiting professor at the Department of Mathematics of the University of California, Berkeley, and a Research Professor at MSRI, Berkeley, USA, organizing a semester on <a href="https://www.slmath.org/programs/340"> Analytic and Geometric Aspects of Gauge Theory </a>. During the Spring 2023 I was a <b> Visiting Fellow</b> at <a href="https://www.asc.ox.ac.uk">All Souls College, Oxford</a> , and a visiting member of the Mathematical Institute, at the University of Oxford. During the summer 2023 I was in Paris, partly as a visiting member of the Institut Henri Poincaré, as part of their Visiting Pairs Program. During the Fall 2026 I was  a visiting faculty member at the Mathematical Institute, University of Oxford,  and a visiting fellow at <a href="https://www.magd.ox.ac.uk/">Magdalen College, Oxford.</a>
  
+ <h3>Research Affiliations</h3>
+
+<p>
+I am a founding core member of
+<a href="https://airship-lab.github.io/members/">AIRSHIP Lab</a>
+at UIC, directed by
+<a href="https://jamesunwin.github.io/">Prof. James Unwin</a>,
+and of the
+<a href="https://lqute.lab.uic.edu/">Laboratory for Quantum Theory at the Extremes (LQuTE)</a>,
+directed by Prof. Tom Imbo.
+These communities bring together researchers across disciplines
+to explore AI in science and fundamental questions in theoretical
+and mathematical physics.
+</p>
+
 <h3>Editorial and Leadership Roles</h3>
-I am in the  <b>editorial board</b> of [Notices of the AMS](https://www.ams.org/notices), and of [Geometriae Dedicata](https://www.springer.com/journal/10711/editors). Since 2026 I am also in the Governing Board of the 
-[Institute of the Mathematical Sciences of the Americas (IMSA)](https://www.imsa.miami.edu/). 
 
-
+<p>
+I serve on the editorial boards of
+<a href="https://www.ams.org/notices">Notices of the AMS</a>
+and
+<a href="https://www.springer.com/journal/10711/editors">Geometriae Dedicata</a>.
+I am also a member of the
+<a href="https://www.aimath.org/governance/scentific-research-board/">Scientific Research Board of the American Institute of Mathematics (AIM)</a>
+and, since 2026, the Governing Board of the
+<a href="https://www.imsa.miami.edu/">Institute of the Mathematical Sciences of the Americas (IMSA)</a>.
+Beginning in 2027, I will serve on the
+<a href="https://www.ams.org/about-us/governance/committees/comm-all.html">American Mathematical Society's Committee on Science Policy</a>.
+</p>
 
 <h3>Research Support</h3>
 My research at UIC has been supported by the following sources: [NSF FRG Award DMS- 2152107](https://sites.google.com/view/frg-ciq/home?authuser=0) (<a href="https://sites.google.com/view/frg-ciq/home?authuser=0">PI</a>), 2022-2027; 
