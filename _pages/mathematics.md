@@ -9,6 +9,8 @@ children:
       permalink: /research-overview/
     - title: Qualities of Mathematicians
       permalink: /qualities/
+    - title: Mathematics in the Age of AI
+      permalink: /math-ai-age/
     - title: Publications
       permalink: /publications/
     - title: Talks and Trips
