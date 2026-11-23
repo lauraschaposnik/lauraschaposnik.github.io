@@ -62,7 +62,12 @@ Collaboration and mentoring are central to my work. Alongside my research, I bui
     }
   }
   
-  .about-links {
+  /* start below the floated photo and icons, so the rule does not cut between them */
+.about-divider {
+  clear: both;
+}
+
+.about-links {
   display: flex;
   flex-wrap: wrap;
   gap: .5rem;
@@ -99,9 +104,7 @@ Collaboration and mentoring are central to my work. Alongside my research, I bui
 }
 </style>
 
-<hr>
-
-6
+<hr class="about-divider">
 
 <nav class="about-links" aria-label="Research and people">
   <a href="/research-overview/">Research Overview</a>
