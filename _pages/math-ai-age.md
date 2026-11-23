@@ -20,9 +20,7 @@ AI is changing how mathematics is done, and I think this is a good moment to ask
 
 The study reads published accounts by and about mathematicians (interviews, profiles, obituaries, memoirs and biographies) together with outside studies. Two AI models read each quote independently, every quote is checked against its source by a script, and the models' judgments are kept separate from the findings.
 
-This is ongoing work, and the interactive page below is a draft for discussion.
-
-<!-- Note for Laura: this link only works for visitors once the artifact is shared publicly on claude.ai. The host refuses iframe embedding, so it opens in a new tab instead of being embedded. -->
+This is ongoing work. Its first result, a draft case for funding mathematics, is below.
 
 <style>
   .ai-age-card {
@@ -56,7 +54,7 @@ This is ongoing work, and the interactive page below is a draft for discussion.
   }
 </style>
 
-<a class="ai-age-card" href="https://claude.ai/artifact/CK4MnSu3ivyodHrnsVfg7x" target="_blank" rel="noopener noreferrer">
-  <div class="ai-age-card-title">Open the interactive study &rarr;</div>
+<a class="ai-age-card" href="{{ '/funding-case/' | relative_url }}">
+  <div class="ai-age-card-title">The case for funding mathematics &rarr;</div>
   <p class="ai-age-card-text">Interactive draft: the case for funding mathematics, built from mathematicians' accounts and outside studies.</p>
 </a>

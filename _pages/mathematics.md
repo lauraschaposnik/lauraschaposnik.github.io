@@ -11,6 +11,8 @@ children:
       permalink: /qualities/
     - title: Mathematics in the Age of AI
       permalink: /math-ai-age/
+    - title: The Case for Funding Mathematics
+      permalink: /funding-case/
     - title: Publications
       permalink: /publications/
     - title: Talks and Trips
