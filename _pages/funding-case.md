@@ -6,9 +6,11 @@ description: "A draft, evidence-based case for funding mathematics: which skills
 nav: false
 ---
 
+This is part of an [AIRSHIP Lab](https://airship-lab.github.io/) program to understand mathematics and science in the age of AI, alongside AIRSHIP's larger study of the motivation and qualities of scientists at every stage of life and career. AIRSHIP Lab at UIC, where I am a founding core member, brings together researchers across disciplines to explore AI in science.
+
 Why should anyone fund mathematics? This is a draft case built from evidence rather than advocacy. It asks which skills bring value to the mathematical profession and to others, what kind of value and for whom, and how each case fares as AI enters the work. It draws on the published accounts of mathematicians collected for the [Qualities of Mathematicians]({{ '/qualities/' | relative_url }}) study, a reading of those accounts for links between skills and the value they bring, and outside studies read in full.
 
-Each argument shows its evidence, three strength ratings (what the accounts show, what outside studies show, and how well the claim as worded holds), its main caveat, and the evidence it still needs. Ratings and AI outlooks made by AI models are marked as judgments, not findings. It is part of my work with [AIRSHIP Lab](https://airship-lab.github.io/) on [mathematics in the age of AI]({{ '/math-ai-age/' | relative_url }}). This is a draft for discussion. [Open it full screen]({{ '/assets/funding-case/index.html' | relative_url }}).
+Each argument shows its evidence, three strength ratings (what the accounts show, what outside studies show, and how well the claim as worded holds), its main caveat, and the evidence it still needs. Ratings and AI outlooks made by AI models are marked as judgments, not findings. See also [Mathematics in the Age of AI]({{ '/math-ai-age/' | relative_url }}). This is a draft for discussion. [Open it full screen]({{ '/assets/funding-case/index.html' | relative_url }}).
 
 <iframe
   id="funding-case-frame"
