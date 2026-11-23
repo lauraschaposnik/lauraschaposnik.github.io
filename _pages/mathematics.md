@@ -7,6 +7,8 @@ dropdown: true
 children: 
     - title: Research Overview
       permalink: /research-overview/
+    - title: Qualities of Mathematicians
+      permalink: /qualities/
     - title: Publications
       permalink: /publications/
     - title: Talks and Trips

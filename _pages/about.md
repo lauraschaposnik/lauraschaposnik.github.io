@@ -150,9 +150,17 @@ I received my degree of Licenciada en Matemáticas from the University of La Pla
 
  <h3>Visiting Appointments</h3>
 
-During the Fall 2018 I was a <b> Visiting Fellow </b>  at <a href="https://www.new.ox.ac.uk">New College, Oxford</a> visiting faculty member at the Mathematical Institute, University of Oxford. During the Spring 2019, I was an visiting member of the SCGP and organizer of a semester on the <a href="https://scgp.stonybrook.edu/archives/24984">Geometry and Physics of Hitchin Systems systems</a>. During the Summer 2019 I was a <a href="https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship">Humboldt Fellow</a> at  Freie Universitat Berlin. During the Fall 2019 I was a Research Member at MSRI within the semester on <a href="https://www.slmath.org/programs/310">Holomorphic Differentials in Mathematics and Physics</a> .
-During the Fall 2022 I was a visiting professor at the Department of Mathematics of the University of California, Berkeley, and a Research Professor at MSRI, Berkeley, USA, organizing a semester on <a href="https://www.slmath.org/programs/340"> Analytic and Geometric Aspects of Gauge Theory </a>. During the Spring 2023 I was a <b> Visiting Fellow</b> at <a href="https://www.asc.ox.ac.uk">All Souls College, Oxford</a> , and a visiting member of the Mathematical Institute, at the University of Oxford. During the summer 2023 I was in Paris, partly as a visiting member of the Institut Henri Poincaré, as part of their Visiting Pairs Program. During the Fall 2026 I was  a visiting faculty member at the Mathematical Institute, University of Oxford,  and a visiting fellow at <a href="https://www.magd.ox.ac.uk/">Magdalen College, Oxford.</a>
- 
+<ul>
+<li><b>Fall 2026</b>: Visiting faculty member at the Mathematical Institute, University of Oxford, and Visiting Fellow at <a href="https://www.magd.ox.ac.uk/">Magdalen College, Oxford</a>.</li>
+<li><b>Summer 2023</b>: Visiting member of the Institut Henri Poincaré, Paris, within its Visiting Pairs Program.</li>
+<li><b>Spring 2023</b>: Visiting Fellow at <a href="https://www.asc.ox.ac.uk">All Souls College, Oxford</a>, and visiting member of the Mathematical Institute, University of Oxford.</li>
+<li><b>Fall 2022</b>: Visiting Professor at the Department of Mathematics, University of California, Berkeley, and Research Professor at MSRI, Berkeley, organizing the semester on <a href="https://www.slmath.org/programs/340">Analytic and Geometric Aspects of Gauge Theory</a>.</li>
+<li><b>Fall 2019</b>: Research Member at MSRI, Berkeley, in the semester on <a href="https://www.slmath.org/programs/310">Holomorphic Differentials in Mathematics and Physics</a>.</li>
+<li><b>Summer 2019</b>: <a href="https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship">Humboldt Fellow</a> at the Freie Universität Berlin.</li>
+<li><b>Spring 2019</b>: Visiting member of the Simons Center for Geometry and Physics (SCGP) and organizer of the semester on the <a href="https://scgp.stonybrook.edu/archives/24984">Geometry and Physics of Hitchin Systems</a>.</li>
+<li><b>Fall 2018</b>: Visiting Fellow at <a href="https://www.new.ox.ac.uk">New College, Oxford</a>, and visiting faculty member at the Mathematical Institute, University of Oxford.</li>
+</ul>
+
  <h3>Research Affiliations</h3>
 
 <p>
