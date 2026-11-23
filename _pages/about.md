@@ -101,25 +101,7 @@ Collaboration and mentoring are central to my work. Alongside my research, I bui
 
 <hr>
 
-<div class="honors-section">
-  <div class="honors-title">Selected honors and fellowships</div>
-
-  <ul>
-    <li>
-      <b>Presidential Early Career Award for Scientists and Engineers (PECASE).</b>
-      Recipient of the highest honor bestowed by the U.S. government on outstanding scientists and engineers early in their careers.
-    </li>
-    <li><b>Alexander von Humboldt Fellow</b>, 2017–2019.</li>
-    <li><b>Simons Fellow in Mathematics</b>, 2022–2023.</li>
-    <li><b>NSF CAREER Awardee</b>, 2018–2023.</li>
-    <li><b>Visiting Fellowship</b>, <a href="https://www.magd.ox.ac.uk/">Magdalen College</a>, University of Oxford, 2026.</li>
-<li><b>Visiting Fellowship</b>, <a href="https://www.asc.ox.ac.uk/">All Souls College</a>, University of Oxford, 2023.</li>
-<li><b>Visiting Fellowship</b>, <a href="https://www.new.ox.ac.uk/">New College</a>, University of Oxford, 2018.</li>
-    <li><b>Clarendon Scholar</b>, University of Oxford.</li>
-  </ul>
-</div>
-
-<hr>
+6
 
 <nav class="about-links" aria-label="Research and people">
   <a href="/research-overview/">Research Overview</a>
