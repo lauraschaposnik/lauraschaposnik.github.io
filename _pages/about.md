@@ -129,7 +129,7 @@ and critically evaluating AI-generated arguments.
 <h3>Student Research Fellowships</h3>
 <p>
 I founded the
-<a href="https://globalims.org/home">Global Institute for Mathematical Science (GIMS)</a>,
+<a href="https://www.globalims.org/home">Global Institute for Mathematical Science (GIMS)</a>,
 which supports student research through fellowships
 for semester- or year-long projects.
 </p>
